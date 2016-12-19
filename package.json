@@ -1,0 +1,16 @@
+{
+  "name": "cunard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://arsenbatyuchok@bitbucket.org/arsenbatyuchok/cunard.git"
+  },
+  "author": "Arsen Batyuchok",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/arsenbatyuchok/cunard#readme"
+}
