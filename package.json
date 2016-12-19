@@ -12,5 +12,22 @@
   },
   "author": "Arsen Batyuchok",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/arsenbatyuchok/cunard#readme"
+  "homepage": "https://bitbucket.org/arsenbatyuchok/cunard#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "angular": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "fullpage.js": "^2.9.0",
+    "jquery": "^3.1.1"
+  }
 }
