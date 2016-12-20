@@ -13,7 +13,9 @@
 			header
 		</div>
 		<div class="section"
-			 ng-repeat="page in data.pages">A New Cunard Spa</div>
+			 ng-repeat="page in data.pages">
+			 <ng-include src="'templates/template' + page.template + '.html'"></ng-include> 	
+		</div>
 	</div>
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="assets/index.js"></script>

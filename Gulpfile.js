@@ -42,6 +42,13 @@ gulp.task('data', function() {
         .pipe(connect.reload());
 });
 
+//data
+gulp.task('templates', function() {
+    return gulp.src(src + '/templates/*.**')
+        .pipe(gulp.dest(dist + '/templates'))
+        .pipe(connect.reload());
+});
+
 //img task
 gulp.task('images', function() {
     return gulp.src(imgSrc + '/**/*.**')
@@ -85,7 +92,7 @@ gulp.task('styles', function() {
 
 // build static site for local testing
 gulp.task('build-static', ['clean'], function(cb) {
-    runSequence(['styles', 'images', 'js', 'html', 'vendorCss', 'data'], cb);
+    runSequence(['styles', 'images', 'js', 'html', 'vendorCss', 'data', 'templates'], cb);
 });
 
 
