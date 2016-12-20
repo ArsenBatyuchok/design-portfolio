@@ -1,17 +1,34 @@
 angular.module('Cunard', [
 	'Cunard.services'
 ])
-.controller('CunardCtrl', ['$scope', 'dataService', function ($scope, dataService) {
+.controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
 	$scope.data = null;
 
-	dataService.getData('/data.json').
-		then(function (response) {
-			$scope.data = response.data;
-			$scope.$broadcast('DATA_LOADED');
-		},
-		function (error) {
+	$q.all([
+        dataService.getData('/section-1.json'),
+        dataService.getData('/section-2.json')
+    ]).then(function (response) {
+        var data = [];
 
-		});
+        response.map(function(arr) {
+            var length = arr.data.pages.length;
+            arr.data.pages.map(function(page, index) {
+                if (index === 0) {
+                    page.isFirst = true;
+                } else if (index === length - 1) {
+                    page.isLast = true;
+                }
+
+                data.push(page);
+            });
+        });
+
+        $scope.data = data;
+		$scope.$broadcast('DATA_LOADED');
+	}, function (error) {
+
+	});
+		
 }])
 .directive('initData', ['$timeout', function ($timeout) {
 	return {
@@ -22,6 +39,7 @@ angular.module('Cunard', [
 					$('.fullpage').fullpage({
 						fixedElements: '.header, .side-panel',
 						scrollingSpeed: 1000,
+                        scrollBar: true,
                         onLeave: function (index, nextIndex) {
                             if (index < nextIndex) {
                                 $($('.fp-section')[index - 1]).addClass('on-leave');
