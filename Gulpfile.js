@@ -110,5 +110,7 @@ gulp.task('watch', ['server', 'build-static'], function() {
     gulp.watch([lessSrc + '/**/*.less'], ['styles']);
     gulp.watch([src + '/*.html', src + '/templates/*.html'], ['html']);
     gulp.watch([jsSrc + '/**/*.js'], ['js']);
+    gulp.watch([src + '/data/**/*.**'], ['data']);
+    gulp.watch([src + '/templates/**/*.**'], ['templates']);
     connect.reload();
 });
