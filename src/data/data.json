@@ -21,6 +21,17 @@
                 ],
                 "images": [ "31.jpg", "32.jpg", "33.jpg"]
             }
+        },
+        {
+            "subsection": "The future of wellness",
+            "template": 4,
+            "content": {
+                "name": null,
+                "text": [
+                    "The future of wellness is defined less and less by “treatment rooms and locker rooms” and more about culture, community and connection."
+                ],
+                "images": [ "31.jpg", "32.jpg", "33.jpg"]
+            }
         }
     ]
 }

@@ -1,22 +1,59 @@
 .template-4 {
     .img-holder {
         position: absolute;
+        transition: opacity 0.5s ease, transform 1s ease-out;
         img {
             width: 100%;
         }
     }
     .img-holder-1 {
+        transition-delay: 0.5s;
         width: 33.33%;
         right: 11.11%;
         bottom: 25px;
     }
     .img-holder-2 {
+        transition-delay: 0.2s;
         width: 22.22%;
         top: 25px;
         right: 25px;
     }
     .img-holder-3 {
+        transition-delay: 0.3s;
         width: 27.77%;
         right: 33.33%;
+    }
+}
+
+.fp-section {
+    .template-4 {
+        p {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .img-holder {
+            opacity: 0;
+            transform: translate(0, 80px);
+        }
+    }
+    &.active {
+        .template-4 {
+            p {
+                opacity: 1;
+            }
+            .img-holder {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+    }
+    &.on-leave {
+        .template-4 {
+            .img-holder {
+                opacity: 0;
+                transform: translate(0, -180px);
+                transition-delay: 0;
+            }
+        }
     }
 }

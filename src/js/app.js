@@ -21,7 +21,15 @@ angular.module('Cunard', [
 				$timeout(function(){
 					$('.fullpage').fullpage({
 						fixedElements: '.header, .side-panel',
-						scrollingSpeed: 1000
+						scrollingSpeed: 1000,
+                        onLeave: function (index, nextIndex) {
+                            if (index < nextIndex) {
+                                $($('.fp-section')[index - 1]).addClass('on-leave');
+                            }
+                        },
+                        afterLoad: function (anchorLink, index) {
+                            $('.fp-section').removeClass('on-leave');
+                        }
 					});
 				}, 0);
 			});

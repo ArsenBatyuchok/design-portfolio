@@ -1,0 +1,31 @@
+.fp-section {
+    .template-1 {
+        p {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    }
+    &.on-leave {
+        .template-1 {
+            p {
+                opacity: 0;
+            }
+        }
+    }
+    &.fp-completely.active {
+        .template-1 {
+            p {
+                opacity: 1;
+                transition-delay: 0.4s;
+            }
+        }
+    }
+    &.active {
+        .template-1 {
+            p {
+                opacity: 1;
+                transition-delay: 0.4s;
+            }
+        }
+    }
+}
