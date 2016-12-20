@@ -1,0 +1,14 @@
+<div class="template-4 section-inner fullheight">
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-1">
+            <p ng-repeat="text in page.content.text" 
+               ng-bind-html="text | to_trusted"
+               class="text-large"></p>
+        </div>
+        <div class="img-holder img-holder-{{$index + 1}}"
+             ng-repeat="image in page.content.images">
+            <img ng-src="assets/img/{{image}}" />
+        </div>
+
+    </div>
+</div>
