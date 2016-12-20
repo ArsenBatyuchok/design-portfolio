@@ -24,13 +24,37 @@
         },
         {
             "subsection": "The future of wellness",
-            "template": 4,
+            "template": 2,
             "content": {
                 "name": null,
                 "text": [
-                    "The future of wellness is defined less and less by “treatment rooms and locker rooms” and more about culture, community and connection."
+                    "Numbers convey a sense of mystery; those who know, know. In London, 'No. 10' is shorthand for the seat of power.",
+                    "12 represents the completed cycle of experience.<br>There are 12 major bodies of water, as well as 12 chakras and 12 units of time and space (minutes, hours, months, inches). The magic of 12 is it's universal application across geography and culture.",
+                    "No. 12 offers programming synchronised to the natural rhythms of the sea and the sky. Each day, we reveal our 12 most important insightsfortheday. Focused mornings, energetic days and long evenings to unwind. Tune in to your fellow seamates with our daily services (morning meditation and classes, afternoon tea, evening elemental ceremonies around water, fire, earth & air) or tune out for some personal time."
+                ]
+            }
+        },
+        {
+            "subsection": "The future of wellness",
+            "template": 3,
+            "content": {
+                "name": "CUNARD’S BRAND OF BRITISH LUXURY",
+                "text": [
+                    "Cunard’s brand of British Luxury (refined, thoughtful, charismatic, proud) reconnects guests to a time and place of rich heritage and stories, of adventure and grand gestures, reflecting all that is wonderful and special of being British. How do we bring this forward in wellness?"
                 ],
-                "images": [ "31.jpg", "32.jpg", "33.jpg"]
+                "image": "71.jpg"
+            }
+        },
+        {
+            "subsection": "MEN’S GROOMING",
+            "template": 6,
+            "content": {
+                "name": "BIOTEC Super-Charger for Men",
+                "labels": ["Emotional", "Physical", "Nutritional"],
+                "text": [
+                    "Cunard’s brand of British Luxury (refined, thoughtful, charismatic, proud) reconnects guests to a time and place of rich heritage and stories, of adventure and grand gestures, reflecting all that is wonderful and special of being British. How do we bring this forward in wellness?"
+                ],
+                "images": ["501.jpg"]
             }
         }
     ]
