@@ -8,32 +8,55 @@
 @import 'components/template1.less';
 
 html, body {
-	font-family: 'Suranna', serif;
-	font-size: 16px;
-	line-height: 1.18;
+    font-family: 'Suranna', serif;
+    font-size: 16px;
+    line-height: 1.18;
+    background: black;
+    color: white;
+    width: 100%;
 }
-
-.section-inner {
-	padding: 25px;
-}
-
+    
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
+
 .side-panel {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 11.11%;
-	padding-left: 25px;
-	.section-name {
-		position: absolute;
-    	bottom: 25px;
-    	img {
-    		margin-bottom: 20px;
-    	}
-	}
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 11.11%;
+    padding-left: 25px;
+    .section-name {
+        position: absolute;
+        bottom: 25px;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.section {
+    .section-inner {
+        padding: 25px;
+    }
+    &.first {
+        .section-inner {
+            position: fixed;
+            top: 0;
+        }
+    }
+    &.last {
+        z-index: 1;
+    }
+    &:nth-child(2n + 2) {
+        background: white;
+        color: black;
+    }
+}
+
+.fullpage {
+    overflow: hidden;
 }
