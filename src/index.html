@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Cunard" ng-controller="CunardCtrl">
 <head>
 	<meta charset="UTF-8">
 	<title>Cunard Spa</title>
+	<link href="https://fonts.googleapis.com/css?family=Suranna" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/jquery.fullpage.min.css" />
+	<link rel="stylesheet" href="assets/main.css" />	
 </head>
 <body>
-	<p>Hello world</p>
+	<div class="fullpage" init-data>
+		<div class="header">
+			header
+		</div>
+		<div class="section"
+			 ng-repeat="page in data.pages">A New Cunard Spa</div>
+	</div>
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="assets/index.js"></script>
 </body>

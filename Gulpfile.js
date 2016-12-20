@@ -35,6 +35,13 @@ gulp.task('html', function() {
         .pipe(connect.reload());
 });
 
+//data
+gulp.task('data', function() {
+    return gulp.src(src + '/data/*.**')
+        .pipe(gulp.dest(dist))
+        .pipe(connect.reload());
+});
+
 //img task
 gulp.task('images', function() {
     return gulp.src(imgSrc + '/**/*.**')
@@ -49,10 +56,17 @@ gulp.task('js', function() {
             'node_modules/angular/angular.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/fullpage.js/dist/jquery.fullpage.min.js',
-            jsSrc + '/*.js'
+            jsSrc + '/services/dataService.js',
+            jsSrc + '/app.js'
         ])
         .pipe(concat('index.js'))
         .pipe(gulp.dest(jsDist))
+        .pipe(connect.reload());
+});
+
+gulp.task('vendorCss', function () {
+    return gulp.src('node_modules/fullpage.js/dist/jquery.fullpage.min.css')
+        .pipe(gulp.dest(cssDist))
         .pipe(connect.reload());
 });
 
@@ -71,7 +85,7 @@ gulp.task('styles', function() {
 
 // build static site for local testing
 gulp.task('build-static', ['clean'], function(cb) {
-    runSequence(['styles', 'images', 'js', 'html'], cb);
+    runSequence(['styles', 'images', 'js', 'html', 'vendorCss', 'data'], cb);
 });
 
 
