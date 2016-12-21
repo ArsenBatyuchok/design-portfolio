@@ -10,8 +10,7 @@
 </head>
 <body>
 	<div class="fullpage" init-data>
-		<div class="section white last"
-			 style="z-index:8">
+		<div class="section white last">
 			<div>WELCOME!!!!!!</div>
 		</div>
 		<div class="section"
@@ -19,7 +18,7 @@
 			 ng-class="{first: page.isFirst, last: page.isLast, white: page.isBackground}">
 
 			<!-- Header -->
-			<div class="header" ng-if="page.isLast">
+			<div class="header" ng-if="page.isFirst">
 				<div class="menu-btn"></div>
 				<div class="subsection-name">
 					THE FUTURE OF<br> WELLNESS
@@ -30,7 +29,7 @@
 			</div>
 
 			<!-- Side panel -->
-			<div class="side-panel" ng-if="page.isLast">
+			<div class="side-panel" ng-if="page.isFirst">
 				<div class="section-name">
 					<img src="assets/img/ui/1_Black.svg" />
 					<div>Market Overview</div>
