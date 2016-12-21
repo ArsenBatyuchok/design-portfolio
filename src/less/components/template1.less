@@ -2,7 +2,7 @@
     .template-1 {
         p {
             opacity: 0;
-            transition: opacity 0.4s ease-in-out, transform 0.4s ease;
+            transition: opacity 0.4s ease;
         }
     }
     &.active {
@@ -12,7 +12,56 @@
             }
         }
     }
-    &.first {
-        
+    &.on-leave-up, .on-leave-down {
+        .template-1 {
+            p {
+                opacity: 0;
+            }
+        }
     }
+    &.on-enter-up, .on-enter-down {
+        .template-1 {
+            p {
+                transition-delay: 0.6s;
+            }
+        }
+    }
+    &.first {
+        .template-1 {
+            p {
+                transition-delay: 0.6s;
+            }
+        }
+        &.on-leave-up {
+            .template-1 {
+                p {
+                    transition-delay: 0s;
+                }
+            }
+        }
+    }
+    // &.first {
+    //     .template-1 {
+    //         p {
+    //             opacity: 0;
+    //             transition: opacity 0.4s ease, transform 0.4s ease;
+    //         }
+    //     }
+    //     &.on-enter-down {
+    //         .template-1 {
+    //             p {
+    //                 opacity: 0;
+    //                 transform: translateY(280px);
+    //             }
+    //         }
+    //     }
+    //     &.fp-completely {
+    //         .template-1 {
+    //             p {
+    //                 opacity: 1;
+    //                 transform: translateY(0);
+    //             }
+    //         }
+    //     }
+    // }
 }

@@ -51,6 +51,7 @@ angular.module('Cunard', [
 
                             if (direction === 'down') {
                                 currentSlide.addClass('on-leave-down');
+                                nextSlide.addClass('on-enter-down');
 
                                 if (nextSlide.hasClass('first')) {
                                     nextSlide.siblings()
@@ -63,6 +64,7 @@ angular.module('Cunard', [
                                 }
                             } else if (direction === 'up') {
                                 currentSlide.addClass('on-leave-up');
+                                nextSlide.addClass('on-enter-up');
 
                                 if (nextSlide.hasClass('last')) {
                                     nextSlide.siblings()
@@ -80,7 +82,7 @@ angular.module('Cunard', [
                             }
                         },
                         afterLoad: function (anchorLink, index) {
-                            $('.fp-section').removeClass('on-leave-up, on-leave-down');
+                            $('.fp-section').removeClass('on-leave-up on-leave-down on-enter-up on-enter-down');
                         }
 					});
 				}, 0);

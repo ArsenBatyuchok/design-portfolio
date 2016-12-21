@@ -21,7 +21,7 @@
     &.active {
         .template-3 {
             p {
-                opacity: 1;
+                opacity: 0;
             }
             .img-holder {
                 opacity: 1;
@@ -35,6 +35,13 @@
                 opacity: 0;
                 transform: translate(0, -180px);
                 transition-delay: 0;
+            }
+        }
+    }
+    &.on-leave-up {
+        .template-3 {
+            p {
+                opacity: 0;
             }
         }
     }
