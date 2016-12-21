@@ -45,24 +45,36 @@ angular.module('Cunard', [
 					$('.fullpage').fullpage({
 						scrollingSpeed: 1000,
                         scrollBar: true,
-                        onLeave: function (index, nextIndex) {
-                            if (index < nextIndex) {
-                                $($('.fp-section')[index - 1]).addClass('on-leave');
-                            }
+                        onLeave: function (index, nextIndex, direction) {
+                            var currentSlide = $($('.section')[index - 1]);
+                            var nextSlide = $($('.section')[nextIndex - 1]);
 
-                            if ($($('.fp-section')[nextIndex - 1]).hasClass('first')) {
-                                $($('.fp-section')[nextIndex - 1]).siblings()
-                                                                  .find('.header, .side-panel')
-                                                                  .removeClass('show-block')
-                                                                  .css('position', 'absolute');
-                                //debugger;
-                                $($('.fp-section')[nextIndex - 1]).nextAll('.last')
-                                                                  .first()
-                                                                  .find('.header, .side-panel')
-                                                                  .css('position', 'fixed')
-                                                                  .fadeIn(1000);
-                            } else if ($($('.fp-section')[nextIndex - 1]).hasClass('last')) {
+                            if (direction === 'down') {
+                                currentSlide.addClass('on-leave');
 
+                                if (nextSlide.hasClass('first')) {
+                                    nextSlide.siblings()
+                                             .find('.header, .side-panel')
+                                             .fadeOut();
+
+                                    nextSlide.find('.header, .side-panel')
+                                             .delay(625)
+                                             .fadeIn(500);
+                                }
+                            } else if (direction === 'up') {
+                                if (nextSlide.hasClass('last')) {
+                                    nextSlide.siblings()
+                                             .find('.header, .side-panel')
+                                             .fadeOut(200);
+
+                                    nextSlide.prevAll('.first')
+                                             .first()
+                                             .find('.header, .side-panel')
+                                             .delay(200)
+                                             .fadeIn(1000);
+
+
+                                }
                             }
                         },
                         afterLoad: function (anchorLink, index) {

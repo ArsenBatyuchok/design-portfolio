@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="assets/main.css" />    
 </head>
 <body>
-    <div class="fullpage" init-data>
-        <div class="section section-starter last"
-             style="z-index:8">
+	<div class="fullpage" init-data>
+		<div class="section section-starter last">
             <div class="section-inner">
                 <div class="main-heading">
                     <span class="highlighted">A New<br></span>
@@ -19,28 +18,28 @@
                 </div>
             </div>
         </div>
-        <div class="section"
-             ng-repeat="page in data"
-             ng-class="{first: page.isFirst, last: page.isLast, white: page.isBackground}">
+		<div class="section"
+			 ng-repeat="page in data"
+			 ng-class="{first: page.isFirst, last: page.isLast, white: page.isBackground}">
 
-            <!-- Header -->
-            <div class="header" ng-if="page.isLast">
-                <div class="menu-btn"></div>
-                <div class="subsection-name">
-                    THE FUTURE OF<br> WELLNESS
-                </div>
-                <div class="page-name">
-                    Being British has <br>Style & Strength
-                </div>
-            </div>
+			<!-- Header -->
+			<div class="header" ng-if="page.isFirst">
+				<div class="menu-btn"></div>
+				<div class="subsection-name">
+					THE FUTURE OF<br> WELLNESS
+				</div>
+	            <div class="page-name">
+	                Being British has <br>Style & Strength
+	            </div>
+			</div>
 
-            <!-- Side panel -->
-            <div class="side-panel" ng-if="page.isLast">
-                <div class="section-name">
-                    <img src="assets/img/ui/1_Black.svg" />
-                    <div>Market Overview</div>
-                </div>
-            </div>
+			<!-- Side panel -->
+			<div class="side-panel" ng-if="page.isFirst">
+				<div class="section-name">
+					<img src="assets/img/ui/1_Black.svg" />
+					<div>Market Overview</div>
+				</div>
+			</div>
 
             <!-- Template -->
             <ng-include src="'templates/template' + page.template + '.html'"></ng-include>  
