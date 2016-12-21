@@ -3,4 +3,90 @@
         font-size: 16px;
         line-height: 1.1875;
     }
+    .img-holder {
+        transition: opacity 0.5s ease, transform 1s ease-out;
+        img {
+            width: 100%;
+        }
+    }
+    .page-info-label {
+        height: 24px;
+        font-size: 14px;
+        width: 100%;
+        line-height: 24px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0 7px;
+        transition: all 0.5s ease;
+        .page-info-label-inner {
+            display: inline-block;
+            position: relative;
+            background: #000;
+            width: calc(100% - 14px);
+            &:before, &:after {
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                position: absolute;
+            }
+            &:before {
+                left: -7px;
+                top: 0;
+                border-width: 12px 7px 12px 0;
+                border-color: transparent #000000 transparent transparent;
+            }
+            &:after {
+                right: -7px;
+                top: 0;
+                border-width: 12px 0 12px 7px;
+                border-color: transparent transparent transparent #000000;
+            }
+        }
+    }
+}
+
+
+.fp-section {
+    .template-6 {
+        p {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .img-holder {
+            opacity: 0;
+            transform: translate(0, 80px);
+        }
+        .page-info-label {
+            opacity: 0;
+        }
+    }
+    &.active {
+        .template-6 {
+            p {
+                opacity: 1;
+            }
+            .img-holder {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            .page-info-label {
+                opacity: 1;
+            }
+        }
+    }
+    &.on-leave {
+        .template-6 {
+            .img-holder {
+                opacity: 0;
+                transform: translate(0, -180px);
+                transition-delay: 0;
+            }
+            .page-info-label {
+                opacity: 0;
+            }
+        }
+    }
 }
