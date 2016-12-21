@@ -10,14 +10,20 @@ angular.module('Cunard', [
     ]).then(function (response) {
         var data = [];
 
-        response.map(function(arr) {
+        response.map(function(arr, index) {
             var length = arr.data.pages.length;
+            var background = index % 2 === 0 ? false : true;
+
             arr.data.pages.map(function(page, index) {
                 if (index === 0) {
                     page.isFirst = true;
                 } else if (index === length - 1) {
                     page.isLast = true;
                 }
+
+                if (background) {
+                    page.isBackground = true;
+                } 
 
                 data.push(page);
             });
@@ -37,12 +43,26 @@ angular.module('Cunard', [
 			$scope.$on('DATA_LOADED', function () {
 				$timeout(function(){
 					$('.fullpage').fullpage({
-						fixedElements: '.header, .side-panel',
 						scrollingSpeed: 1000,
                         scrollBar: true,
                         onLeave: function (index, nextIndex) {
                             if (index < nextIndex) {
                                 $($('.fp-section')[index - 1]).addClass('on-leave');
+                            }
+
+                            if ($($('.fp-section')[nextIndex - 1]).hasClass('first')) {
+                                $($('.fp-section')[nextIndex - 1]).siblings()
+                                                                  .find('.header, .side-panel')
+                                                                  .removeClass('show-block')
+                                                                  .css('position', 'absolute');
+                                //debugger;
+                                $($('.fp-section')[nextIndex - 1]).nextAll('.last')
+                                                                  .first()
+                                                                  .find('.header, .side-panel')
+                                                                  .css('position', 'fixed')
+                                                                  .fadeIn(1000);
+                            } else if ($($('.fp-section')[nextIndex - 1]).hasClass('last')) {
+
                             }
                         },
                         afterLoad: function (anchorLink, index) {

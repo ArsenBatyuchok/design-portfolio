@@ -16,9 +16,10 @@ html, body {
     font-family: 'Suranna', serif;
     font-size: 16px;
     line-height: 1.18;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     width: 100%;
+    min-width: 1024px;
 }
     
 .header {
@@ -26,6 +27,8 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    display: none;
+    top: 0;
 }
 
 .side-panel {
@@ -58,15 +61,13 @@ html, body {
             transform: translateY(-50%);
         }
     }
-    &.last {
-        z-index: 1;
-    }
-    &:nth-child(2n + 2) {
-        //background: white;
-        //color: black;
+    &.white {
+        background: white;
+        color: black;
     }
 }
 
 .fullpage {
     overflow: hidden;
 }
+
