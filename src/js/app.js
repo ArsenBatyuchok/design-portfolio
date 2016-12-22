@@ -43,12 +43,26 @@ angular.module('Cunard', [
                     return;
                 }
 
+                // if (index === 1) {
+                //     window.setTimeout(function () {
+                //         $('.header').css({'transform': 'translate3d(0,' + window.screen.availHeight + 'px , 0)'});
+                //     });
+                // }
+
+                // if (index === 2 && nextIndex === 1) {
+                //     window.setTimeout(function () {
+                //         $('.header').css({'transform': 'translate3d(0,' + 0 + 'px , 0)'});
+                //     });
+                // }
+
                 $('.slider').css({'transform': 'translate3d(0,' + (-(window.screen.availHeight * nextIndex)) + 'px , 0)'});
                 el.removeClass('slide-active');
+                nextEl.addClass('sliding')
 
                 window.setTimeout(function () {
-                    nextEl.addClass('slide-active');    
-                }, 1000);
+                    nextEl.addClass('slide-active');
+                    nextEl.removeClass('sliding');
+                }, 300);
 
                 if ($('.navigation').hasClass('visible')) {
                     $('.navigation').removeClass('visible');
