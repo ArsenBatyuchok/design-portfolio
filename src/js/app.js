@@ -5,6 +5,8 @@ angular.module('Cunard', [
 ])
 .controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
     var indexReveal = 0;
+    var scrollTimeout;
+
 	$scope.data = null;
     $scope.windowHeight = window.screen.availHeight;
 
@@ -14,11 +16,7 @@ angular.module('Cunard', [
     ]).then(function (response) {
         $scope.data = response;
     }, function (error) {
-
-    });
-
-    $(document).on('touchmove', function(e) {
-        e.preventDefault();
+        // Error
     });
 
     window.setTimeout(function() {
@@ -41,62 +39,96 @@ angular.module('Cunard', [
         e.preventDefault();
     });
 
+    // Swipe event
     $(document).swipe( {
-        //Generic swipe handler for all directions
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-            var length = $('.slide').length;
-            var el = $('.slide-active');
-            var index = el.data('id');
-
-            function slide(nextIndex, direction) {
-                var nextEl = $('.slide[data-id="' + nextIndex + '"]');
-
-                if (nextIndex < 0 || nextIndex >= length) {
-                    return;
-                }
-
-                animateHeader(el, index, nextEl, direction, $scope.windowHeight);
-
-                if (nextEl.parent('.section').hasClass('black')) {
-                    $('body').css('background-color', '#000');
-                } else {
-                    $('body').css('background-color', '#fff');
-                }
-
-                if (nextEl.hasClass('reveal') && direction === 'up') {
-                    el.parent('.section').css({transform: 'translateY(-' + $scope.windowHeight + 'px)'});
-                } else if (el.hasClass('reveal') && direction === 'down') {
-                    nextEl.parent('.section').css({transform: 'translateY(0px)'});
-                } else {
-                    if (direction === 'down') {
-                        indexReveal -= 1;
-                    } else if (direction === 'up') {
-                        indexReveal += 1;
-                    }
-
-                    $('.slider').css({'transform': 'translate3d(0,' + (-($scope.windowHeight*indexReveal)) + 'px , 0)'});
-                }
-
-                el.removeClass('slide-active');
-                nextEl.addClass('sliding')
-
-                window.setTimeout(function () {
-                    nextEl.addClass('slide-active');
-                    nextEl.removeClass('sliding');
-                }, 300);
-
-                if ($('.navigation').hasClass('visible')) {
-                    $('.navigation').removeClass('visible');
-                }
-            }
-
-            if (direction === 'up') {
-                slide(index + 1, direction);
-            } else if (direction === 'down') {
-                slide(index - 1, direction);
+            if($('.prevent-sliding').length === 0) {
+                slidePages(direction);
             }
         }
     });
+
+    // Scroll event
+    $(window).on('mousewheel', function(e) {
+        var direction;
+
+        // Slide on scroll
+        clearTimeout(scrollTimeout);  
+        scrollTimeout = setTimeout(function() {
+            direction = e.originalEvent.wheelDelta /120 > 0 ? 'down' : 'up';
+
+            if ($('.prevent-sliding').length === 0) {
+                slidePages(direction);
+            }
+        }, 30);
+
+        // Header animation
+        animateHeader(el, index, nextEl, direction, $scope.windowHeight);
+
+        if (nextEl.parent('.section').hasClass('black')) {
+            $('body').css('background-color', '#000');
+        } else {
+            $('body').css('background-color', '#fff');
+        }
+    });
+
+    // Slide event
+    function slidePages(direction) {
+        var length = $('.slide').length;
+        var el = $('.slide-active');
+        var index = el.data('id');
+
+        function slide(nextIndex, direction) {
+            var nextEl = $('.slide[data-id="' + nextIndex + '"]');
+
+            if (nextIndex < 0 || nextIndex >= length) {
+                return;
+            }
+
+            if (nextEl.parent('.section').hasClass('black')) {
+                $('body').css('background-color', '#000');
+            } else {
+                $('body').css('background-color', '#fff');
+            }
+
+            if (nextEl.hasClass('reveal') && direction === 'up') {
+                el.parent('.section').css({transform: 'translateY(-' + $scope.windowHeight + 'px)'});
+            } else if (el.hasClass('reveal') && direction === 'down') {
+                nextEl.parent('.section').css({transform: 'translateY(0px)'});
+            } else {
+                if (direction === 'down') {
+                    indexReveal -= 1;
+                } else if (direction === 'up') {
+                    indexReveal += 1;
+                }
+
+                $('.slider').css({'transform': 'translate3d(0,' + (-($scope.windowHeight*indexReveal)) + 'px , 0)'});
+            }
+
+            el.removeClass('slide-active');
+            nextEl.addClass('sliding');
+            nextEl.addClass('prevent-sliding');
+
+            window.setTimeout(function () {
+                nextEl.addClass('slide-active');
+                nextEl.removeClass('sliding');
+            }, 300);
+
+            window.setTimeout(function () {
+                nextEl.removeClass('prevent-sliding');
+            }, 1000);
+
+            if ($('.navigation').hasClass('visible')) {
+                $('.navigation').removeClass('visible');
+            }
+        }
+
+        if (direction === 'up') {
+            slide(index + 1, direction);
+        } else if (direction === 'down') {
+            slide(index - 1, direction);
+        }
+    }
 
     function touchNavToggle(e) {
         e.preventDefault();
