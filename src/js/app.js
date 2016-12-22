@@ -50,6 +50,8 @@ angular.module('Cunard', [
                     return;
                 }
 
+                animateHeader(el, index, nextEl, direction, $scope.windowHeight);
+
                 if (nextEl.parent('.section').hasClass('black')) {
                     $('body').css('background-color', '#000');
                 } else {
@@ -95,6 +97,16 @@ angular.module('Cunard', [
         e.preventDefault();
         e.stopPropagation();
         $('.navigation').toggleClass('visible');
+    }
+
+    function animateHeader(el, index, next, direction, windowHeight) {
+        var sectionIndex = el.closest('.section').find('.slide').index(el) + 1;
+        if (!(el.parent('.section').find('.header').length > 0)) {
+            return;
+        }
+        if (direction === 'up') {
+            el.parent('.section').find('.header').css({'transform': 'translate3d(0, ' + (windowHeight * sectionIndex) + 'px, 0)'});
+        }
     }
 
 }])
