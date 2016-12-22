@@ -1,6 +1,7 @@
 {
     "pages": [
         {
+            "id": 1,
             "subsection": "The future of wellness",
             "template": 1,
             "content": {
@@ -12,6 +13,7 @@
             }
         },
         {
+            "id": 2,
             "subsection": "The future of wellness",
             "template": 1,
             "content": {
@@ -23,6 +25,7 @@
             }
         },
         {
+            "id": 3,
             "subsection": "The future of wellness",
             "template": 4,
             "content": {
@@ -34,6 +37,7 @@
             }
         },
         {
+            "id": 4,
             "subsection": "The future of wellness",
             "template": 2,
             "content": {
@@ -46,6 +50,7 @@
             }
         },
         {
+            "id": 5,
             "subsection": "The future of wellness",
             "template": 3,
             "content": {
@@ -57,6 +62,7 @@
             }
         },
         {
+            "id": 6,
             "subsection": "MEN’S GROOMING",
             "template": 6,
             "content": {

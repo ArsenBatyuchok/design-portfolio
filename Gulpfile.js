@@ -62,8 +62,9 @@ gulp.task('js', function() {
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/angular/angular.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            'node_modules/fullpage.js/dist/jquery.fullpage.min.js',
+            'node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
             jsSrc + '/services/dataService.js',
+            jsSrc + '/directives/full-page-directive.js',
             jsSrc + '/app.js'
         ])
         .pipe(concat('index.js'))

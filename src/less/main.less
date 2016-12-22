@@ -20,26 +20,20 @@ html, body {
     color: white;
     width: 100%;
     min-width: 1024px;
+    overflow: hidden;
+    transition: transform 1s ease;
 }
     
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    display: none;
-    z-index: 2;
+    position: absolute;
 }
 
 .side-panel {
-    position: fixed;
+    position: absolute;
     top: 0;
-    bottom: 0;
+    height: 100%;
     width: 11.11%;
     padding-left: 25px;
-    z-index: 2;
-    display: none;
     .section-name {
         position: absolute;
         bottom: 25px;
@@ -50,42 +44,14 @@ html, body {
 }
 
 .section {
-    &.section-starter {
-        background: #000;
-        .section-inner {
-            height: 100%;
-        }
-    }
-    .section-inner {
-        padding: 25px;
-        &.fullheight {
-            height: 100vh;
-            padding-top: 168px;
-        }
-    }
-    &.first {
-        .section-inner {
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
-    &.white {
+    position: relative;
+    &:nth-child(2n + 2) {
         background: white;
         color: black;
     }
-}
-
-.fullpage {
-    overflow: hidden;
-}
-
-.main-heading {
-    font-size: 100px;
-    color: #967c30;
-    line-height: 1;
-    .highlighted {
-        color: #ff0000;
+    .slide {
+        position: relative;
+        width: 100%;
     }
 }
 

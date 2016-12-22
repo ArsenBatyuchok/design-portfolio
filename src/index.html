@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="assets/main.css" />    
 </head>
 <body>
-	<div class="fullpage" init-data>
-		<div class="section section-starter last">
+	<div class="section">
+        <div class="slide slide-active" data-id="0" full-page>
             <div class="section-inner">
                 <div class="main-heading">
                     <span class="highlighted">A New<br></span>
@@ -18,33 +18,38 @@
                 </div>
             </div>
         </div>
-		<div class="section"
-			 ng-repeat="page in data"
-			 ng-class="{first: page.isFirst, last: page.isLast, white: page.isBackground}">
-
-			<!-- Header -->
-			<div class="header" ng-if="page.isFirst">
-				<div class="menu-btn"></div>
-				<div class="subsection-name">
-					THE FUTURE OF<br> WELLNESS
-				</div>
-	            <div class="page-name">
-	                Being British has <br>Style & Strength
-	            </div>
-			</div>
-
-			<!-- Side panel -->
-			<div class="side-panel" ng-if="page.isFirst">
-				<div class="section-name">
-					<img src="assets/img/ui/1_Black.svg" />
-					<div>Market Overview</div>
-				</div>
-			</div>
-
-            <!-- Template -->
-            <ng-include src="'templates/template' + page.template + '.html'"></ng-include>  
-        </div>
     </div>
+
+	<div class="section"
+		 ng-repeat="section in data">
+
+		<!-- Header -->
+		<div class="header">
+			<div class="menu-btn"></div>
+			<div class="subsection-name">
+				THE FUTURE OF<br> WELLNESS
+			</div>
+            <div class="page-name">
+                Being British has <br>Style & Strength
+            </div>
+		</div>
+
+		<!-- Side panel -->
+		<div class="side-panel">
+			<div class="section-name">
+				<img src="assets/img/ui/1_Black.svg" />
+				<div>Market Overview</div>
+			</div>
+		</div>
+
+        <div class="slide" full-page
+             ng-repeat="slide in section.data.pages"
+             data-id="{{slide.id}}">
+            <!-- Template -->
+            <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
+        </div>  
+    </div>
+
     <!-- SCRIPTS -->
     <script type="text/javascript" src="assets/index.js"></script>
 </body>

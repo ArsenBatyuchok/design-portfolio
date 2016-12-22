@@ -1,6 +1,7 @@
 {
   "pages": [
     {
+      "id": 7,
       "subsection": "The future of wellness",
       "template": 1,
       "content": {
@@ -12,6 +13,7 @@
       }
     },
     {
+      "id": 8,
       "subsection": "The future of wellness",
       "template": 1,
       "content": {
