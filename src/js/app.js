@@ -1,18 +1,33 @@
 angular.module('Cunard', [
-	'Cunard.services',
+    'Cunard.services',
     'Cunard.fullPage'
 ])
 .controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
-	$scope.data = null;
+    $scope.data = null;
 
-	$q.all([
+    $q.all([
         dataService.getData('/section-1.json'),
         dataService.getData('/section-2.json')
     ]).then(function (response) {
         $scope.data = response;
-	}, function (error) {
+    }, function (error) {
 
-	});
+    });
+
+    $(document).on('touchmove', function(e) {
+        e.preventDefault();
+    });
+
+    // navigation
+    $('.close-btn').on('click', function () {
+        $('.navigation').toggleClass('visible');
+    });
+    $('.slider').on('click', '.menu-btn', function () {
+        $('.navigation').toggleClass('visible');
+    });
+
+    $('.close-btn').on('touchstart', function (e) { touchNavToggle(e); });
+    $('.slider').on('touchstart', '.menu-btn', function (e) { touchNavToggle(e); });
 
     $(document).swipe( {
         //Generic swipe handler for all directions
@@ -28,14 +43,17 @@ angular.module('Cunard', [
                     return;
                 }
 
-                $('body').css({'transform': 'translate3d(0,' + (-(window.screen.availHeight * nextIndex)) + 'px , 0)'});
+                $('.slider').css({'transform': 'translate3d(0,' + (-(window.screen.availHeight * nextIndex)) + 'px , 0)'});
                 el.removeClass('slide-active');
 
                 window.setTimeout(function () {
                     nextEl.addClass('slide-active');    
                 }, 1000);
-            }
 
+                if ($('.navigation').hasClass('visible')) {
+                    $('.navigation').removeClass('visible');
+                }
+            }
 
             if (direction === 'up') {
                 slide(index + 1);
@@ -44,7 +62,13 @@ angular.module('Cunard', [
             }
         }
     });
-		
+
+    function touchNavToggle(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.navigation').toggleClass('visible');
+    }
+
 }])
 .filter('to_trusted', ['$sce', function($sce){
     return function(text) {

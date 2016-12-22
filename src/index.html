@@ -6,48 +6,89 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href="https://fonts.googleapis.com/css?family=Suranna" rel="stylesheet" />
     <link rel="stylesheet" href="assets/jquery.fullpage.min.css" />
-    <link rel="stylesheet" href="assets/main.css" />    
+    <link rel="stylesheet" href="assets/main.css" />
 </head>
 <body>
-	<div class="section">
-        <div class="slide slide-active" data-id="0" full-page>
-            <div class="section-inner">
-                <div class="main-heading">
-                    <span class="highlighted">A New<br></span>
-                    <span>Cunard Spa</span>
+    <div class="navigation">
+        <div class="close-btn"></div>
+        <div class="nav-item clearfix">
+            <a href="#"> 
+            <div class="nav-img-holder"><img src="assets/img/ui/1_White.svg" /></div>
+                <div>Market overview</div>
+            </a>
+        </div>
+        <div class="nav-item clearfix">
+            <a href="#"> 
+            <div class="nav-img-holder"><img src="assets/img/ui/2_White.svg" /></div>
+                <div>Concept</div>
+            </a>
+        </div>
+        <div class="nav-item clearfix">
+            <a href="#"> 
+            <div class="nav-img-holder"><img src="assets/img/ui/3_White.svg" /></div>
+                <div>Service Model</div>
+            </a>
+        </div>
+        <div class="nav-item clearfix">
+            <a href="#"> 
+            <div class="nav-img-holder"><img src="assets/img/ui/4_White.svg" /></div>
+                <div>New Business Model</div>
+            </a>
+        </div>
+        <div class="nav-item clearfix">
+            <a href="#"> 
+            <div class="nav-img-holder"><img src="assets/img/ui/5_White.svg" /></div>
+                <div>Programming Pillars</div>
+            </a>
+        </div>
+        <div class="nav-item clearfix">
+            <a href="#"> 
+            <div class="nav-img-holder"><img src="assets/img/ui/5_White.svg" /></div>
+                <div>Programming Pillars</div>
+            </a>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="section">
+            <div class="slide slide-active" data-id="0" full-page>
+                <div class="section-inner">
+                    <div class="main-heading">
+                        <span class="highlighted">A New<br></span>
+                        <span>Cunard Spa</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-	<div class="section"
-		 ng-repeat="section in data">
+        <div class="section"
+             ng-repeat="section in data">
 
-		<!-- Header -->
-		<div class="header">
-			<div class="menu-btn"></div>
-			<div class="subsection-name">
-				THE FUTURE OF<br> WELLNESS
-			</div>
-            <div class="page-name">
-                Being British has <br>Style & Strength
+            <!-- Header -->
+            <div class="header">
+                <div class="menu-btn"></div>
+                <div class="subsection-name">
+                    THE FUTURE OF<br> WELLNESS
+                </div>
+                <div class="page-name">
+                    Being British has <br>Style & Strength
+                </div>
             </div>
-		</div>
 
-		<!-- Side panel -->
-		<div class="side-panel">
-			<div class="section-name">
-				<img src="assets/img/ui/1_Black.svg" />
-				<div>Market Overview</div>
-			</div>
-		</div>
+            <!-- Side panel -->
+            <div class="side-panel">
+                <div class="section-name">
+                    <img src="assets/img/ui/1_Black.svg" />
+                    <div>Market Overview</div>
+                </div>
+            </div>
 
-        <div class="slide" full-page
-             ng-repeat="slide in section.data.pages"
-             data-id="{{slide.id}}">
-            <!-- Template -->
-            <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
-        </div>  
+            <div class="slide" full-page
+                 ng-repeat="slide in section.data.pages"
+                 data-id="{{slide.id}}">
+                <!-- Template -->
+                <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
+            </div>  
+        </div>
     </div>
 
     <!-- SCRIPTS -->
