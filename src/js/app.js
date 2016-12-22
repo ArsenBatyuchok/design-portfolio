@@ -21,6 +21,11 @@ angular.module('Cunard', [
         e.preventDefault();
     });
 
+    window.setTimeout(function() {
+        $('.side-panel').css({height: window.innerHeight + 'px'});
+    }, 100);
+    
+
     // navigation
     $('.close-btn').on('click', function () {
         $('.navigation').toggleClass('visible');
@@ -100,12 +105,26 @@ angular.module('Cunard', [
     }
 
     function animateHeader(el, index, next, direction, windowHeight) {
-        var sectionIndex = el.closest('.section').find('.slide').index(el) + 1;
+        var sectionIndex = el.closest('.section').find('.slide').index(el);
+
+        // if there's no header in section (i.e. first)
         if (!(el.parent('.section').find('.header').length > 0)) {
             return;
         }
+
+        // if scrolling up to the next section
+        if (el.hasClass('reveal') && direction === 'down') {
+            return;
+        }
+
+        // if scrolling down to the next section
+        if (next.hasClass('reveal') && direction === 'up') {
+            return;
+        }
         if (direction === 'up') {
-            el.parent('.section').find('.header').css({'transform': 'translate3d(0, ' + (windowHeight * sectionIndex) + 'px, 0)'});
+            el.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex + 1)) + 'px, 0)'});
+        } else if (direction === 'down') {
+            next.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex - 1)) + 'px, 0)'});
         }
     }
 
