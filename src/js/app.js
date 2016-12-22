@@ -50,6 +50,12 @@ angular.module('Cunard', [
                     return;
                 }
 
+                if (nextEl.parent('.section').hasClass('black')) {
+                    $('body').css('background-color', '#000');
+                } else {
+                    $('body').css('background-color', '#fff');
+                }
+
                 if (nextEl.hasClass('reveal') && direction === 'up') {
                     el.parent('.section').css({transform: 'translateY(-' + $scope.windowHeight + 'px)'});
                 } else if (el.hasClass('reveal') && direction === 'down') {
