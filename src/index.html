@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 <body>
+    <!-- Navigation -->
     <div class="navigation">
         <div class="close-btn"></div>
         <div class="nav-item clearfix">
@@ -48,8 +49,15 @@
             </a>
         </div>
     </div>
+
+    <!-- Slider Container -->
     <div class="slider">
-        <div class="section section-starter">
+
+        <!-- First section -->
+        <div class="section section-starter"
+             reveal-section
+             ng-style="{'z-index': data.length + 1}"
+             data-last="false">
             <div class="slide slide-active" data-id="0" full-page>
                 <div class="section-inner">
                     <div class="main-heading">
@@ -60,9 +68,13 @@
             </div>
         </div>
 
-        <div class="section"
+        <!-- Slider Sections -->
+    	<div class="section"
+             reveal-section
              ng-class-even="'black'"
-             ng-repeat="section in data">
+    		 ng-repeat="section in data"
+             ng-style="{'z-index': data.length - $index}"
+             data-last="{{$last}}">
 
             <!-- Header -->
             <div class="header">
@@ -85,10 +97,11 @@
 
             <div class="slide" full-page
                  ng-repeat="slide in section.data.pages"
+                 ng-class="{reveal: $index === 0}"
                  data-id="{{slide.id}}">
                 <!-- Template -->
                 <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
-            </div>  
+            </div>
         </div>
     </div>
 

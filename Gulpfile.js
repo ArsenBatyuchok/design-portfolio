@@ -65,6 +65,7 @@ gulp.task('js', function() {
             'node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
             jsSrc + '/services/dataService.js',
             jsSrc + '/directives/full-page-directive.js',
+            jsSrc + '/directives/reveal-section-directive.js',
             jsSrc + '/app.js'
         ])
         .pipe(concat('index.js'))

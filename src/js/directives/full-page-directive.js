@@ -3,9 +3,9 @@ angular.module('Cunard.fullPage', [])
   return {
     restrict: 'A',
     link: function(scope, element, attrs) {
-      var slideHeight = window.screen.availHeight;
+      var windowHeight = window.screen.availHeight;
 
-      element.height(slideHeight);
+      element.height(windowHeight);
     }
   }
 });

@@ -1,9 +1,12 @@
 angular.module('Cunard', [
-    'Cunard.services',
-    'Cunard.fullPage'
+	'Cunard.services',
+    'Cunard.fullPage',
+    'Cunard.revealSection'
 ])
 .controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
-    $scope.data = null;
+    var indexReveal = 0;
+	$scope.data = null;
+    $scope.windowHeight = window.screen.availHeight;
 
     $q.all([
         dataService.getData('/section-1.json'),
@@ -29,6 +32,10 @@ angular.module('Cunard', [
     $('.close-btn').on('touchstart', function (e) { touchNavToggle(e); });
     $('.slider').on('touchstart', '.menu-btn', function (e) { touchNavToggle(e); });
 
+    $(document).on('touchmove', function(e) {
+        e.preventDefault();
+    });
+
     $(document).swipe( {
         //Generic swipe handler for all directions
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -36,26 +43,27 @@ angular.module('Cunard', [
             var el = $('.slide-active');
             var index = el.data('id');
 
-            function slide(nextIndex) {
+            function slide(nextIndex, direction) {
                 var nextEl = $('.slide[data-id="' + nextIndex + '"]');
 
                 if (nextIndex < 0 || nextIndex >= length) {
                     return;
                 }
 
-                // if (index === 1) {
-                //     window.setTimeout(function () {
-                //         $('.header').css({'transform': 'translate3d(0,' + window.screen.availHeight + 'px , 0)'});
-                //     });
-                // }
+                if (nextEl.hasClass('reveal') && direction === 'up') {
+                    el.parent('.section').css({transform: 'translateY(-' + $scope.windowHeight + 'px)'});
+                } else if (el.hasClass('reveal') && direction === 'down') {
+                    nextEl.parent('.section').css({transform: 'translateY(0px)'});
+                } else {
+                    if (direction === 'down') {
+                        indexReveal -= 1;
+                    } else if (direction === 'up') {
+                        indexReveal += 1;
+                    }
 
-                // if (index === 2 && nextIndex === 1) {
-                //     window.setTimeout(function () {
-                //         $('.header').css({'transform': 'translate3d(0,' + 0 + 'px , 0)'});
-                //     });
-                // }
+                    $('.slider').css({'transform': 'translate3d(0,' + (-($scope.windowHeight*indexReveal)) + 'px , 0)'});
+                }
 
-                $('.slider').css({'transform': 'translate3d(0,' + (-(window.screen.availHeight * nextIndex)) + 'px , 0)'});
                 el.removeClass('slide-active');
                 nextEl.addClass('sliding')
 
@@ -70,9 +78,9 @@ angular.module('Cunard', [
             }
 
             if (direction === 'up') {
-                slide(index + 1);
+                slide(index + 1, direction);
             } else if (direction === 'down') {
-                slide(index - 1);
+                slide(index - 1, direction);
             }
         }
     });
