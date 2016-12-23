@@ -90,8 +90,11 @@
             <!-- Side panel -->
             <div class="side-panel">
                 <div class="section-name">
-                    <img src="assets/img/ui/1_Black.svg" />
-                    <div>Market Overview</div>
+                    <img ng-if="$index % 2 === 0"
+                         ng-src="assets/img/ui/{{section.data.position}}_Black.svg" />
+                    <img ng-if="$index % 2 !== 0"
+                         ng-src="assets/img/ui/{{section.data.position}}_White.svg" />
+                    <div>{{section.data.name}}</div>
                 </div>
             </div>
 
