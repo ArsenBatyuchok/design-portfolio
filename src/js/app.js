@@ -98,18 +98,11 @@ angular.module('Cunard', [
                 $('.slider').css({'transform': 'translate3d(0,' + (-($scope.windowHeight*indexReveal)) + 'px , 0)'});
             }
 
-            el.removeClass('slide-active');
-            nextEl.addClass('sliding');
-            nextEl.addClass('prevent-sliding');
-
-            window.setTimeout(function () {
-                nextEl.addClass('slide-active');
-                nextEl.removeClass('sliding');
-            }, 300);
-
+            addAnimationClasses(el, nextEl);
             window.setTimeout(function () {
                 nextEl.removeClass('prevent-sliding');
             }, 1000);
+            nextEl.addClass('prevent-sliding');
 
             if ($('.navigation').hasClass('visible')) {
                 $('.navigation').removeClass('visible');
@@ -152,6 +145,22 @@ angular.module('Cunard', [
         } else if (direction === 'down') {
             next.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex - 1)) + 'px, 0)'});
         }
+    }
+
+    function addAnimationClasses(el, nextEl, direction) {
+        el.removeClass('slide-active');
+        nextEl.addClass('sliding');
+        if (direction === 'down') {
+            nextEl.addClass('sliding-up');
+        } else if (direction === 'up') {
+            nextEl.addClass('sliding-down');
+        }
+
+        window.setTimeout(function () {
+            nextEl.addClass('slide-active');
+            nextEl.removeClass('sliding sliding-up sliding-down');
+        }, 300);
+       
     }
 
 }])
