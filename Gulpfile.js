@@ -66,6 +66,7 @@ gulp.task('js', function() {
             jsSrc + '/services/dataService.js',
             jsSrc + '/directives/full-page-directive.js',
             jsSrc + '/directives/reveal-section-directive.js',
+            jsSrc + '/filters/to-trusted-filter.js',
             jsSrc + '/app.js'
         ])
         .pipe(concat('index.js'))

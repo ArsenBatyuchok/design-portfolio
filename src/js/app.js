@@ -1,11 +1,13 @@
 angular.module('Cunard', [
 	'Cunard.services',
     'Cunard.fullPage',
-    'Cunard.revealSection'
+    'Cunard.revealSection',
+    'Cunard.toTrustedFilter'
 ])
 .controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
     var indexReveal = 0;
-    var scrollTimeout;
+    var timer;
+    var didScroll = false;
 
 	$scope.data = null;
     $scope.windowHeight = window.screen.availHeight;
@@ -50,16 +52,19 @@ angular.module('Cunard', [
 
     // Scroll event
     $(window).on('mousewheel', function(e) {
-        var direction;
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            didScroll = false;
+        }, 50);
 
-        clearTimeout(scrollTimeout);  
-        scrollTimeout = setTimeout(function() {
-            direction = e.originalEvent.wheelDelta /120 > 0 ? 'down' : 'up';
+        if (!didScroll) {
+            var direction = e.originalEvent.wheelDelta /120 > 0 ? 'down' : 'up';
+            didScroll = true;
 
             if ($('.prevent-sliding').length === 0) {
                 slidePages(direction);
             }
-        }, 30);
+        }
     });
 
     // Slide event
@@ -163,11 +168,6 @@ angular.module('Cunard', [
        
     }
 
-}])
-.filter('to_trusted', ['$sce', function($sce){
-    return function(text) {
-        return $sce.trustAsHtml(text);
-    };
 }]);
 
 
