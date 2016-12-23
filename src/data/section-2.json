@@ -1,28 +1,30 @@
 {
-  "pages": [
-    {
-      "id": 7,
-      "subsection": "The future of wellness",
-      "template": 1,
-      "content": {
-        "name": null,
-        "text": [
-          "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
-          "Mia Collins, <br>general merchandise, manager of beauty, Harrods"
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "subsection": "The future of wellness",
-      "template": 1,
-      "content": {
-        "name": null,
-        "text": [
-          "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
-          "Mia Collins, &nbsp;general merchandise, manager of beauty, Harrods"
-        ]
-      }
-    }
-  ]
+    "name": "Concept",
+    "position": 2,
+    "pages": [
+        {
+          "id": 8,
+          "subsection": "The future of wellness",
+          "template": 1,
+          "content": {
+            "name": null,
+            "text": [
+              "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
+              "Mia Collins, <br>general merchandise, manager of beauty, Harrods"
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "subsection": "The future of wellness",
+          "template": 1,
+          "content": {
+            "name": null,
+            "text": [
+              "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
+              "Mia Collins, &nbsp;general merchandise, manager of beauty, Harrods"
+            ]
+          }
+        }
+    ]
 }

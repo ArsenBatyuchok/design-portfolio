@@ -1,4 +1,6 @@
 {
+    "name": "Market Overview",
+    "position": 1,
     "pages": [
         {
             "id": 1,
@@ -15,18 +17,6 @@
         {
             "id": 2,
             "subsection": "The future of wellness",
-            "template": 1,
-            "content": {
-                "name": null,
-                "text": [
-                    "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
-                    "Mia Collins, <br>general merchandise, manager of beauty, Harrods"
-                ]
-            }
-        },
-        {
-            "id": 3,
-            "subsection": "The future of wellness",
             "template": 4,
             "content": {
                 "name": null,
@@ -37,7 +27,27 @@
             }
         },
         {
+            "id": 3,
+            "subsection": "The future of wellness",
+            "template": 1,
+            "content": {
+                "name": "Opportunity",
+                "text": [
+                    "Building on a foundation of British luxury, create a multi-platform, wellness brand and business model that integrates happy & healthy living into the everyday voyage."
+                ]
+            }
+        },
+        {
             "id": 4,
+            "subsection": "The future of wellness",
+            "template": 5,
+            "content": {
+                "name": "Opportunity",
+                "images": []
+            }
+        },
+        {
+            "id": 5,
             "subsection": "The future of wellness",
             "template": 2,
             "content": {
@@ -50,7 +60,7 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "subsection": "The future of wellness",
             "template": 3,
             "content": {
@@ -62,7 +72,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 7,
             "subsection": "MEN’S GROOMING",
             "template": 6,
             "content": {
