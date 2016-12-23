@@ -151,6 +151,7 @@ angular.module('Cunard', [
         if (next.hasClass('reveal') && direction === 'up') {
             return;
         }
+        
         if (direction === 'up') {
             el.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex + 1)) + 'px, 0)'});
         } else if (direction === 'down') {
