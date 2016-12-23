@@ -52,7 +52,6 @@ angular.module('Cunard', [
     $(window).on('mousewheel', function(e) {
         var direction;
 
-        // Slide on scroll
         clearTimeout(scrollTimeout);  
         scrollTimeout = setTimeout(function() {
             direction = e.originalEvent.wheelDelta /120 > 0 ? 'down' : 'up';
@@ -61,15 +60,6 @@ angular.module('Cunard', [
                 slidePages(direction);
             }
         }, 30);
-
-        // Header animation
-        animateHeader(el, index, nextEl, direction, $scope.windowHeight);
-
-        if (nextEl.parent('.section').hasClass('black')) {
-            $('body').css('background-color', '#000');
-        } else {
-            $('body').css('background-color', '#fff');
-        }
     });
 
     // Slide event
@@ -84,6 +74,9 @@ angular.module('Cunard', [
             if (nextIndex < 0 || nextIndex >= length) {
                 return;
             }
+
+            // Header animation
+            animateHeader(el, index, nextEl, direction, $scope.windowHeight);
 
             if (nextEl.parent('.section').hasClass('black')) {
                 $('body').css('background-color', '#000');
