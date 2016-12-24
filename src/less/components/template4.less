@@ -27,9 +27,28 @@
         }
     }
 }
-.template-4, .template-44, .template-41, .template-42, .template-43 {
-    .text-large {
-        
+.section {
+    .template-41, .template-42, .template-43, .template-44 {
+        &.section-inner {
+            padding-top: @fullsection-top-padding;
+            position: relative;
+            .img-holder {
+                position: absolute;
+                transition: opacity 0.5s ease, transform 1s ease-out;
+                padding: 0 7px;
+                img {
+                    width: 100%;
+                }
+            }
+            .img-row {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 25px;
+            }
+        }
     }
 }
 
