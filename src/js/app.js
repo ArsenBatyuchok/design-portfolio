@@ -75,10 +75,21 @@ angular.module('Cunard', [
             if (section.data.position < sectionPosition) {
                 sections += 1;
                 slideIndex += section.data.pages.length;
+
+                //Animate headers
+                $($('.section')[section.data.position]).find('.header, .side-panel')
+                                                       .css({'transform': 'translate3d(0, ' + (self.windowHeight * (slideIndex - 2)) + 'px, 0)',
+                                                             'transition': 'none'});
             }
         });
 
-        $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*slideIndex)) + 'px , 0)'});
+        $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*slideIndex)) + 'px , 0)',
+                          'transition': 'none'});
+
+        $($('.slide')[slideIndex]).parent('.section')
+                                  .find('.header, .side-panel')
+                                  .css({'transform': 'translate3d(0, 0, 0)',
+                                        'transition': 'none'});
 
         $('.slide-active').removeClass('slide-active');
         $($('.slide')[slideIndex]).addClass('slide-active');
@@ -106,7 +117,7 @@ angular.module('Cunard', [
             }
 
             // Header animation
-            animateHeader(el, index, nextEl, direction, self.windowHeight);
+            animateHeader(el, nextEl, direction, self.windowHeight);
 
             defineBodyBackground(nextEl.parent('.section'));
 
@@ -151,7 +162,7 @@ angular.module('Cunard', [
         }
     }
 
-    function animateHeader(el, index, next, direction, windowHeight) {
+    function animateHeader(el, next, direction, windowHeight) {
         var sectionIndex = el.closest('.section').find('.slide').index(el);
 
         // if there's no header in section (i.e. first)
@@ -170,9 +181,11 @@ angular.module('Cunard', [
         }
         
         if (direction === 'up') {
-            el.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex + 1)) + 'px, 0)'});
+            el.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex + 1)) + 'px, 0)',
+                                                                    'transition': 'transform 1s ease'});
         } else if (direction === 'down') {
-            next.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex - 1)) + 'px, 0)'});
+            next.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex - 1)) + 'px, 0)',
+                                                                      'transition': 'transform 1s ease'});
         }
     }
 
