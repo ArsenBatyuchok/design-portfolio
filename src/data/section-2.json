@@ -4,10 +4,10 @@
     "pages": [
         {
             "id": 7,
-            "subsection": "The Wellness Social Club",
+            "subsection": "The Wellness <br>Social Club",
             "template": 44,
             "content": {
-                "name": "What is a private social club?",
+                "name": "What is a private<br> social club?",
                 "text": [
                   "Originating in London, and growing in popularity in major cities around the world, modern takes on private social clubs have captured the social Zeitgeist."
                 ],
@@ -16,10 +16,10 @@
         },
         {
             "id": 8,
-            "subsection": "The Wellness Social Club",
+            "subsection": "The Wellness <br>Social Club",
             "template": 41,
             "content": {
-                "name": "What do social clubs offer?",
+                "name": "What do social <br>clubs offer?",
                 "text": [
                   "Modern social clubs exude luxury consciousness and are hubs that create social connectivity across lines of generation, class and gender."
                 ],
@@ -28,10 +28,10 @@
         },
         {
             "id": 9,
-            "subsection": "The Wellness Social Club",
+            "subsection": "The Wellness <br>Social Club",
             "template": 44,
             "content": {
-                "name": "A New kind of Wellness Social Club",
+                "name": "A New kind of <br>Wellness Social Club",
                 "text": [
                   "Cunard merges the codes of modern social clubs and the destination spa experience. The result is a nexus for wellness that feels exciting and essential for voyagers wanting to maximize the social impact of a cruise. The spa celebrates a new kind of meaningful and mindful luxury grounded in health and wellness, revitalising the classic archetypes of adventures by sea, and eclectic doyenne beauty."
                 ],
@@ -85,7 +85,7 @@
         },
         {
             "id": 14,
-            "subsection": "No.12 Brand values",
+            "subsection": "No.12 Brand <br>values",
             "template": 42,
             "content": {
                 "name": "British",

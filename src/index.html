@@ -54,12 +54,8 @@
             <div class="header">
                 <div class="menu-btn"
                      ng-click="ctrl.menuOpened = true"></div>
-                <div class="subsection-name">
-                    {{ctrl.subsectionName}}
-                </div>
-                <div class="page-name">
-                    {{ctrl.activePageName}}
-                </div>
+                <div class="subsection-name" ng-bind-html="ctrl.subsectionName | to_trusted"></div>
+                <div class="page-name" ng-bind-html="ctrl.activePageName | to_trusted"></div>
             </div>
 
             <!-- Side panel -->
