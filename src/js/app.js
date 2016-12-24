@@ -5,38 +5,29 @@ angular.module('Cunard', [
     'Cunard.toTrustedFilter'
 ])
 .controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
-    var indexReveal = 0;
+    var self = this;
     var timer;
     var didScroll = false;
 
-	$scope.data = null;
-    $scope.windowHeight = window.screen.availHeight;
+    this.menuOpened = false;
+	this.data = null;
+    this.windowHeight = window.screen.availHeight;
 
     $q.all([
         dataService.getData('/section-1.json'),
         dataService.getData('/section-2.json')
     ]).then(function (response) {
-        $scope.data = response;
+        self.data = response;
     }, function (error) {
         // Error
     });
 
+    //Fix because of avalHeight 
     window.setTimeout(function() {
         $('.side-panel').css({height: window.innerHeight + 'px'});
     }, 100);
-    
 
-    // navigation
-    $('.close-btn').on('click', function () {
-        $('.navigation').toggleClass('visible');
-    });
-    $('.slider').on('click', '.menu-btn', function () {
-        $('.navigation').toggleClass('visible');
-    });
-
-    $('.close-btn').on('touchstart', function (e) { touchNavToggle(e); });
-    $('.slider').on('touchstart', '.menu-btn', function (e) { touchNavToggle(e); });
-
+    //Prevent scroll on Ipad
     $(document).on('touchmove', function(e) {
         e.preventDefault();
     });
@@ -67,11 +58,45 @@ angular.module('Cunard', [
         }
     });
 
+    function defineBodyBackground(el) {
+        if (el.hasClass('black')) {
+            $('body').css('background-color', '#000');
+        } else {
+            $('body').css('background-color', '#fff');
+        }
+    };
+
+    //Slide to section
+    this.slideTo = function(sectionPosition) {
+        var slideIndex = 1;
+        var sections = 1;
+
+        self.data.map(function(section, index) {
+            if (section.data.position < sectionPosition) {
+                sections += 1;
+                slideIndex += section.data.pages.length;
+            }
+        });
+
+        $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*slideIndex)) + 'px , 0)'});
+
+        $('.slide-active').removeClass('slide-active');
+        $($('.slide')[slideIndex]).addClass('slide-active');
+
+        defineBodyBackground($($('.slide')[slideIndex]).parent('.section'));
+
+        self.menuOpened = false;
+    };
+
     // Slide event
     function slidePages(direction) {
         var length = $('.slide').length;
         var el = $('.slide-active');
         var index = el.data('id');
+
+        $scope.$apply(function() {
+            self.menuOpened = false;
+        });
 
         function slide(nextIndex, direction) {
             var nextEl = $('.slide[data-id="' + nextIndex + '"]');
@@ -81,26 +106,34 @@ angular.module('Cunard', [
             }
 
             // Header animation
-            animateHeader(el, index, nextEl, direction, $scope.windowHeight);
+            animateHeader(el, index, nextEl, direction, self.windowHeight);
 
-            if (nextEl.parent('.section').hasClass('black')) {
-                $('body').css('background-color', '#000');
-            } else {
-                $('body').css('background-color', '#fff');
-            }
+            defineBodyBackground(nextEl.parent('.section'));
 
             if (nextEl.hasClass('reveal') && direction === 'up') {
-                el.parent('.section').css({transform: 'translateY(-' + $scope.windowHeight + 'px)'});
-            } else if (el.hasClass('reveal') && direction === 'down') {
-                nextEl.parent('.section').css({transform: 'translateY(0px)'});
-            } else {
-                if (direction === 'down') {
-                    indexReveal -= 1;
-                } else if (direction === 'up') {
-                    indexReveal += 1;
-                }
+                $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
+                                  'transition': 'none'});
 
-                $('.slider').css({'transform': 'translate3d(0,' + (-($scope.windowHeight*indexReveal)) + 'px , 0)'});
+                el.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)'});
+                window.setTimeout(function () {
+                    el.parent('.section').css({'transform': 'translateY(0px)',
+                                               'transition': 'transform 1s ease'});
+                }, 0);
+
+            } else if (el.hasClass('reveal') && direction === 'down') {
+
+                nextEl.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)',
+                                               'transition': 'transform 1s ease'});
+                
+                window.setTimeout(function () {
+                    $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
+                                      'transition': 'none'});
+                    nextEl.parent('.section').css({'transform': 'translateY(0px)',
+                                               'transition': 'none'});
+                }, 1000);
+            } else {
+                $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
+                                  'transition': 'transform 1s ease'});
             }
 
             addAnimationClasses(el, nextEl);
@@ -109,9 +142,6 @@ angular.module('Cunard', [
             }, 1000);
             nextEl.addClass('prevent-sliding');
 
-            if ($('.navigation').hasClass('visible')) {
-                $('.navigation').removeClass('visible');
-            }
         }
 
         if (direction === 'up') {
@@ -119,12 +149,6 @@ angular.module('Cunard', [
         } else if (direction === 'down') {
             slide(index - 1, direction);
         }
-    }
-
-    function touchNavToggle(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $('.navigation').toggleClass('visible');
     }
 
     function animateHeader(el, index, next, direction, windowHeight) {
