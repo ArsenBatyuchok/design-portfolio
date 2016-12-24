@@ -3,28 +3,41 @@
     "position": 2,
     "pages": [
         {
-          "id": 9,
-          "subsection": "The future of wellness",
-          "template": 1,
-          "content": {
-            "name": null,
-            "text": [
-              "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
-              "Mia Collins, <br>general merchandise, manager of beauty, Harrods"
-            ]
-          }
+            "id": 8,
+            "subsection": "The Wellness Social Club",
+            "template": 41,
+            "content": {
+                "name": "What is a private social club?",
+                "text": [
+                  "Originating in London, and growing in popularity in major cities around the world, modern takes on private social clubs have captured the social Zeitgeist."
+                ],
+                "images"
+            }
         },
         {
-          "id": 10,
-          "subsection": "The future of wellness",
-          "template": 1,
-          "content": {
-            "name": null,
-            "text": [
-              "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
-              "Mia Collins, &nbsp;general merchandise, manager of beauty, Harrods"
-            ]
-          }
+            "id": 9,
+            "subsection": "The future of wellness",
+            "template": 1,
+            "content": {
+                "name": null,
+                "text": [
+                  "Beauty is developing into a broader wellness category. People are becoming mindful of how what is manifest externally has a lot to do with what happens internally.",
+                  "Mia Collins, &nbsp;general merchandise, manager of beauty, Harrods"
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "subsection": "MEN’S GROOMING",
+            "template": 6,
+            "content": {
+                "name": "BIOTEC Super-Charger for Men",
+                "labels": ["Emotional", "Physical", "Nutritional"],
+                "text": [
+                    "Cunard’s brand of British Luxury (refined, thoughtful, charismatic, proud) reconnects guests to a time and place of rich heritage and stories, of adventure and grand gestures, reflecting all that is wonderful and special of being British. How do we bring this forward in wellness?"
+                ],
+                "images": ["501.jpg"]
+            }
         }
     ]
 }
