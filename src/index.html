@@ -12,40 +12,14 @@
     <!-- Navigation -->
     <div class="navigation">
         <div class="close-btn"></div>
-        <div class="nav-item clearfix">
-            <a href="#"> 
-            <div class="nav-img-holder"><img src="assets/img/ui/1_White.svg" /></div>
-                <div>Market overview</div>
-            </a>
-        </div>
-        <div class="nav-item clearfix">
-            <a href="#"> 
-            <div class="nav-img-holder"><img src="assets/img/ui/2_White.svg" /></div>
-                <div>Concept</div>
-            </a>
-        </div>
-        <div class="nav-item clearfix">
-            <a href="#"> 
-            <div class="nav-img-holder"><img src="assets/img/ui/3_White.svg" /></div>
-                <div>Service Model</div>
-            </a>
-        </div>
-        <div class="nav-item clearfix">
-            <a href="#"> 
-            <div class="nav-img-holder"><img src="assets/img/ui/4_White.svg" /></div>
-                <div>New Business Model</div>
-            </a>
-        </div>
-        <div class="nav-item clearfix">
-            <a href="#"> 
-            <div class="nav-img-holder"><img src="assets/img/ui/5_White.svg" /></div>
-                <div>Programming Pillars</div>
-            </a>
-        </div>
-        <div class="nav-item clearfix">
-            <a href="#"> 
-            <div class="nav-img-holder"><img src="assets/img/ui/5_White.svg" /></div>
-                <div>Programming Pillars</div>
+        <div class="nav-item clearfix"
+             ng-repeat="section in data">
+            <a href
+               ng-click="slideTo(section.data.position)"> 
+                <div class="nav-img-holder">
+                    <img ng-src="assets/img/ui/{{section.data.position}}_White.svg" />
+                </div>
+                <div>{{section.data.name}}</div>
             </a>
         </div>
     </div>
@@ -55,7 +29,6 @@
 
         <!-- First section -->
         <div class="section section-starter black"
-             reveal-section
              ng-style="{'z-index': data.length + 1}"
              data-last="false">
             <div class="slide slide-active" data-id="0" full-page>
@@ -70,7 +43,6 @@
 
         <!-- Slider Sections -->
     	<div class="section"
-             reveal-section
              ng-class-odd="'black'"
     		 ng-repeat="section in data"
              ng-style="{'z-index': data.length - $index}"

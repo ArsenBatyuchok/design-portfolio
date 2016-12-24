@@ -64,7 +64,6 @@ html, body {
     position: relative;
     background: #fff;
     color: #000;
-    transition: transform 1s ease;
     &.black {
         background: #000;
         color: #fff;
@@ -84,6 +83,10 @@ html, body {
         position: relative;
         width: 100%;
         overflow: hidden;
+    }
+    &.reveal-section {
+        top: 100vh;
+        //animation: reveal 5s ease;
     }
 }
 
