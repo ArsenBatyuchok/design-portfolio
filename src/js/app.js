@@ -12,6 +12,8 @@ angular.module('Cunard', [
     this.menuOpened = false;
 	this.data = null;
     this.windowHeight = window.screen.availHeight;
+    this.activePageName;
+    this.subsectionName;
 
     $q.all([
         dataService.getData('/section-1.json'),
@@ -96,6 +98,8 @@ angular.module('Cunard', [
 
         defineBodyBackground($($('.slide')[slideIndex]).parent('.section'));
 
+        defineHeaderContent(slideIndex, 0);
+
         self.menuOpened = false;
     };
 
@@ -153,6 +157,7 @@ angular.module('Cunard', [
             }, 1000);
             nextEl.addClass('prevent-sliding');
 
+            defineHeaderContent(nextIndex, 500);
         }
 
         if (direction === 'up') {
@@ -160,6 +165,32 @@ angular.module('Cunard', [
         } else if (direction === 'down') {
             slide(index - 1, direction);
         }
+    }
+
+    //Define subsection/page name
+    function defineHeaderContent(nextIndex, animationTime) {
+        self.data.map(function(section) {
+            section.data.pages.map(function(page) {
+                if (page.id === nextIndex) {
+                    if (self.subsectionName !== page.subsection) {
+                        $('.subsection-name').fadeOut(animationTime).fadeIn(animationTime);
+
+                        window.setTimeout(function () {
+                            $scope.$apply(function() {
+                                self.subsectionName = page.subsection;
+                            });
+                        }, animationTime);
+                    }
+
+                    $('.page-name').fadeOut(animationTime).fadeIn(animationTime);
+
+                    window.setTimeout(function () {
+                        $scope.$apply(function() {
+                            self.activePageName = page.content.name;                            });
+                    }, animationTime);
+                }
+            });
+        });
     }
 
     function animateHeader(el, next, direction, windowHeight) {
