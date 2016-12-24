@@ -1,29 +1,48 @@
 .section {
     .template-44.section-inner {
-        padding-top: 160px;
+        padding-top: @fullsection-top-padding;
+        position: relative;
         .img-holder {
             position: absolute;
             transition: opacity 0.5s ease, transform 1s ease-out;
+            padding: 0 7px;
             img {
                 width: 100%;
             }
         }
+        .img-row {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 25px;
+        }
         .img-holder-1 {
-            width: 27.3%;
-            right: 11.11%;
-            bottom: 25px;
-            margin-right: 25px;
+            width: 33.33%;
+            right: 22.22%;
+            top: 0;
         }
         .img-holder-2 {
             width: 22.22%;
-            top: 75px;
-            right: 25px;
+            top: 0;
+            right: 0;
         }
         .img-holder-3 {
             width: 33.33%;
-            right: 22.22%;
-            top: 25px;
-            margin-right: 45px;
+            right: 0;
+            bottom: 0;
+        }
+        .img-holder-4 {
+            width: 22.22%;
+            left: 44.44%;
+            bottom: 0;
+        }
+        .img-holder-5 {
+            width: 22.22%;
+            left: 44.44%;
+            bottom: 160px;
+            max-width: 150px;
         }
     }
 }
