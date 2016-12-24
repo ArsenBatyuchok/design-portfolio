@@ -52,7 +52,6 @@ angular.module('Cunard', [
 
     // Scroll event
     $(window).on('mousewheel', function(e) {
-        debugger;
         clearTimeout(timer);
         timer = setTimeout(function() {
             didScroll = false;

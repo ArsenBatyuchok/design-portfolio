@@ -25,6 +25,63 @@
                 ],
                 "images": [ "31.jpg", "32.jpg", "33.jpg"]
             }
+        },
+        {
+            "id": 3,
+            "subsection": "Opportunity",
+            "template": 1,
+            "content": {
+                "name": null,
+                "text": [
+                    "Building on a foundation of British luxury, create a multi-platform, wellness brand and business model that integrates happy & healthy living into the everyday voyage."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "subsection": "British power",
+            "template": 5,
+            "content": {
+                "name": "Being British has Style & Strength",
+                "images": ["5-1.jpg", "5-2.jpg", "5-3.jpg", "5-4.jpg", "5-5.jpg", "5-6.jpg", "5-7.jpg", "5-8.jpg", "5-9.jpg", "5-10.jpg", "5-11.jpg", "5-12.png", "5-13.jpg"]
+            }
+        },
+        {
+            "id": 5,
+            "subsection": "British power",
+            "template": 51,
+            "content": {
+                "name": "Being British has Style & Strength",
+                "col1Images": ["6-1.png", "6-5.png", "6-9.png", "6-13.png", "6-14.png"],
+                "col2Images": ["6-2.png", "6-6.png", "6-10.png", "6-15.png", "6-16.png", "6-17.png"],
+                "col3Images": ["6-3.png", "6-7.png", "6-11.png", "6-18.png", "6-19.png"],
+                "col4Images": ["6-4.png", "6-8.png", "6-12.png", "6-20.png"]
+            }
+        },
+        {
+            "id": 6,
+            "subsection": "The future of wellness",
+            "template": 2,
+            "content": {
+                "name": null,
+                "text": [
+                    "Numbers convey a sense of mystery; those who know, know. In London, 'No. 10' is shorthand for the seat of power.",
+                    "12 represents the completed cycle of experience.<br>There are 12 major bodies of water, as well as 12 chakras and 12 units of time and space (minutes, hours, months, inches). The magic of 12 is it's universal application across geography and culture.",
+                    "No. 12 offers programming synchronised to the natural rhythms of the sea and the sky. Each day, we reveal our 12 most important insightsfortheday. Focused mornings, energetic days and long evenings to unwind. Tune in to your fellow seamates with our daily services (morning meditation and classes, afternoon tea, evening elemental ceremonies around water, fire, earth & air) or tune out for some personal time."
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "subsection": "CUNARD’S BRAND OF BRITISH LUXURY",
+            "template": 3,
+            "content": {
+                "name": null,
+                "text": [
+                    "Cunard’s brand of British Luxury (refined, thoughtful, charismatic, proud) reconnects guests to a time and place of rich heritage and stories, of adventure and grand gestures, reflecting all that is wonderful and special of being British. How do we bring this forward in wellness?"
+                ],
+                "image": "71.jpg"
+            }
         }
     ]
 }

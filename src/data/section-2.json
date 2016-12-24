@@ -5,13 +5,13 @@
         {
             "id": 8,
             "subsection": "The Wellness Social Club",
-            "template": 41,
+            "template": 44,
             "content": {
                 "name": "What is a private social club?",
                 "text": [
                   "Originating in London, and growing in popularity in major cities around the world, modern takes on private social clubs have captured the social Zeitgeist."
                 ],
-                "images"
+                "images": ["8-1.jpg", "8-2.jpg", "8-3.jpg", "8-4.jpg", "8-5.jpg"]
             }
         },
         {
