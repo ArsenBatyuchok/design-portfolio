@@ -28,10 +28,10 @@
         },
         {
             "id": 3,
-            "subsection": "The future of wellness",
+            "subsection": "Opportunity",
             "template": 1,
             "content": {
-                "name": "Opportunity",
+                "name": null,
                 "text": [
                     "Building on a foundation of British luxury, create a multi-platform, wellness brand and business model that integrates happy & healthy living into the everyday voyage."
                 ]
@@ -39,15 +39,24 @@
         },
         {
             "id": 4,
-            "subsection": "The future of wellness",
+            "subsection": "British power",
             "template": 5,
             "content": {
-                "name": "Opportunity",
-                "images": ["5-1.jpg", "5-2.jpg", "5-3.jpg", "5-4.jpg", "5-5.jpg", "5-6.jpg", "5-7.jpg", "5-8.jpg", "5-9.jpg", "5-10.jpg", "5-11.jpg", "5-12.jpg", "5-13.jpg"]
+                "name": "Being British has Style & Strength",
+                "images": ["5-1.jpg", "5-2.jpg", "5-3.jpg", "5-4.jpg", "5-5.jpg", "5-6.jpg", "5-7.jpg", "5-8.jpg", "5-9.jpg", "5-10.jpg", "5-11.jpg", "5-12.png", "5-13.jpg"]
             }
         },
         {
             "id": 5,
+            "subsection": "British power",
+            "template": 51,
+            "content": {
+                "name": "Being British has Style & Strength",
+                "images": ["5-1.jpg", "5-2.jpg", "5-3.jpg", "5-4.jpg", "5-5.jpg", "5-6.jpg", "5-7.jpg", "5-8.jpg", "5-9.jpg", "5-10.jpg", "5-11.jpg", "5-12.png", "5-13.jpg"]
+            }
+        },
+        {
+            "id": 6,
             "subsection": "The future of wellness",
             "template": 2,
             "content": {
@@ -60,7 +69,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 7,
             "subsection": "The future of wellness",
             "template": 3,
             "content": {
@@ -72,7 +81,7 @@
             }
         },
         {
-            "id": 7,
+            "id": 8,
             "subsection": "MEN’S GROOMING",
             "template": 6,
             "content": {

@@ -71,7 +71,7 @@
         <!-- Slider Sections -->
     	<div class="section"
              reveal-section
-             ng-class-even="'black'"
+             ng-class-odd="'black'"
     		 ng-repeat="section in data"
              ng-style="{'z-index': data.length - $index}"
              data-last="{{$last}}">
@@ -91,9 +91,9 @@
             <div class="side-panel">
                 <div class="section-name">
                     <img ng-if="$index % 2 === 0"
-                         ng-src="assets/img/ui/{{section.data.position}}_Black.svg" />
-                    <img ng-if="$index % 2 !== 0"
                          ng-src="assets/img/ui/{{section.data.position}}_White.svg" />
+                    <img ng-if="$index % 2 !== 0"
+                         ng-src="assets/img/ui/{{section.data.position}}_Black.svg" />
                     <div>{{section.data.name}}</div>
                 </div>
             </div>
