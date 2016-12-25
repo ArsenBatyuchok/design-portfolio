@@ -11,7 +11,18 @@
         align-items: center;
     }
 }
-.sliding {
+
+//Animation
+.slide-active {
+    .template-1 {
+        p {
+            opacity: 1;
+            transition: opacity 0.2s ease;
+        }
+    }
+}
+
+.sliding-down {
     .template-1 {
         p {
             opacity: 0;
@@ -19,10 +30,10 @@
     }
 }
 
-.slide-active {
+.sliding-up {
     .template-1 {
         p {
-            opacity: 1;
+            opacity: 0;
         }
     }
 }

@@ -152,6 +152,7 @@ angular.module('Cunard', [
             }
 
             addAnimationClasses(el, nextEl);
+
             window.setTimeout(function () {
                 nextEl.removeClass('prevent-sliding');
             }, 1000);
@@ -229,6 +230,7 @@ angular.module('Cunard', [
     function addAnimationClasses(el, nextEl, direction) {
         el.removeClass('slide-active');
         nextEl.addClass('sliding');
+
         if (direction === 'down') {
             nextEl.addClass('sliding-up');
         } else if (direction === 'up') {
