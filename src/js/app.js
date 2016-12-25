@@ -160,7 +160,7 @@ angular.module('Cunard', [
                                   'transition': 'transform 1s ease'});
             }
 
-            addAnimationClasses(el, nextEl);
+            addAnimationClasses(el, nextEl, direction);
 
             window.setTimeout(function () {
                 nextEl.removeClass('prevent-sliding');
