@@ -142,6 +142,18 @@
                     "Exploring the intersection between people and the built environment, we create spaces that actively contribute to human health, performance and well-being by marrying the best innovations in technology, health, science, design and enterprise. We see the built environment as an asset to maximize human potential, and we envision environments that enhance us – that are both proactive and reactive – to live better by cultivating healthy lifestyle choices and helping prevent health problems before they begin."
                 ]
             }
+        },
+        {
+            "id": 19,
+            "subsection": "No.12 Besign <br>values",
+            "template": 4,
+            "content": {
+                "name": "Modern",
+                "text": [
+                  "Modern need not be cold and sleek. Heritage rendered new."
+                ],
+                "images": ["19-1.jpg", "19-2.jpg", "19-3.jpg"]
+            }
         }
     ]
 }

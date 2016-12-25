@@ -6,10 +6,12 @@
                class="text-large"></p>
         </div>
     </div>
-    <div class="row img-row">
-        <div class="img-holder img-holder-{{$index + 1}}"
-         ng-repeat="image in slide.content.images">
-            <img ng-src="assets/img/{{image}}" />
+    <div class="row">
+        <div class="img-row">
+            <div class="img-holder img-holder-{{$index + 1}}"
+                 ng-repeat="image in slide.content.images">
+                <img ng-src="assets/img/{{image}}" />
+            </div>
         </div>
     </div>
 </div>
