@@ -1,0 +1,66 @@
+{
+    "name": "Service Model",
+    "position": 3,
+    "pages": [
+        {
+            "id": 22,
+            "subsection": "White Star Service",
+            "template": 2,
+            "content": {
+                "name": "",
+                "text": [
+                    "Cunard is synonymous with elegance, luxury and its renowned White Star Service which sets the standard by which all others are judged. Cunard’s commitment to ensuring each guest is pampered begins at the White Star Academy where each crew member is trained to provide impeccable service.",
+                    "Leveraging a history of perfect storms when style collided with  ve-star service. Brani  Airlines in the 70’s. Annabel’s in the 80s & 90’s, The Wolseley and Cunard today.",
+                    "No.12’s White Star service builds upon this rich tradition with thoughtfulness, care and a nod to the inimitable British wit.",
+                    "How may we help you?"
+                ]
+            }
+        },
+        {
+            "id": 23,
+            "subsection": "White Star Code <br>of Service",
+            "template": 21,
+            "content": {
+                "name": "",
+                "text": [
+                    "Each No. 12 guest is greeted with a signature greeting and o ered a wellness elixir upon arrival (anti-oxidant infusion).",
+                    "Each guest participating in a No. 12 spa service will be o ered luxurious lounge wear or a robe and slippers.",
+                    "Attention to Ambiance: The spa will be bathed in soft lighting to evoke relaxation.",
+                    "A No. 12 music list will be carefully choreographed to enhance each guest’s auditory experience. On occasion a live musical social surprise will undulate the airwaves; a Cunard harpist, a cellist, violinist, guitarist or perhaps even an opera singer will add to the sound of No. 12.",
+                    "A No. 12 bespoke aroma",
+                    "A No. 12, 12 minute promise: if we are more than 12 minutes late for an appointment, the treatment is complimentary.",
+                    "12 No. 12 Wellness Boxes containing 12 di erent quotes in each will be found in surprise locations around the ship.",
+                    "Customized bed temperature options with every spa treatment.",
+                    "Each spa treatment begins with a Welcome Ritual, a cleansing of the feet and the recitation of the insight of the day.",
+                    "Each spa treatments ends with an Awakening Ritual, a gentle touch around the body, and the playing of a crystal sound bowl signifying the start of a new more journey.",
+                    "Personal, handwritten, No. 12 Thank You Card delivered to each guest who has a private treatment.",
+                    "Every day, guests can participate in a 12 minute meditation."
+                ]
+            }
+        },
+        {
+            "id": 24,
+            "subsection": "No.12 Butler Service",
+            "template": 3,
+            "content": {
+                "name": null,
+                "text": [
+                    "The anticipator of wellness whims.<br>Let us come to you. The No. 12 Butler is at your service."
+                ],
+                "image": "24-1.jpg"
+            }
+        },
+        {
+            "id": 25,
+            "subsection": "Social Surprises",
+            "template": 3,
+            "content": {
+                "name": null,
+                "text": [
+                    "Holistic wellness is about the balance of opposing forces. Intense physicality mixed with the slower rhythms of yoga and stretching. The high energy of clinical services with the calming force of the ELEMIS-trained therapists. We believe added to this mix is a collection of ‘social surprises.’ Moments of indulgent delight - glass of champagne upon arrival, savory and sweet treats in the lounge, custom DIY products for No. 12’s Bathhouse, surprise music by violinists and guitarists and a handcrafted cock whilst prepping for a lavish night out."
+                ],
+                "image": "25-1.jpg"
+            }
+        }
+    ]
+}
