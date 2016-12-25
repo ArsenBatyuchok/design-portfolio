@@ -34,14 +34,15 @@
 }
 
 .section {
-    .template-41, .template-42, .template-43, .template-44 {
+    .template-41, .template-42, .template-44 {
         &.section-inner {
             padding-top: @fullsection-top-padding;
             position: relative;
             .img-holder {
                 position: absolute;
-                transition: opacity 0.5s ease, transform 1s ease-out;
                 padding: 0 7px;
+                opacity: 0;
+                transition: opacity 0.5s ease, transform 0.15s ease;
                 img {
                     width: 100%;
                 }
@@ -54,11 +55,53 @@
                 bottom: 0;
                 margin: 25px 18px;
             }
+            p {
+                opacity: 0;
+                transition: opacity 0.15s ease;
+            }
         }
     }
 }
 
 //Animation
+.section {
+    .slide-active {
+        .template-41.section-inner,
+        .template-42.section-inner,
+        .template-44.section-inner {
+            p, .img-holder {
+                opacity: 1;
+                transition: opacity 0.5s 0.2s ease;
+            }
+        }
+    }
+    .sliding-down {
+        .template-41.section-inner,
+        .template-42.section-inner,
+        .template-44.section-inner {
+            p, .img-holder {
+                opacity: 0;
+            }
+            .img-holder {
+                transform: translate(0, 180px);
+            }
+        }
+    }
+
+    .sliding-up {
+        .template-41.section-inner,
+        .template-42.section-inner,
+        .template-44.section-inner {
+            p, .img-holder {
+                opacity: 0;
+            }
+            .img-holder {
+                transform: translate(0, -180px);
+            }
+        }
+    }
+}
+
 .section {
     .slide-active {
         .template-4.section-inner {

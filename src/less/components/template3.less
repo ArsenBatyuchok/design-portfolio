@@ -2,49 +2,51 @@
     .section-inner.template-3 {
         padding-top: @fullsection-top-padding;
         .img-holder {
-            transition: opacity 0.5s ease;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.15s ease;
         }
         .img-holder img {
             max-width: 100%;
         }
+        p {
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
     }
 }
 
-.fp-section {
-    .template-3 {
-        p {
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-        .img-holder {
-            opacity: 0;
-            transform: translate(0, 80px);
-        }
-    }
-    &.active {
-        .template-3 {
-            p {
-                opacity: 0;
-            }
-            .img-holder {
+//Animation
+.section {
+    .slide-active {
+        .template-3.section-inner {
+            p, .img-holder {
                 opacity: 1;
-                transform: translate(0, 0);
+                transition: opacity 0.5s 0.2s ease;
             }
-        }
-    }
-    &.on-leave-down {
-        .template-3 {
             .img-holder {
-                opacity: 0;
-                transform: translate(0, -180px);
-                transition-delay: 0;
+                transform: translate(0, 0);
+                transition: transform 0.8s ease;
             }
         }
     }
-    &.on-leave-up {
-        .template-3 {
-            p {
+    .sliding-down {
+        .template-3.section-inner {
+            p, .img-holder {
                 opacity: 0;
+            }
+            .img-holder {
+                transform: translate(0, 180px);
+            }
+        }
+    }
+
+    .sliding-up {
+        .template-3.section-inner {
+            p, .img-holder {
+                opacity: 0;
+            }
+            .img-holder {
+                transform: translate(0, -180px);
             }
         }
     }
