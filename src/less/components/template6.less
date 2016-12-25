@@ -84,6 +84,34 @@
         }
     }
 }
+.section {
+    .page-info-label {
+        color: #fff;
+    }
+    .page-info-label-inner {
+        background: #000;
+        &:before {
+            border-color: transparent #000000 transparent transparent;
+        }
+        &:after {
+            border-color: transparent transparent transparent #000000;
+        }
+    }
+    &.black {
+        .page-info-label {
+            color: #000;
+        }
+        .page-info-label-inner {
+            background: #fff;
+            &:before {
+                border-color: transparent #ffffff transparent transparent;
+            }
+            &:after {
+                border-color: transparent transparent transparent #ffffff;
+            }
+        }
+    }
+}
 
 //Animation
 .section {
