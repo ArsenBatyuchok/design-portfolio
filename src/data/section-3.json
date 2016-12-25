@@ -4,7 +4,7 @@
     "pages": [
         {
             "id": 22,
-            "subsection": "White Star Service",
+            "subsection": "White Star <br>Service",
             "template": 2,
             "content": {
                 "name": "",
@@ -40,7 +40,7 @@
         },
         {
             "id": 24,
-            "subsection": "No.12 Butler Service",
+            "subsection": "No.12 Butler <br>Service",
             "template": 3,
             "content": {
                 "name": null,

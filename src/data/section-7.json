@@ -49,7 +49,8 @@
                 "name": "No. 12 Staterooms",
                 "labels": ["Emotional"],
                 "text": [
-                    "When away from home, we are distanced from our daily biological rhythms and exposed to countless unknowns, environmental hazards and discomforts. Stay Well® is designed to mitigate these variables by introducing scienti cally validated features into the built environment to optimize health, vitality, relaxation and well-being. The Onboard Spa by Steiner® in partnership with Delos® recommends a new Stateroom category within the greater Stateroom inventory. These Staterooms will feature Stay Well® experiences as part of the No. 12 Wellness experience."
+                    "When away from home, we are distanced from our daily biological rhythms and exposed to countless unknowns, environmental hazards and discomforts. Stay Well® is designed to mitigate these variables by introducing scienti cally validated features into the built environment to optimize health, vitality, relaxation and well-being.",
+                    "The Onboard Spa by Steiner® in partnership with Delos® recommends a new Stateroom category within the greater Stateroom inventory. These Staterooms will feature Stay Well® experiences as part of the No. 12 Wellness experience."
                 ],
                 "images": ["40-1.jpg"]
             }
@@ -75,8 +76,8 @@
                 "name": "Program Features",
                 "labels": ["Emotional"],
                 "text": [
-                    "Stateroom fitted with Stay Well® features will optimize the well-being of its residents.",
-                    "Benefits include:<br>Air Puri cation. Aromatherapy. Black Out Shades. Circadian Mood Lighting. Circadian Shower. Cleaning Protocol. Cleveland Clinic Wellness. Dawn Simulation. Deepak Chopra Welcome. Designated Signage. Energising Light. Guided Meditation. Stay Well® Linens. Stay Well® Mattress. Healthy Menu Options. In-Room Program Guide. Long Wave Night Lighting. Mattress Encasements. Stay Well® Mobile APP. Vitamin C Infused Shower. Water Puri cation. Well Hub."
+                    "Stateroom fitted with Stay Well® features will optimize the well-being of its residents. Benefits include:<br>Air Puri cation. Aromatherapy. Black Out Shades. Circadian Mood Lighting. Circadian Shower. Cleaning Protocol. Cleveland Clinic Wellness. Dawn Simulation. Deepak Chopra Welcome. Designated Signage. Energising Light.",
+                    "Guided Meditation. Stay Well® Linens. Stay Well® Mattress. Healthy Menu Options. In-Room Program Guide. Long Wave Night Lighting. Mattress Encasements. Stay Well® Mobile APP. Vitamin C Infused Shower. Water Puri cation. Well Hub."
                 ],
                 "images": ["42-1.jpg"]
             }
@@ -89,7 +90,8 @@
                 "name": "",
                 "labels": ["Social", "Physical"],
                 "text": [
-                    "Guests enrolled in wellness programs receive introductory consultations with leading personal trainers. No.12’s active lifestyle programs are tailored to each client’s interests and  tness level and take an integrated approach to physical activity combining elements of ballet, pilates, yoga, strength training and cardio. Sessions build on variety and an approach to daily exercise celebrating the cruise as platform for discovery."
+                    "Guests enrolled in wellness programs receive introductory consultations with leading personal trainers. No.12’s active lifestyle programs are tailored to each client’s interests and  tness level and take an integrated approach to ",
+                    "physical activity combining elements of ballet, pilates, yoga, strength training and cardio. Sessions build on variety and an approach to daily exercise celebrating the cruise as platform for discovery."
                 ],
                 "images": ["43-1.jpg"]
             }
@@ -102,7 +104,8 @@
                 "name": "No.12 ST Circuit",
                 "labels": ["Social", "Physical"],
                 "text": [
-                    "Our signature functional circuit training program is ST Circuit. ST Circuit is unlike anything you’ve ever tried before. This complete workout is based around the 12 round boxing contest, comprised of 12, three minute rounds with 30 secs rest between rounds. There are 12 stations, each representing a di erent exercise to ensure each body part is challenged equally. ST represents space & time which are the two key fundamentals of the number twelve and also the two key fundamentals for a complete workout."
+                    "Our signature functional circuit training program is ST Circuit. ST Circuit is unlike anything you’ve ever tried before. This complete workout is based around the 12 round boxing contest, comprised of 12, three minute rounds with 30 secs rest between rounds.",
+                    "There are 12 stations, each representing a di erent exercise to ensure each body part is challenged equally. ST represents space & time which are the two key fundamentals of the number twelve and also the two key fundamentals for a complete workout."
                 ],
                 "images": ["44-1.jpg"]
             }
@@ -131,6 +134,366 @@
                     "Using Crystal Bowls, guests can relax into a deep meditation as the harmonic sounds resonate and vibrate into the very core of each guest offering a unique and deeply profound experience. A new version of an ancient ritual, Sound Bath Meditation helps to re-tune mind and body."
                 ],
                 "images": ["46-1.jpg"]
+            }
+        },
+        {
+            "id": 47,
+            "subsection": "HOUSE OF <br>ELEMIS",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Social", "Physical", "Clinical", "Emotional"],
+                "text": [
+                    "THE HOUSE OF ELEMIS program is the creative heart of ELEMIS. A couture beauty house where spa meets science meets skin. More than 25 years of wisdom inspire the pioneering ELEMIS formulas and revolutionary treatment menu.",
+                    "Designed to deliver exactly what you need, when you need it. ELEMIS Elite therapists make it personal. They look. They listen. They tune in to you, performing transformative treatments, personalised to respond to the ever-evolving rhythm of your life and the ever-changing nature of your skin.<br>VIDEO https://www.youtube.com/watch?v=dvSOxoBMexY"
+                ],
+                "images": ["47-1.jpg"]
+            }
+        },
+        {
+            "id": 48,
+            "subsection": "HOUSE OF <br>ELEMIS",
+            "template": 6,
+            "content": {
+                "name": "Face",
+                "labels": ["Clinical"],
+                "text": [
+                    "BIOTEC facial treatments are where ground-breaking technology meets active ingredients and transformative touch. The pioneering innovation of the BIOTEC machine works to switch the skin back on, increasing its natural cellular energy. Technology turbo-charges touch. The clinically proven result? Thriving, visibly healthy and energised skin.",
+                    "Select From: <br>Anti-Ageing<br>BIOTEC Line Eraser<br>BIOTEC Firm-a-Li <br>BIOTEC Anti-Pigment Brightener BIOTEC Skin Resurfacer<br><br>Skin Solutions: BIOTEC, Radiance, Renew, BIOTEC, Blemish, Control, BIOTEC, Sensitive, Skin, Soother"
+                ],
+                "images": ["48-1.jpg"]
+            }
+        },
+        {
+            "id": 49,
+            "subsection": "HOUSE OF <br>ELEMIS",
+            "template": 6,
+            "content": {
+                "name": "Bodywork",
+                "labels": ["Physical"],
+                "text": [
+                    "The HOUSE OF ELEMIS exclusively presents the state of the art Amber and Quartz Crystal bed. Warm crystals mould and shape around your body helping to release muscle tension, detoxify and promote a deeper state of relaxation. A revolutionary minerally-charged experience of skin conditioning, metabolic balancing and energising wellness.",
+                    "Choose from:<br>Hot Mineral Body Boost<br>Poultice-Powered Muscle Release"
+                ],
+                "images": ["49-1.jpg"]
+            }
+        },
+        {
+            "id": 50,
+            "subsection": "HOUSE OF <br>ELEMIS",
+            "template": 6,
+            "content": {
+                "name": "Detox & Retox",
+                "labels": ["Emotional", "Physical", "Nutritional"],
+                "text": [
+                    "Thousand Flower Detox Wrap<br>Enriched by Somerset soil packed with tree,  ower and grass rich nutrients, this treatment provides super skin-health and powerful detoxi cation, helping stimulate the elimination process and restore equilibrium.",
+                    "Omega-rich Green Tea seed oils massaged into the skin followed by the thousand  ower, vitamin-packed, super nutritious earth wrap encouraging the body to surrender its toxins. A nourishing Green Tea balm, rich in minerals, proteins and Omegas – the superfoods of the skin– is the  nal touch, leaving you feeling completely reinvigorated and the body  ring on all cylinders."
+                ],
+                "images": ["50-1.jpg"]
+            }
+        },
+        {
+            "id": 51,
+            "subsection": "HOUSE OF <br>ELEMIS",
+            "template": 6,
+            "content": {
+                "name": "Detox & Retox",
+                "labels": ["Emotional", "Physical", "Nutritional"],
+                "text": [
+                    "Body Nectar Nourishing Wrap – Sweet Orchid or Frangipani This lusciously fragrant, intensely moisturising body wrap will transport you to the Far East. The velvety texture of the Monoi oil o ers super-hydration, quenching a thirsty skin.",
+                    "The aromatic oil is applied using sweeping strokes with maximum attention paid to any particularly parched areas. You are kept cocooned and warm while the mood-balancing aromatics and skin conditioning oils do their work. An emotionally grounding experience for skin that has never felt silkier."
+                ],
+                "images": ["51-1.jpg"]
+            }
+        },
+        {
+            "id": 52,
+            "subsection": "HOUSE OF <br>ELEMIS",
+            "template": 6,
+            "content": {
+                "name": "Bespoke Beauty Lab",
+                "labels": ["Emotional"],
+                "text": [
+                    "Voyagers create personalised products by choosing from a selection of essential oil blends and a choice of base scrubs and body oils from the HOUSE OF ELEMIS.",
+                    "Personalised labels are included with customer’s name and a title for their blend, along with the cruise dates and voyage. Products are presented in limited-edition packaging."
+                ],
+                "images": ["52-1.jpg"]
+            }
+        },
+        {
+            "id": 53,
+            "subsection": "NO. 12 <br>BATHHOUSE",
+            "template": 6,
+            "content": {
+                "name": "Bespoke Beauty Lab",
+                "labels": ["Social"],
+                "text": [
+                    "With spa facilities  t for socializing or staying low key, the No. 12 Bathhouse is the hot new place to be. Unexpected facility features mix things up with hot and cold therapy, self play areas, cool social scenes and creative spaces that leave a great e ect for both the social butter y and the laidback loner.",
+                    "In The No.12 Bathhouse, you can bask in a traditional Hammam experience and slough away dead skin with a customized scrub under a revitalizing shower. You can also bathe in the healing salty waters of the Thalassotherapy pool, or sink into heated benches and immerse yourself in the sheer pleasure of No. 12. On one or two nights every voyage, The No.12 Bathhouse transforms into a Wellness Night Club and is open for mini treatments, music and mimosas. Check our Wellness events calendar for more details."
+                ],
+                "images": ["53-1.jpg"]
+            }
+        },
+        {
+            "id": 54,
+            "subsection": "SOCIAL BEAUTY <br>BAR",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Social"],
+                "text": [
+                    "The perfect blow dry or updo can make the whole evening. Stop by in our Social Beauty Bar for a 30-min blow dry or classic French twist and a glass of champagne before heading out for the evening. Or if you can’t make it to us, book our signature No. 12 Beauty Butler to come to you.",
+                    "High energy music, food and beverage capabilities and a casual atmosphere create a social scene - some guests attend the space for breakfast or drinks, some for treatments."
+                ],
+                "images": ["54-1.jpg"]
+            }
+        },
+        {
+            "id": 55,
+            "subsection": "Authentic Cultural <br>Experience",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Emotional", "Physical", "Nutritional"],
+                "text": [
+                    "Every voyage promises local indigenous experiences that connect with the cruising itinerary. When in the South Paci c, guests can enjoy the highly aromatic Tahitian Frangipani Body Nourishing Wrap and Massage or the Balinese Four Hand Massage. On these cruises, treatments will emphasise heady aromas and hands on techniques passed on",
+                    "by generations since the dawn of civilization in each region. The following slides give an example of indigenous therapies we would add to the spa journey. We envision this to be o ered in a separate menu where a treatment of each region. South Pacific, Middle East, India, South Pacific, Baltic, Mediterranean, Australasia, South America"
+                ],
+                "images": ["55-1.jpg"]
+            }
+        },
+        {
+            "id": 56,
+            "subsection": "Authentic Cultural <br>Experience",
+            "template": 6,
+            "content": {
+                "name": "Destination: India",
+                "labels": ["Emotional", "Physical"],
+                "text": [
+                    "Ayurvedic Shirodhara and Abyhanga Massage Treatment This ancient healing tradition thrives in the modern world. Experience two beautifully Ayurvedic treatments. Shirodhara, which is the constant stream of ho oil onto the third eye, the seat of your",
+                    "intuition between the brows, combined with Ayurvedic aromatherapy massage. Sounds: Om Mantra for Chakra Cleansing"
+                ],
+                "images": ["56-1.jpg"]
+            }
+        },
+        {
+            "id": 57,
+            "subsection": "Authentic Cultural <br>Experience",
+            "template": 6,
+            "content": {
+                "name": "Destination: China",
+                "labels": ["Emotional", "Physical"],
+                "text": [
+                    "Traditional Chinese Medicine<br>After a complete tongue and pulse analysis, you will receive an introduction to Chinese Wellness philosophy, a customized acupuncture treatment, a",
+                    "Chi-balancing massage and a Chinese Herbal Medicine Consultation. <br>Sounds: classical Chinese music"
+                ],
+                "images": ["57-1.jpg"]
+            }
+        },
+        {
+            "id": 58,
+            "subsection": "Authentic Cultural <br>Experience",
+            "template": 6,
+            "content": {
+                "name": "Destination: <br>Polynesian Islands",
+                "labels": ["Emotional", "Physical"],
+                "text": [
+                    "Polynesian Warmed Monoi Massage<br>In Polynesia, a special nourishing wax is created by combining thousands of Tiare  ower petals in Coconut Coprah Oil, and leaving the potion to macerate for three weeks in darkness. After this time, the petals have melted into the oil and a thick wax called Monoi is created.",
+                    "When placed in hot water, the wax becomes warm oil which the Polynesians have used for sacred rituals. And today, it is used to nourish and protect their bodies, hair and nails. In this exclusive Polynesian treatment, we anoint your entire body and hair in the nourishing oil with a deep Tahitian massage.<br>SensorySounds:TheSandsofTime-PolynesianCompilation"
+                ],
+                "images": ["58-1.jpg"]
+            }
+        },
+        {
+            "id": 59,
+            "subsection": "WELLNESS <br>AFTERNOON TEA",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Nutritional"],
+                "text": [
+                    "No. 12 o ers guests a carefully curated and globally sourced collection of twelve signature tea blends, celebrating a blending of cultures and tastes. Each beverage combines the medicinal with the  avourful, exotic elements and traditional  avours, as well as highly aesthetic and anti- oxidant rich garnishes. ",
+                    "Inspired by tea-innovators like Pret- a-Portea from The Berkeley Hotel, No.12’s tea o erings are fun, quirky and delicious, with drinks and tea-cakes named after fashion icons, British mavericks and royals past and present."
+                ],
+                "images": ["59-1.jpg"]
+            }
+        },
+        {
+            "id": 60,
+            "subsection": "MEN’S GROOMING",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Clinical", "Social"],
+                "text": [
+                    "In the style of vintage-inspired sporting clubs and news cafés, the men’s grooming salon o ers traditional services like haircuts and shaves, as a masculine bridge to more adventurous skin and medi-spa treatments."
+                ],
+                "images": ["60-1.jpg"]
+            }
+        },
+        {
+            "id": 61,
+            "subsection": "MEN’S GROOMING",
+            "template": 6,
+            "content": {
+                "name": "BIOTEC Super-Charger for Men",
+                "labels": ["Clinical"],
+                "text": [
+                    "This is the facial to de-stress, de-age and de-fatigue the male complexion whilst activating ultimate skin dynamism. A triple hit of ultrasonic peeling and galvanic current delivers a ",
+                    "deep clean, simultaneously exfoliating and powering up Kalpariane’s anti-wrinkle properties and Samphire’s hydrating potency. An oxygen infusion is the  nal blast of energy for real, best face forward results. A multi-tasking, time e cient solution."
+                ],
+                "images": ["61-1.jpg"]
+            }
+        },
+        {
+            "id": 62,
+            "subsection": "MEN’S GROOMING",
+            "template": 6,
+            "content": {
+                "name": "The Mayfair Shave",
+                "labels": ["Social"],
+                "text": [
+                    "Whilst seated in a traditionally inspired barber’s station, enjoy one of our luxurious deep cleansing shaves. Complete with facial massage and steaming hot towels, skin will feel smoother than ever.",
+                    "Select from:<br>The Express Deep Cleanse Grooming Treatment with Shave<br>Pro-Collagen Grooming Treatment with Shave"
+                ],
+                "images": ["62-1.jpg"]
+            }
+        },
+        {
+            "id": 63,
+            "subsection": "MOBILE <br>MINI-SPA",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Social", "Nutritional"],
+                "text": [
+                    "No.12 introduces its signature mobile spa services cart. Beauty’s answer to a mini-bar crossed with a cocktail cart, the mobile mini-spa o ers quick product sales like sunscreen, body butter and lip balm, in-suite service rituals like bath blends and self-applied masks, aromatherapy,",
+                    "sleep masks and a host of beauty butler services in which a spa comes to you for in-suite, on-deck and cabana appointments. The mini-spa is digitally equipped also o ering possibilities to browse for other products and services, download sleep meditations, book appointments and more."
+                ],
+                "images": ["63-1.jpg"]
+            }
+        },
+        {
+            "id": 64,
+            "subsection": "MOBILE <br>MINI-SPA",
+            "template": 6,
+            "content": {
+                "name": "Speed Spa Services",
+                "labels": ["Social", "Physical"],
+                "text": [
+                    "Our 15- and 30-minute signature HOUSE OF ELEMIS Mobile Speed Spa services allows for maximum impact with limited time. The perfect everyday pick me up. Choices include:<br>Past Tense - a cunningly choreographed neck and shoulder reviver designed to sweep you o  to the land of eased muscles and calm thoughts.",
+                    "Head First - tension is dissolved using a combination of the ancient Chinese healing massage Tui Na and Japanese Shiatsu, while Indian and Thai kneading invigorates and clears your head.<br>Deep Clean and Dash - from soothing shave oil and refining Thai drainage massage to an instantly refreshing eye treatment, this is a shortcut to the new face of man."
+                ],
+                "images": ["64-1.jpg"]
+            }
+        },
+        {
+            "id": 65,
+            "subsection": "CURATED RETAIL <br>COLLECTION",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Emotional", "Social", "Clinical"],
+                "text": [
+                    "Commissioned capsule collections of activewear, loungewear and sleepwear in collaboration with iconic British independent designers like Olivia Von Halle, Paul Smith and Burberry."
+                ],
+                "images": ["65-1.jpg"]
+            }
+        },
+        {
+            "id": 66,
+            "subsection": "ADVANCED & <br>INTEGRATED WELLNESS",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Emotional", "Social", "Clinical"],
+                "text": [
+                    "The Medi-Spa and Integrative Wellness Centre offers treatments to address signs of ageing on the face and body as well Traditional Chinese Medicine, an ancient panacea for many other health care concerns.",
+                    "Return home from your voyage looking and feeling completely refreshed and renewed. No downtime."
+                ],
+                "images": ["66-1.jpg"]
+            }
+        },
+        {
+            "id": 67,
+            "subsection": "ADVANCED & <br>INTEGRATED WELLNESS",
+            "template": 6,
+            "content": {
+                "name": "Thermage™",
+                "labels": ["Clinical"],
+                "text": [
+                    "Thermage is a new non-surgical, non-invasive procedure that uses focused ultrasound and the body’s own natural healing process to lift, tone, and tighten loose skin on the brow, neck, under the chin and even the ",
+                    "décolletage (upper chest area). With Thermage™ there’s no downtime, no foreign substances, no radical change-just a healthy reset on the inside for a natural noticeable e ect on the outside."
+                ],
+                "images": ["67-1.jpg"]
+            }
+        },
+        {
+            "id": 68,
+            "subsection": "ADVANCED & <br>INTEGRATED WELLNESS",
+            "template": 6,
+            "content": {
+                "name": "Coolsculpting",
+                "labels": ["Clinical"],
+                "text": [
+                    "Coolsculpting (c) is the only non-surgical body contouring treatment that freezes and eliminates stubborn fat from the body. There’s no downtime and results can be seen in as little as three weeks."
+                ],
+                "images": ["68-1.jpg"]
+            }
+        },
+        {
+            "id": 69,
+            "subsection": "ADVANCED & <br>INTEGRATED WELLNESS",
+            "template": 6,
+            "content": {
+                "name": "Injectables",
+                "labels": ["Clinical"],
+                "text": [
+                    "We love self-expression and encourage it. BOTOX® and DYSPORT® won’t remove your ability to reveal emotion but they will soften deeper lines and give you a refreshed look.",
+                    "RESTYLANE® is a non-surgical FDA approved filler that helps get rid of wrinkles as well as plump up the lips."
+                ],
+                "images": ["69-1.jpg"]
+            }
+        },
+        {
+            "id": 70,
+            "subsection": "ADVANCED & <br>INTEGRATED WELLNESS",
+            "template": 6,
+            "content": {
+                "name": "Acupuncture & Chinese<br>Herbal Medicine",
+                "labels": ["Clinical"],
+                "text": [
+                    "Acupuncture has o ered relief for millions of people world- wide and is the oldest health care system still being practiced in China. In England, Europe and the US, acupuncture is often combined with conventional medicine to encourage faster healing. Our onboard acupuncturist ",
+                    "is certified to safely and e ectively treat an extensive list of symptoms and conditions including, but not limited to, pain management, sea sickness, weight gain, insomnia and anxiety. No. 12 guests can also participate in a complimentary Chinese herbal medicine consultation to assess which whole food herbs will be complement the treatment."
+                ],
+                "images": ["70-1.jpg"]
+            }
+        },
+        {
+            "id": 71,
+            "subsection": "ADVANCED & <br>INTEGRATED WELLNESS",
+            "template": 6,
+            "content": {
+                "name": "No.12 Private Crystal <br>Sound Therapy",
+                "labels": ["Emotional", "Physical"],
+                "text": [
+                    "Similar to Tibetan Singing Bowls, Quartz Crystal Bowls create a sound that resonates through mind and body, helping to release stagnant energy, leaving you in a state of profound peace.",
+                    "In this healing treatment, bowls are played both around and on the body while your sound therapist instructs you on breath work to maximise the healing benefits."
+                ],
+                "images": ["71-1.jpg"]
+            }
+        },
+        {
+            "id": 72,
+            "subsection": "MOVING ART",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Emotional"],
+                "text": [
+                    "Time-lapse video by artist Louie Schwartzberg transforms spaces into healing environments. Entire walls or ceilings can be fitted with a very fine video screen that can bring the power of nature into any environment."
+                ],
+                "images": ["72-1.jpg"]
             }
         }
     ]
