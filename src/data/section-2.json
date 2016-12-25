@@ -23,7 +23,7 @@
                 "text": [
                   "Modern social clubs exude luxury consciousness and are hubs that create social connectivity across lines of generation, class and gender."
                 ],
-                "images": ["9-1.jpg", "9-3.jpg", "9-2.jpg"]
+                "images": ["9-1.jpg", "9-2.jpg", "9-3.jpg"]
             }
         },
         {
@@ -93,6 +93,54 @@
                   "To be British today is to be respectful and clever, dapper yet fresh, formal in design yet passionate about the details. To be British today is to live amidst centuries of leaders and legends, the imaginative the fearless. We carry their souls yet push forward with our hearts."
                 ],
                 "images": ["14-1.jpg", "14-2.jpg", "14-3.jpg"]
+            }
+        },
+        {
+            "id": 15,
+            "subsection": "No.12 Brand <br>values",
+            "template": 4,
+            "content": {
+                "name": "Joy",
+                "text": [
+                  "Equal parts detox & retox. Rooted in a belief that living well should be joyful, not a sacrifice."
+                ],
+                "images": ["15-1.jpg", "15-2.jpg", "15-3.jpg"]
+            }
+        },
+        {
+            "id": 16,
+            "subsection": "No.12 Brand <br>values",
+            "template": 42,
+            "content": {
+                "name": "Joy",
+                "text": [
+                  "Worldly curious, openly exploring."
+                ],
+                "images": ["16-1.jpg", "16-2.jpg", "16-3.jpg"]
+            }
+        },
+        {
+            "id": 17,
+            "subsection": "No.12 Brand <br>values",
+            "template": 41,
+            "content": {
+                "name": "Allure",
+                "text": [
+                  "To be coveted for embodying the essence of hospitality- graciousness & respect delivered exquisitely and quietly, not because of high design or stylish tricks."
+                ],
+                "images": ["17-1.jpg", "17-2.jpg", "17-3.jpg"]
+            }
+        },
+        {
+            "id": 18,
+            "subsection": "No.12 Design Values",
+            "template": 2,
+            "content": {
+                "name": "Philosophy",
+                "text": [
+                    "Underpinning our entire design philosophy is well-being. We have partnered with Delos to create healthy environments to support our innovative wellness programs. Along with Delos, we place health and wellness at the center of design, construction and facilities.",
+                    "Exploring the intersection between people and the built environment, we create spaces that actively contribute to human health, performance and well-being by marrying the best innovations in technology, health, science, design and enterprise. We see the built environment as an asset to maximize human potential, and we envision environments that enhance us – that are both proactive and reactive – to live better by cultivating healthy lifestyle choices and helping prevent health problems before they begin."
+                ]
             }
         }
     ]
