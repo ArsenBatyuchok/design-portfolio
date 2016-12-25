@@ -172,6 +172,8 @@ angular.module('Cunard', [
         self.data.map(function(section) {
             section.data.pages.map(function(page) {
                 if (page.id === nextIndex) {
+
+                    //Subsection
                     if (self.subsectionName !== page.subsection) {
                         $('.subsection-name').fadeOut(animationTime).fadeIn(animationTime);
 
@@ -182,12 +184,16 @@ angular.module('Cunard', [
                         }, animationTime);
                     }
 
-                    $('.page-name').fadeOut(animationTime).fadeIn(animationTime);
+                    //Page
+                    if (self.activePageName !== page.content.name) {
+                        $('.page-name').fadeOut(animationTime).fadeIn(animationTime);
 
-                    window.setTimeout(function () {
-                        $scope.$apply(function() {
-                            self.activePageName = page.content.name;                            });
-                    }, animationTime);
+                        window.setTimeout(function () {
+                            $scope.$apply(function() {
+                                self.activePageName = page.content.name;
+                            });
+                        }, animationTime);
+                    }
                 }
             });
         });
