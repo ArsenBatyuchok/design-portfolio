@@ -3,15 +3,134 @@
     "position": 7,
     "pages": [
         {
-            "subsection": "MEN’S GROOMING",
+            "id": 37,
+            "subsection": "British Library <br>Lounge",
             "template": 6,
             "content": {
-                "name": "BIOTEC Super-Charger for Men",
-                "labels": ["Emotional", "Physical", "Nutritional"],
+                "name": "",
+                "labels": ["Intellectual", "Emotional"],
                 "text": [
-                    "Cunard’s brand of British Luxury (refined, thoughtful, charismatic, proud) reconnects guests to a time and place of rich heritage and stories, of adventure and grand gestures, reflecting all that is wonderful and special of being British. How do we bring this forward in wellness?"
+                    "Curated by trend-setters like Heywood Hill in London, the No. 12 Library gives an innocent look toward British Academy-chic. The library houses the latest and most in uential books on health, mindfulness, creativity and culture."
                 ],
-                "images": ["501.jpg"]
+                "images": ["37-1.jpg"]
+            }
+        },
+        {
+            "id": 38,
+            "subsection": "British Library <br>Lounge",
+            "template": 6,
+            "content": {
+                "name": "Expert Living",
+                "labels": ["Intellectual"],
+                "text": [
+                    "The space includes a digital screening room connecting voyagers with the most contemporary wellness programming around the world. In  tting with social surprises, on certain voyages, No.12 will feature a visiting healthy living expert who will offer lectures and workshops on detoxi cation, integrative healing, stress management and pain reduction."
+                ],
+                "images": ["38-1.jpg"]
+            }
+        },
+        {
+            "id": 39,
+            "subsection": "British Library <br>Lounge",
+            "template": 6,
+            "content": {
+                "name": "Quiet Spaces",
+                "labels": ["Emotional"],
+                "text": [
+                    "Creative Mindfulness<br>Our 45-minute guided creative meditation will help guests achieve a heightened sense of mindful quietude. This process is less about focusing on one idea, but allowing the mind to follow the various paths as the ideas fully realize themselves."
+                ],
+                "images": ["39-1.jpg"]
+            }
+        },
+        {
+            "id": 40,
+            "subsection": "STAYWELL®",
+            "template": 6,
+            "content": {
+                "name": "No. 12 Staterooms",
+                "labels": ["Emotional"],
+                "text": [
+                    "When away from home, we are distanced from our daily biological rhythms and exposed to countless unknowns, environmental hazards and discomforts. Stay Well® is designed to mitigate these variables by introducing scienti cally validated features into the built environment to optimize health, vitality, relaxation and well-being. The Onboard Spa by Steiner® in partnership with Delos® recommends a new Stateroom category within the greater Stateroom inventory. These Staterooms will feature Stay Well® experiences as part of the No. 12 Wellness experience."
+                ],
+                "images": ["40-1.jpg"]
+            }
+        },
+        {
+            "id": 41,
+            "subsection": "STAYWELL®",
+            "template": 6,
+            "content": {
+                "name": "No. 12 Staterooms",
+                "labels": ["Emotional"],
+                "text": [
+                    "“Stay Well® rooms are built on many individual features, which when combined, have an unprecedented positive health impact for the traveler.” Deepak Chopra, MD. Delos® Advisory Board Member."
+                ],
+                "images": ["41-1.jpg"]
+            }
+        },
+        {
+            "id": 42,
+            "subsection": "STAYWELL®",
+            "template": 6,
+            "content": {
+                "name": "Program Features",
+                "labels": ["Emotional"],
+                "text": [
+                    "Stateroom fitted with Stay Well® features will optimize the well-being of its residents.",
+                    "Benefits include:<br>Air Puri cation. Aromatherapy. Black Out Shades. Circadian Mood Lighting. Circadian Shower. Cleaning Protocol. Cleveland Clinic Wellness. Dawn Simulation. Deepak Chopra Welcome. Designated Signage. Energising Light. Guided Meditation. Stay Well® Linens. Stay Well® Mattress. Healthy Menu Options. In-Room Program Guide. Long Wave Night Lighting. Mattress Encasements. Stay Well® Mobile APP. Vitamin C Infused Shower. Water Puri cation. Well Hub."
+                ],
+                "images": ["42-1.jpg"]
+            }
+        },
+        {
+            "id": 43,
+            "subsection": "MIND & BODY<br> RENAISSANCE",
+            "template": 6,
+            "content": {
+                "name": "",
+                "labels": ["Social", "Physical"],
+                "text": [
+                    "Guests enrolled in wellness programs receive introductory consultations with leading personal trainers. No.12’s active lifestyle programs are tailored to each client’s interests and  tness level and take an integrated approach to physical activity combining elements of ballet, pilates, yoga, strength training and cardio. Sessions build on variety and an approach to daily exercise celebrating the cruise as platform for discovery."
+                ],
+                "images": ["43-1.jpg"]
+            }
+        },
+        {
+            "id": 44,
+            "subsection": "MIND & BODY<br> RENAISSANCE",
+            "template": 6,
+            "content": {
+                "name": "No.12 ST Circuit",
+                "labels": ["Social", "Physical"],
+                "text": [
+                    "Our signature functional circuit training program is ST Circuit. ST Circuit is unlike anything you’ve ever tried before. This complete workout is based around the 12 round boxing contest, comprised of 12, three minute rounds with 30 secs rest between rounds. There are 12 stations, each representing a di erent exercise to ensure each body part is challenged equally. ST represents space & time which are the two key fundamentals of the number twelve and also the two key fundamentals for a complete workout."
+                ],
+                "images": ["44-1.jpg"]
+            }
+        },
+        {
+            "id": 45,
+            "subsection": "MIND & BODY<br> RENAISSANCE",
+            "template": 6,
+            "content": {
+                "name": "No.12 Yoga",
+                "labels": ["Social", "Physical"],
+                "text": [
+                    "As well as Core Power Yoga, No. 12 will offer signature yoga sessions, featuring 12 postures for a fast, but e ective yogic experience which incorporates deep breath work, meditation and mantras."
+                ],
+                "images": ["45-1.jpg"]
+            }
+        },
+        {
+            "id": 46,
+            "subsection": "MIND & BODY<br> RENAISSANCE",
+            "template": 6,
+            "content": {
+                "name": "No.12 Sound Bath <br>Meditation Class",
+                "labels": ["Emotional", "Physical"],
+                "text": [
+                    "Using Crystal Bowls, guests can relax into a deep meditation as the harmonic sounds resonate and vibrate into the very core of each guest offering a unique and deeply profound experience. A new version of an ancient ritual, Sound Bath Meditation helps to re-tune mind and body."
+                ],
+                "images": ["46-1.jpg"]
             }
         }
     ]
