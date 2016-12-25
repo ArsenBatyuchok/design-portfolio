@@ -9,7 +9,11 @@
             </div>
         </div>
         <div class="col-xs-7">
-            <p ng-repeat="text in slide.content.text" ng-bind-html="text | to_trusted"></p>
+            <div class="row custom">
+                <div class="col-xs-6" ng-repeat="text in slide.content.text">
+                    <p ng-bind-html="text | to_trusted"></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">

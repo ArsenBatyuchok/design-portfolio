@@ -16,16 +16,14 @@
             font-size: 14px;
             width: 100%;
             line-height: 24px;
-            color: #fff;
             text-align: center;
             margin-bottom: 10px;
-            padding: 0 7px;
             transition: all 0.5s ease;
             .page-info-label-inner {
                 display: inline-block;
                 position: relative;
-                background: #000;
                 width: calc(100% - 14px);
+                border-radius: 4px;
                 &:before, &:after {
                     content: " ";
                     display: block;
@@ -35,21 +33,51 @@
                     position: absolute;
                 }
                 &:before {
-                    left: -7px;
+                    left: -6px;
                     top: 0;
                     border-width: 12px 7px 12px 0;
-                    border-color: transparent #000000 transparent transparent;
                 }
                 &:after {
-                    right: -7px;
+                    right: -6px;
                     top: 0;
                     border-width: 12px 0 12px 7px;
-                    border-color: transparent transparent transparent #000000;
                 }
             }
         }
+        .row.custom {
+            .col-xs-6 {
+                width: 50%;
+            }
+        }
     }
-
+}
+.section {
+    .page-info-label {
+        color: #fff;
+    }
+    .page-info-label-inner {
+        background: #000;
+        &:before {
+            border-color: transparent #000000 transparent transparent;
+        }
+        &:after {
+            border-color: transparent transparent transparent #000000;
+        }
+    }
+    &.black {
+        .page-info-label {
+            color: #000;
+        }
+        .page-info-label-inner {
+            background: #fff;
+            &:before {
+                border-color: transparent #ffffff transparent transparent;
+            }
+            &:after {
+                border-color: transparent transparent transparent #ffffff;
+            }
+        }
+    }
 }
 
 
