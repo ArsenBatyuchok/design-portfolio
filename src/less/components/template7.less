@@ -1,9 +1,39 @@
-.video-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  video {
-    width: 100%;
-  }
+.template-7 {
+    .video-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+        video {
+            width: 100%;
+        }
+    }
+}
+
+//Animation
+.slide-active {
+    .template-7 {
+        .video-container {
+            opacity: 1;
+            transition: opacity 0.5s 0.2s ease;
+        }
+    }
+}
+
+.sliding-down {
+    .template-7 {
+        .video-container {
+            opacity: 0;
+        }
+    }
+}
+
+.sliding-up {
+    .template-7 {
+        .video-container {
+            opacity: 0;
+        }
+    }
 }

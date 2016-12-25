@@ -5,7 +5,36 @@
         align-items: center;
         p {
             margin-bottom: 25px;
-            transition: opacity 0.5s ease;
+            opacity: 0;
+            transition: opacity 0.15s ease;
         }
     }
+}
+
+//Animation
+.section {
+  .slide-active {
+      .template-2, .section-inner.template-21 {
+          p, ol {
+              opacity: 1;
+              transition: opacity 0.5s 0.2s ease;
+          }
+      }
+  }
+
+  .sliding-down {
+      .template-2, .section-inner.template-21 {
+          p, ol {
+              opacity: 0;
+          }
+      }
+  }
+
+  .sliding-up {
+      .template-2, .section-inner.template-21 {
+          p, ol {
+              opacity: 0;
+          }
+      }
+  }
 }
