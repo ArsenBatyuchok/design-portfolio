@@ -1,0 +1,97 @@
+{
+    "name": "Programming Pillars",
+    "position": 5,
+    "pages": [
+        {
+            "id": 27,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 2,
+            "content": {
+                "name": "",
+                "text": [
+                    "EMOTIONAL<br>Staywell staterooms / meditation / breathwork / sound therapy",
+                    "SOCIAL<br>bathhouse experience / group yoga, pilates / sound baths / beauty bar / grooming rituals",
+                    "INTELLECTUAL<br>curated library of books, educational seminars, shows & podcasts about the latest & greatest in wellness, health and healing",
+                    "PHYSICAL<br>bootcamp / personal trainers / group classes / massages & bodywork",
+                    "NUTRITIONAL<br>healthy eating / cooking classes / nutritional consultations / Chinese herbal medicine / herbal teas / healthy spa beverages and snacks",
+                    "CLINICAL<br>advanced anti-ageing therapies / sports clinic / acupuncture for well-being / pain management"
+                ]
+            }
+        },
+        {
+            "id": 28,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 3,
+            "content": {
+                "name": "Emotional",
+                "text": [
+                    "Emotional well-being grounds us in the present. From mindfulness exercises to creative meditation programs, our group classes, in-room tutorials and integrated breathwork in every service forces us to take a moment for ourselves."
+                ],
+                "image": "28-1.jpg"
+            }
+        },
+        {
+            "id": 29,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 3,
+            "content": {
+                "name": "Social",
+                "text": [
+                    "Wellness is a group e ort. When we surround ourselves with those who enrich us--be it old friends and life loves or new friends, we grow and learn from each interaction. Everyday, No. 12 o ers a variety of group classes and social spaces to connect and re-connect with those around us."
+                ],
+                "image": "29-1.jpg"
+            }
+        },
+        {
+            "id": 30,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 3,
+            "content": {
+                "name": "Intellectual",
+                "text": [
+                    "The open seas encourage open thinking. Be inspired by one of our educational seminars, listen to interesting philosophical, cultural, historical and wellness focused Podcasts, or watch interesting, mind expanding documentaries in your Stateroom. Stop by our Heywood Hill curated lounge and browse from the latest releases including Candice Millard’s Hero of The Empire: The Making of Winston Churchill to Andrew Solomon’s Far and Away: How Travel Can Change the World, Chronicle of a lifetime’s travels & experiences."
+                ],
+                "image": "30-1.png"
+            }
+        },
+        {
+            "id": 31,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 3,
+            "content": {
+                "name": "Physical",
+                "text": [
+                    "Work hard, play hard. No. 12’s Physical program encompasses a wide-range of one-on-one training and sessions with group classes from leading brands such as Pure Barre TM and PelotonTM.",
+                    "Massage and Body Therapy. <br>From straight up Swedish massage to the poetic Thousand Flower Detoxifying Wrap, guests can check in and then check out.",
+                    "Group Classes: Step in, Be bold. <br>Engage the body in a variety of functional movements, build muscle and strength. Be it yoga, pilates, stretch therapy or barre, be a part of the team e ort to achieve strong hearts and beautiful bodies.",
+                    "Fitness Centre: Build strength, one step at a time.<br> Our signature  tness centre features a high-intensity circuit program built around intervals, strength and T3 conditioning. Practiced by the top athletes worldwide, this proprietary program will allow you to achieve your highest goals."
+                ],
+                "image": "31-1.jpg"
+            }
+        },
+        {
+            "id": 32,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 3,
+            "content": {
+                "name": "Nutritional",
+                "text": [
+                    "Foods feed the mind and the soul. No.12 pays considered attention to all elements of the food experience pairing services with creative and globally-inspired beverages and light food items. Our signature wellness inspired tea program served everyday o ers our specially-blended teas inspired by the various Cunard voyages alongside sweet and savoury delights all made with health and nutrition in mind, but no compromise on taste. The perfect afternoon indulgence."
+                ],
+                "image": "32-1.jpg"
+            }
+        },
+        {
+            "id": 33,
+            "subsection": "No.12 Wellness <br>Pillars",
+            "template": 3,
+            "content": {
+                "name": "Clinical",
+                "text": [
+                    "The most cutting-edge, anti-ageing treatments o ered on the seas. Consult with our top physicians, acupuncturists and aestheticians to achieve your anti-ageing and wellness goals with instant results and little to no recovery time."
+                ],
+                "image": "33-1.jpg"
+            }
+        }
+    ]
+}

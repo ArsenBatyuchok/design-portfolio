@@ -1,0 +1,73 @@
+{
+    "name": "Journeys",
+    "position": 6,
+    "pages": [
+        {
+            "id": 34,
+            "subsection": "One Day <br>Package",
+            "template": 3,
+            "content": {
+                "name": null,
+                "text": [
+                    "Sample packages could include:",
+                    "Daily Meditation",
+                    "1 No. 12 Yoga Class",
+                    "Bathhouse access",
+                    "One facial One massage"
+                ],
+                "image": ""
+            }
+        },
+        {
+            "id": 35,
+            "subsection": "Three Day <br>Package",
+            "template": 3,
+            "content": {
+                "name": null,
+                "text": [
+                    "Sample packages could include:",
+                    "Daily Meditation",
+                    "Personal Trainer for three days",
+                    "1 No. 12 Yoga Class",
+                    "Complimentary 3-day access to The Bathhouse",
+                    "One facial",
+                    "One massage",
+                    "One Body Treatment",
+                    "One ELEMIS amenity bag",
+                    "Complimentary designer lounge wear that comes with each package"
+                ],
+                "image": ""
+            }
+        },
+        {
+            "id": 36,
+            "subsection": "Six Day <br>Package",
+            "template": 3,
+            "content": {
+                "name": null,
+                "text": [
+                    "Sample packages could include:",
+                    "Daily Meditation",
+                    "Personal coach during seven-days",
+                    "Complimentary 5-day access to The Bathhouse",
+                    "2 No. 12 Yoga Class",
+                    "2 No. 12 Sound Bath Classes",
+                    "One facial",
+                    "Three Massages",
+                    "Two Body Treatments",
+                    "No. 12 Manicure and Pedicure",
+                    "One ELEMIS amenity bag",
+                    "1 No. 12 Beauty Butler Stateroom visit",
+                    "Complimentary designer lounge wear that comes with each package"
+                    
+                ],
+                "image": ""
+            }
+        }
+    ]
+}
+
+
+
+
+

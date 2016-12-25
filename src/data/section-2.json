@@ -133,7 +133,7 @@
         },
         {
             "id": 18,
-            "subsection": "No.12 Design Values",
+            "subsection": "No.12 Design <br>Values",
             "template": 2,
             "content": {
                 "name": "Philosophy",
@@ -145,7 +145,7 @@
         },
         {
             "id": 19,
-            "subsection": "No.12 Besign <br>values",
+            "subsection": "No.12 Design <br>values",
             "template": 4,
             "content": {
                 "name": "Modern",
@@ -153,6 +153,30 @@
                   "Modern need not be cold and sleek. Heritage rendered new."
                 ],
                 "images": ["19-1.jpg", "19-2.jpg", "19-3.jpg"]
+            }
+        },
+        {
+            "id": 20,
+            "subsection": "No.12 Design <br>values",
+            "template": 41,
+            "content": {
+                "name": "Layered",
+                "text": [
+                  "Refined luxury with a just- under-the-surface creative heartbeat."
+                ],
+                "images": ["20-1.jpg", "20-2.jpg"]
+            }
+        },
+        {
+            "id": 21,
+            "subsection": "No.12 Design <br>values",
+            "template": 4,
+            "content": {
+                "name": "Personal",
+                "text": [
+                  "Graciousness and warmth, with a thoughtful touch."
+                ],
+                "images": ["21-1.jpg", "21-2.jpg", "21-3.jpg"]
             }
         }
     ]

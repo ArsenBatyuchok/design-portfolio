@@ -17,7 +17,12 @@ angular.module('Cunard', [
 
     $q.all([
         dataService.getData('/section-1.json'),
-        dataService.getData('/section-2.json')
+        dataService.getData('/section-2.json'),
+        dataService.getData('/section-3.json'),
+        dataService.getData('/section-4.json'),
+        dataService.getData('/section-5.json'),
+        dataService.getData('/section-6.json'),
+        dataService.getData('/section-7.json')
     ]).then(function (response) {
         self.data = response;
     }, function (error) {
