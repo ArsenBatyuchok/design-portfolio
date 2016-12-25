@@ -74,18 +74,22 @@ angular.module('Cunard', [
     };
 
     //Slide to section
-    this.slideTo = function(sectionPosition) {
+    this.slideTo = function(sectionIndex) {
         var slideIndex = 1;
-        var sections = 1;
 
         self.data.map(function(section, index) {
-            if (section.data.position < sectionPosition) {
-                sections += 1;
-                slideIndex += section.data.pages.length;
+            if (section.data.position < sectionIndex) {
+                var sectionLength = section.data.pages.length;
+                slideIndex += sectionLength;
 
-                //Animate headers
+                //Animate prev headers
                 $($('.section')[section.data.position]).find('.header, .side-panel')
-                                                       .css({'transform': 'translate3d(0, ' + (self.windowHeight * (slideIndex - 2)) + 'px, 0)',
+                                                       .css({'transform': 'translate3d(0, ' + (self.windowHeight * (sectionLength - 1)) + 'px, 0)',
+                                                             'transition': 'none'});
+            } else if (section.data.position > sectionIndex) {
+                //Animate next headers
+                $($('.section')[section.data.position]).find('.header, .side-panel')
+                                                       .css({'transform': 'translate3d(0, 0, 0)',
                                                              'transition': 'none'});
             }
         });
