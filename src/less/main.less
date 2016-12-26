@@ -70,8 +70,10 @@ html, body {
     background: #fff;
     color: #000;
     &.black {
-        background: #000;
-        color: #fff;
+        .slide {
+            background: #000;
+            color: #fff;
+        }
         .header {
             .menu-btn {
                 background: url('img/ui/menu.svg') no-repeat 0 0;
@@ -85,6 +87,8 @@ html, body {
         padding: 25px;
     }
     .slide {
+        background: white;
+        color: black;
         position: absolute;
         width: 100%;
         overflow: hidden;
@@ -98,6 +102,9 @@ html, body {
         }
         &.next {
             transform: translate3d(0, 100%, 0);
+            &.reveal {
+                transform: translate3d(0, 0, 0);
+            }
         }
         &.ng-enter {
             transition: none;
