@@ -67,14 +67,6 @@ angular.module('Cunard', [
         }
     });
 
-    function defineBodyBackground(el) {
-        if (el.hasClass('black')) {
-            $('body').css('background-color', '#000');
-        } else {
-            $('body').css('background-color', '#fff');
-        }
-    };
-
     //Slide to section
     this.slideTo = function(sectionIndex) {
         var slideIndex = 1;
@@ -83,33 +75,13 @@ angular.module('Cunard', [
             if (section.data.position < sectionIndex) {
                 var sectionLength = section.data.pages.length;
                 slideIndex += sectionLength;
-
-                //Animate prev headers
-                $($('.section')[section.data.position]).find('.header, .side-panel')
-                                                       .css({'transform': 'translate3d(0, ' + (self.windowHeight * (sectionLength - 1)) + 'px, 0)',
-                                                             'transition': 'none'});
-            } else if (section.data.position > sectionIndex) {
-                //Animate next headers
-                $($('.section')[section.data.position]).find('.header, .side-panel')
-                                                       .css({'transform': 'translate3d(0, 0, 0)',
-                                                             'transition': 'none'});
             }
         });
 
-        $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*slideIndex)) + 'px , 0)',
-                          'transition': 'none'});
-
-        $($('.slide')[slideIndex]).parent('.section')
-                                  .find('.header, .side-panel')
-                                  .css({'transform': 'translate3d(0, 0, 0)',
-                                        'transition': 'none'});
-
-
-        defineBodyBackground($($('.slide')[slideIndex]).parent('.section'));
+        self.activeSlide = slideIndex;
+        self.menuOpened = false;
 
         defineHeaderContent(slideIndex, 0);
-
-        self.menuOpened = false;
     };
 
     // Slide event
@@ -132,45 +104,15 @@ angular.module('Cunard', [
                 self.activeSlide = nextIndex;
             });
 
-            // Header animation
-            //animateHeader(el, nextEl, direction, self.windowHeight);
-
             addAnimationClasses(el, nextEl, direction);
-            
-            defineBodyBackground(nextEl.parent('.section'));
-
-            // if (nextEl.hasClass('reveal') && direction === 'up') {
-            //     $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
-            //                       'transition': 'none'});
-
-            //     el.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)'});
-            //     window.setTimeout(function () {
-            //         el.parent('.section').css({'transform': 'translateY(0px)',
-            //                                    'transition': 'transform 1s ease'});
-            //     }, 0);
-
-            // } else if (el.hasClass('reveal') && direction === 'down') {
-
-            //     nextEl.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)',
-            //                                    'transition': 'transform 1s ease'});
-                
-            //     window.setTimeout(function () {
-            //         $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
-            //                           'transition': 'none'});
-            //         nextEl.parent('.section').css({'transform': 'translateY(0px)',
-            //                                    'transition': 'none'});
-            //     }, 1000);
-            // } else {
-            //     $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight)) + 'px , 0)',
-            //                       'transition': 'transform 1s ease'});
-            // }
 
             window.setTimeout(function () {
                 nextEl.removeClass('prevent-sliding');
             }, 1000);
+
             nextEl.addClass('prevent-sliding');
 
-            //defineHeaderContent(nextIndex, 500);
+            defineHeaderContent(nextIndex, 500);
         }
 
         if (direction === 'up') {
@@ -212,6 +154,7 @@ angular.module('Cunard', [
         });
     }
 
+    // ???
     function animateHeader(el, next, direction, windowHeight) {
         var sectionIndex = el.closest('.section').find('.slide').index(el);
 
