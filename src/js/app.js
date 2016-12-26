@@ -11,9 +11,10 @@ angular.module('Cunard', [
     var didScroll = false;
 
     this.activeSlide = 0;
+    this.revealIndex = 0;
     this.menuOpened = false;
 	this.data = null;
-    this.windowHeight = window.screen.availHeight;
+    this.windowHeight = window.innerHeight;
     this.activePageName;
     this.subsectionName;
 
@@ -70,14 +71,18 @@ angular.module('Cunard', [
     //Slide to section
     this.slideTo = function(sectionIndex) {
         var slideIndex = 1;
+        var sections = 1;
 
         self.data.map(function(section, index) {
             if (section.data.position < sectionIndex) {
                 var sectionLength = section.data.pages.length;
+
+                sections += 1;
                 slideIndex += sectionLength;
             }
         });
 
+        self.revealIndex = sections;
         self.activeSlide = slideIndex;
         self.menuOpened = false;
 
@@ -103,6 +108,22 @@ angular.module('Cunard', [
             $scope.$apply(function() {
                 self.activeSlide = nextIndex;
             });
+
+            if (nextEl.hasClass('reveal')) {
+                if (direction === 'up') {
+                    $scope.$apply(function() {
+                        self.revealIndex += 1;
+                    });
+                }
+            }
+
+            if (el.hasClass('reveal')) {
+                if (direction === 'down') {
+                    $scope.$apply(function() {
+                        self.revealIndex -= 1;
+                    });
+                }
+            }
 
             addAnimationClasses(el, nextEl, direction);
 
@@ -152,34 +173,6 @@ angular.module('Cunard', [
                 }
             });
         });
-    }
-
-    // ???
-    function animateHeader(el, next, direction, windowHeight) {
-        var sectionIndex = el.closest('.section').find('.slide').index(el);
-
-        // if there's no header in section (i.e. first)
-        if (!(el.parent('.section').find('.header').length > 0)) {
-            return;
-        }
-
-        // if scrolling up to the next section
-        if (el.hasClass('reveal') && direction === 'down') {
-            return;
-        }
-
-        // if scrolling down to the next section
-        if (next.hasClass('reveal') && direction === 'up') {
-            return;
-        }
-        
-        if (direction === 'up') {
-            el.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex + 1)) + 'px, 0)',
-                                                                    'transition': 'transform 1s ease'});
-        } else if (direction === 'down') {
-            next.parent('.section').find('.header, .side-panel').css({'transform': 'translate3d(0, ' + (windowHeight * (sectionIndex - 1)) + 'px, 0)',
-                                                                      'transition': 'transform 1s ease'});
-        }
     }
 
     function addAnimationClasses(el, nextEl, direction) {

@@ -45,7 +45,7 @@ html, body {
 .header {
     position: absolute;
     width: 100%;
-    z-index: 5;
+    z-index: 2;
 }
 
 .side-panel {
@@ -54,6 +54,8 @@ html, body {
     height: 100%;
     width: 11.11%;
     padding-left: 25px;
+    z-index: 1;
+    color: balck;
     .section-name {
         position: absolute;
         bottom: 25px;
@@ -61,6 +63,12 @@ html, body {
             margin-bottom: 20px;
         }
     }
+}
+.transition-remove.transition-remove-add-active {
+    transition: none !important;
+}
+.transition-remove-remove-active {
+    transform: none !important;
 }
 
 .section {
@@ -76,6 +84,9 @@ html, body {
             .menu-btn {
                 background: url('img/ui/menu.svg') no-repeat 0 0;
             }
+        }
+        .side-panel {
+            color: white;
         }
     }
     &.section-starter {

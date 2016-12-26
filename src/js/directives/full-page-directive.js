@@ -3,7 +3,7 @@ angular.module('Cunard.fullPage', [])
   return {
     restrict: 'A',
     link: function(scope, element, attrs) {
-      var windowHeight = window.screen.availHeight;
+      var windowHeight = window.innerHeight;
 
       element.height(windowHeight);
     }

@@ -59,7 +59,9 @@
              data-last="{{$last}}">
 
             <!-- Header -->
-            <div class="header">
+            <div class="header"
+                 ng-style="{'transform': 'translate3d(0,' + ctrl.windowHeight * ($index + 1 - ctrl.revealIndex) + 'px, 0)', 'transition': 'transform 1s ease'}"
+                 ng-class="{'transition-remove': ctrl.activeSlide === section.data.pages[0].id}">
                 <div class="menu-btn"
                      ng-click="ctrl.menuOpened = true"></div>
                 <div class="subsection-name" ng-bind-html="ctrl.subsectionName | to_trusted"></div>
@@ -67,7 +69,9 @@
             </div>
 
             <!-- Side panel -->
-            <div class="side-panel">
+            <div class="side-panel"
+                 ng-style="{'transform': 'translate3d(0,' + ctrl.windowHeight * ($index + 1 - ctrl.revealIndex) + 'px, 0)', 'transition': 'transform 1s ease'}"
+                 ng-class="{'transition-remove': ctrl.activeSlide === section.data.pages[0].id}">
                 <div class="section-name">
                     <img ng-if="$index % 2 === 0"
                          ng-src="assets/img/ui/{{section.data.position}}_White.svg" />
