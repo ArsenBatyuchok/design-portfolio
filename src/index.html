@@ -64,8 +64,10 @@
                  ng-class="{'transition-remove': ctrl.activeSlide === section.data.pages[0].id}">
                 <div class="menu-btn"
                      ng-click="ctrl.menuOpened = true"></div>
-                <div class="subsection-name" ng-bind-html="ctrl.subsectionName | to_trusted"></div>
-                <div class="page-name" ng-bind-html="ctrl.activePageName | to_trusted"></div>
+                <div class="header-info-wrapper">
+                    <div class="subsection-name" ng-bind-html="ctrl.subsectionName | to_trusted"></div>
+                    <div class="page-name" ng-bind-html="ctrl.activePageName | to_trusted"></div>
+                </div>
             </div>
 
             <!-- Side panel -->

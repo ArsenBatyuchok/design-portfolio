@@ -40,7 +40,7 @@
         },
         {
             "id": 10,
-            "subsection": "Introducing No.12",
+            "subsection": "Introducing <br>No.12",
             "template": 1,
             "content": {
                 "name": null,
@@ -51,7 +51,7 @@
         },
         {
             "id": 11,
-            "subsection": "Introducing No.12",
+            "subsection": "Introducing <br>No.12",
             "template": 4,
             "content": {
                 "name": "No.12",
@@ -63,7 +63,7 @@
         },
         {
             "id": 12,
-            "subsection": "Introducing No.12",
+            "subsection": "Introducing <br>No.12",
             "template": 7,
             "content": {
                 "name": "No.12",
@@ -72,7 +72,7 @@
         },
         {
             "id": 13,
-            "subsection": "Introducing No.12",
+            "subsection": "Introducing <br>No.12",
             "template": 2,
             "content": {
                 "name": "No.12",
@@ -145,7 +145,7 @@
         },
         {
             "id": 19,
-            "subsection": "No.12 Design <br>values",
+            "subsection": "No.12 Design <br>Values",
             "template": 4,
             "content": {
                 "name": "Modern",
@@ -157,7 +157,7 @@
         },
         {
             "id": 20,
-            "subsection": "No.12 Design <br>values",
+            "subsection": "No.12 Design <br>Values",
             "template": 41,
             "content": {
                 "name": "Layered",
@@ -169,7 +169,7 @@
         },
         {
             "id": 21,
-            "subsection": "No.12 Design <br>values",
+            "subsection": "No.12 Design <br>Values",
             "template": 4,
             "content": {
                 "name": "Personal",

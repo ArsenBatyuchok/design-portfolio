@@ -20,6 +20,7 @@
 
 // variables
 @fullsection-top-padding: 160px;
+@desktop-max-width: 865px;
 
 html, body {
     font-family: 'Suranna', serif;
@@ -148,3 +149,16 @@ html, body {
     position: relative;
 }
 
+@media (min-width: 1025px) {
+    .section-inner {
+        max-width: @desktop-max-width;
+        margin: 0 auto;
+    }
+    .header-info-wrapper {
+        max-width: @desktop-max-width - (@grid-gutter-width * 2);
+        margin: 0 auto;
+    }
+    .col-xs-offset-1 {
+        margin-left: 0;
+    }
+}
