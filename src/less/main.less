@@ -46,6 +46,7 @@ html, body {
     position: absolute;
     width: 100%;
     z-index: 5;
+    display: none;
 }
 
 .side-panel {
@@ -54,6 +55,7 @@ html, body {
     height: 100%;
     width: 11.11%;
     padding-left: 25px;
+    display: none;
     .section-name {
         position: absolute;
         bottom: 25px;
@@ -83,14 +85,37 @@ html, body {
         padding: 25px;
     }
     .slide {
-        position: relative;
+        position: absolute;
         width: 100%;
         overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        transition: transform 1s ease;
+        &.prev, &.next {
+            transition: transform 1s ease;
+        }
+        &.prev {
+            transform: translate3d(0, -100%, 0);
+        }
+        &.next {
+            transform: translate3d(0, 100%, 0);
+        }
+        &.ng-enter {
+            transition: none;
+        }
+        &.ng-leave {
+            transition: 0.5s 0.2s;
+        }
+        &.ng-enter, &.ng-enter-active {
+            opacity: 0;
+        }
+        &.ng-leave, &.ng-leave-active {
+            opacity: 0;
+        }
     }
-    &.reveal-section {
-        top: 100vh;
+    //&.reveal-section {
+        //top: 100vh;
         //animation: reveal 5s ease;
-    }
+    //}
 }
 
 .main-heading {

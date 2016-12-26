@@ -33,7 +33,15 @@
         <div class="section section-starter black"
              ng-style="{'z-index': ctrl.data.length + 1}"
              data-last="false">
-            <div class="slide slide-active" data-id="0" full-page>
+            <div class="slide"
+                 data-id="0"
+                 full-page
+                 ng-class="{'slide-active': ctrl.activeSlide === 0,
+                            'prev': ctrl.activeSlide - 1 === 0,
+                            'next': ctrl.activeSlide + 1 === 0}"
+                 ng-if="ctrl.activeSlide === 0 ||
+                       (ctrl.activeSlide - 1) === 0 ||
+                       (ctrl.activeSlide + 1) === 0">
                 <div class="section-inner">
                     <div class="main-heading">
                         <span class="highlighted">A New<br></span>
@@ -71,8 +79,14 @@
 
             <div class="slide" full-page
                  ng-repeat="slide in section.data.pages"
-                 ng-class="{reveal: $index === 0}"
-                 data-id="{{slide.id}}">
+                 data-id="{{slide.id}}"
+                 ng-class="{'slide-active': ctrl.activeSlide === slide.id,
+                            prev: ctrl.activeSlide - 1 === slide.id,
+                            next: ctrl.activeSlide + 1 === slide.id,
+                            reveal: $index === 0}"
+                 ng-if="ctrl.activeSlide === slide.id ||
+                       (ctrl.activeSlide - 1) === slide.id ||
+                       (ctrl.activeSlide + 1) === slide.id">
                 <!-- Template -->
                 <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
             </div>

@@ -61,6 +61,7 @@ gulp.task('js', function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/angular/angular.min.js',
+            'node_modules/angular-animate/angular-animate.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
             jsSrc + '/services/dataService.js',

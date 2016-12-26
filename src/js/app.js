@@ -2,13 +2,15 @@ angular.module('Cunard', [
 	'Cunard.services',
     'Cunard.fullPage',
     'Cunard.revealSection',
-    'Cunard.toTrustedFilter'
+    'Cunard.toTrustedFilter',
+    'ngAnimate'
 ])
 .controller('CunardCtrl', ['$scope', '$q', 'dataService', function ($scope, $q, dataService) {
     var self = this;
     var timer;
     var didScroll = false;
 
+    this.activeSlide = 0;
     this.menuOpened = false;
 	this.data = null;
     this.windowHeight = window.screen.availHeight;
@@ -102,8 +104,6 @@ angular.module('Cunard', [
                                   .css({'transform': 'translate3d(0, 0, 0)',
                                         'transition': 'none'});
 
-        $('.slide-active').removeClass('slide-active');
-        $($('.slide')[slideIndex]).addClass('slide-active');
 
         defineBodyBackground($($('.slide')[slideIndex]).parent('.section'));
 
@@ -114,7 +114,6 @@ angular.module('Cunard', [
 
     // Slide event
     function slidePages(direction) {
-        var length = $('.slide').length;
         var el = $('.slide-active');
         var index = el.data('id');
 
@@ -125,49 +124,53 @@ angular.module('Cunard', [
         function slide(nextIndex, direction) {
             var nextEl = $('.slide[data-id="' + nextIndex + '"]');
 
-            if (nextIndex < 0 || nextIndex >= length) {
-                return;
+            if (nextIndex < 0 || nextIndex >= 72) {
+                 return;
             }
+
+            $scope.$apply(function() {
+                self.activeSlide = nextIndex;
+            });
 
             // Header animation
-            animateHeader(el, nextEl, direction, self.windowHeight);
-
-            defineBodyBackground(nextEl.parent('.section'));
-
-            if (nextEl.hasClass('reveal') && direction === 'up') {
-                $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
-                                  'transition': 'none'});
-
-                el.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)'});
-                window.setTimeout(function () {
-                    el.parent('.section').css({'transform': 'translateY(0px)',
-                                               'transition': 'transform 1s ease'});
-                }, 0);
-
-            } else if (el.hasClass('reveal') && direction === 'down') {
-
-                nextEl.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)',
-                                               'transition': 'transform 1s ease'});
-                
-                window.setTimeout(function () {
-                    $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
-                                      'transition': 'none'});
-                    nextEl.parent('.section').css({'transform': 'translateY(0px)',
-                                               'transition': 'none'});
-                }, 1000);
-            } else {
-                $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
-                                  'transition': 'transform 1s ease'});
-            }
+            //animateHeader(el, nextEl, direction, self.windowHeight);
 
             addAnimationClasses(el, nextEl, direction);
+            
+            defineBodyBackground(nextEl.parent('.section'));
+
+            // if (nextEl.hasClass('reveal') && direction === 'up') {
+            //     $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
+            //                       'transition': 'none'});
+
+            //     el.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)'});
+            //     window.setTimeout(function () {
+            //         el.parent('.section').css({'transform': 'translateY(0px)',
+            //                                    'transition': 'transform 1s ease'});
+            //     }, 0);
+
+            // } else if (el.hasClass('reveal') && direction === 'down') {
+
+            //     nextEl.parent('.section').css({'transform': 'translateY(' + self.windowHeight + 'px)',
+            //                                    'transition': 'transform 1s ease'});
+                
+            //     window.setTimeout(function () {
+            //         $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight*nextIndex)) + 'px , 0)',
+            //                           'transition': 'none'});
+            //         nextEl.parent('.section').css({'transform': 'translateY(0px)',
+            //                                    'transition': 'none'});
+            //     }, 1000);
+            // } else {
+            //     $('.slider').css({'transform': 'translate3d(0,' + (-(self.windowHeight)) + 'px , 0)',
+            //                       'transition': 'transform 1s ease'});
+            // }
 
             window.setTimeout(function () {
                 nextEl.removeClass('prevent-sliding');
             }, 1000);
             nextEl.addClass('prevent-sliding');
 
-            defineHeaderContent(nextIndex, 500);
+            //defineHeaderContent(nextIndex, 500);
         }
 
         if (direction === 'up') {
@@ -237,7 +240,6 @@ angular.module('Cunard', [
     }
 
     function addAnimationClasses(el, nextEl, direction) {
-        el.removeClass('slide-active');
         nextEl.addClass('sliding');
 
         if (direction === 'down') {
@@ -247,7 +249,6 @@ angular.module('Cunard', [
         }
 
         window.setTimeout(function () {
-            nextEl.addClass('slide-active');
             nextEl.removeClass('sliding sliding-up sliding-down');
         }, 300);
        
