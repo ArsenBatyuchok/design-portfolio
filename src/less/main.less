@@ -56,7 +56,6 @@ html, body {
     width: 11.11%;
     padding-left: 25px;
     z-index: 1;
-    color: balck;
     .section-name {
         position: absolute;
         bottom: 25px;
@@ -65,11 +64,17 @@ html, body {
         }
     }
 }
-.transition-remove.transition-remove-add-active {
-    transition: none !important;
-}
-.transition-remove-remove-active {
-    transform: none !important;
+
+.header, .side-panel {
+    &.transition-add-up {
+        transition: transform 1s 0.04s ease;
+    }
+    &.transition-add-down {
+        transition: transform 1s 0.08s ease;
+    }
+    &.transform-none {
+        transform: none !important;
+    }
 }
 
 .section {
