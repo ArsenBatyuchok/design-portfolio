@@ -111,6 +111,8 @@ angular.module('Cunard', [
 
             if (nextEl.hasClass('reveal')) {
                 if (direction === 'up') {
+                    headerReveal(el, 'transition-add-up', 1200);
+
                     $scope.$apply(function() {
                         self.revealIndex += 1;
                     });
@@ -119,6 +121,10 @@ angular.module('Cunard', [
 
             if (el.hasClass('reveal')) {
                 if (direction === 'down') {
+                    headerReveal(nextEl, 'transition-add-down', 1200);
+                    
+                    headerReveal(el, 'transform-none', 1000);
+
                     $scope.$apply(function() {
                         self.revealIndex -= 1;
                     });
@@ -141,6 +147,18 @@ angular.module('Cunard', [
         } else if (direction === 'down') {
             slide(index - 1, direction);
         }
+    }
+
+    function headerReveal(el, className, timing) {
+        el.parent()
+          .find('.header, .side-panel')
+          .addClass(className);
+
+        window.setTimeout(function () {
+            el.parent()
+              .find('.header, .side-panel')
+              .removeClass(className);
+        }, timing);
     }
 
     //Define subsection/page name
