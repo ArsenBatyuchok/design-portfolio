@@ -100,8 +100,10 @@ angular.module('Cunard', [
 
         function slide(nextIndex, direction) {
             var nextEl = $('.slide[data-id="' + nextIndex + '"]');
+            var lastSection = self.data[self.data.length - 1];
+            var lastPage = lastSection.data.pages[lastSection.data.pages.length - 1];
 
-            if (nextIndex < 0 || nextIndex >= 72) {
+            if (nextIndex < 0 || nextIndex >= lastPage.id + 1) {
                  return;
             }
 
