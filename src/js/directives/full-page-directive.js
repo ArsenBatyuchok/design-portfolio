@@ -3,9 +3,11 @@ angular.module('Cunard.fullPage', [])
   return {
     restrict: 'A',
     link: function(scope, element, attrs) {
-      var windowHeight = window.innerHeight;
+      element.height(window.innerHeight);
 
-      element.height(windowHeight);
+      $(window).on("resize", function() {
+        element.height(window.innerHeight);
+      });
     }
   }
 });
