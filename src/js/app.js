@@ -68,6 +68,19 @@ angular.module('Cunard', [
         }
     });
 
+    // Key left/right event
+    $('body').on('keydown', function(e) {
+        if(e.keyCode == 37) { // left
+            if ($('.prevent-sliding').length === 0) {
+                slidePages('down');
+            }
+        } else if(e.keyCode == 39) { // right
+            if ($('.prevent-sliding').length === 0) {
+                slidePages('up');
+            }
+        }
+    });
+
     //Slide to section
     this.slideTo = function(sectionIndex) {
         var slideIndex = 1;
