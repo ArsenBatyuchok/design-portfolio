@@ -107,6 +107,10 @@ angular.module('Cunard', [
         var el = $('.slide-active');
         var index = el.data('id');
 
+        if (el.length !== 1) {
+            return;
+        }
+
         $scope.$apply(function() {
             self.menuOpened = false;
         });
