@@ -23,7 +23,7 @@
                 "name": "Expert Living",
                 "labels": ["Intellectual"],
                 "text": [
-                    "The space includes a digital screening room connecting voyagers with the most contemporary wellness programming around the world. In  tting with social surprises, on certain voyages, No.12 will feature a visiting healthy living expert who will offer lectures and workshops on detoxi cation, integrative healing, stress management and pain reduction."
+                    "The space includes a digital screening room connecting voyagers with the most contemporary wellness programming around the world. In fitting with social surprises, on certain voyages, No.12 will feature a visiting healthy living expert who will offer lectures and workshops on detoxi cation, integrative healing, stress management and pain reduction."
                 ],
                 "images": ["38-1.jpg"]
             }
@@ -145,7 +145,7 @@
                 "labels": ["Social", "Physical", "Clinical", "Emotional"],
                 "text": [
                     "THE HOUSE OF ELEMIS program is the creative heart of ELEMIS. A couture beauty house where spa meets science meets skin. More than 25 years of wisdom inspire the pioneering ELEMIS formulas and revolutionary treatment menu.",
-                    "Designed to deliver exactly what you need, when you need it. ELEMIS Elite therapists make it personal. They look. They listen. They tune in to you, performing transformative treatments, personalised to respond to the ever-evolving rhythm of your life and the ever-changing nature of your skin.<br>VIDEO https://www.youtube.com/watch?v=dvSOxoBMexY"
+                    "Designed to deliver exactly what you need, when you need it. ELEMIS Elite therapists make it personal. They look. They listen. They tune in to you, performing transformative treatments, personalised to respond to the ever-evolving rhythm of your life and the ever-changing nature of your skin. <a href='https://www.youtube.com/watch?v=dvSOxoBMexY'>VIDEO</a>"
                 ],
                 "images": ["47-1.jpg"]
             }
@@ -172,8 +172,8 @@
                 "name": "Bodywork",
                 "labels": ["Physical"],
                 "text": [
-                    "The HOUSE OF ELEMIS exclusively presents the state of the art Amber and Quartz Crystal bed. Warm crystals mould and shape around your body helping to release muscle tension, detoxify and promote a deeper state of relaxation. A revolutionary minerally-charged experience of skin conditioning, metabolic balancing and energising wellness.",
-                    "Choose from:<br>Hot Mineral Body Boost<br>Poultice-Powered Muscle Release"
+                    "The HOUSE OF ELEMIS exclusively presents the state of the art Amber and Quartz Crystal bed. Warm crystals mould and shape around your",
+                    "body helping to release muscle tension, detoxify and promote a deeper state of relaxation. A revolutionary minerally-charged experience of skin conditioning, metabolic balancing and energising wellness.<br>Choose from:<br>Hot Mineral Body Boost<br>Poultice-Powered Muscle Release"
                 ],
                 "images": ["49-1.jpg"]
             }

@@ -5,7 +5,7 @@
         {
             "id": 34,
             "subsection": "One Day <br>Package",
-            "template": 3,
+            "template": 42,
             "content": {
                 "name": null,
                 "text": [
@@ -15,13 +15,13 @@
                     "Bathhouse access",
                     "One facial One massage"
                 ],
-                "image": ""
+                "images": ["34-1.jpg", "34-2.jpg"]
             }
         },
         {
             "id": 35,
             "subsection": "Three Day <br>Package",
-            "template": 3,
+            "template": 44,
             "content": {
                 "name": null,
                 "text": [
@@ -36,13 +36,13 @@
                     "One ELEMIS amenity bag",
                     "Complimentary designer lounge wear that comes with each package"
                 ],
-                "image": ""
+                "images": ["35-1.jpg", "35-2.jpg", "35-3.jpg", "35-4.jpg"]
             }
         },
         {
             "id": 36,
             "subsection": "Six Day <br>Package",
-            "template": 3,
+            "template": 44,
             "content": {
                 "name": null,
                 "text": [
@@ -61,7 +61,7 @@
                     "Complimentary designer lounge wear that comes with each package"
                     
                 ],
-                "image": ""
+                "images": ["36-1.jpg", "36-2.jpg", "36-3.jpg", "36-4.jpg", "36-5.jpg"]
             }
         }
     ]
