@@ -70,13 +70,13 @@ angular.module('Cunard', [
 
     // Key left/right event
     $('body').on('keydown', function(e) {
-        if(e.keyCode == 37) { // left
-            if ($('.prevent-sliding').length === 0) {
-                slidePages('down');
-            }
-        } else if(e.keyCode == 39) { // right
+        if(e.keyCode == 40) { // down
             if ($('.prevent-sliding').length === 0) {
                 slidePages('up');
+            }
+        } else if(e.keyCode == 38) { // up
+            if ($('.prevent-sliding').length === 0) {
+                slidePages('down');
             }
         }
     });
