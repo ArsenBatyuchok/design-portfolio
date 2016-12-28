@@ -43,41 +43,41 @@
         },
         {
             "id": 40,
-            "subsection": "STAYWELL®",
+            "subsection": "STAYWELL<span class='registered'>®</span>",
             "template": 6,
             "content": {
                 "name": "No. 12 Staterooms",
                 "labels": ["Emotional"],
                 "text": [
-                    "When away from home, we are distanced from our daily biological rhythms and exposed to countless unknowns, environmental hazards and discomforts. Stay Well® is designed to mitigate these variables by introducing scienti cally validated features into the built environment to optimize health, vitality, relaxation and well-being.",
-                    "The Onboard Spa by Steiner® in partnership with Delos® recommends a new Stateroom category within the greater Stateroom inventory. These Staterooms will feature Stay Well® experiences as part of the No. 12 Wellness experience."
+                    "When away from home, we are distanced from our daily biological rhythms and exposed to countless unknowns, environmental hazards and discomforts. Stay Well<span class='registered'>®</span> is designed to mitigate these variables by introducing scienti cally validated features into the built environment to optimize health, vitality, relaxation and well-being.",
+                    "The Onboard Spa by Steiner<span class='registered'>®</span> in partnership with Delos<span class='registered'>®</span> recommends a new Stateroom category within the greater Stateroom inventory. These Staterooms will feature Stay Well<span class='registered'>®</span> experiences as part of the No. 12 Wellness experience."
                 ],
                 "images": ["40-1.jpg"]
             }
         },
         {
             "id": 41,
-            "subsection": "STAYWELL®",
+            "subsection": "STAYWELL<span class='registered'>®</span>",
             "template": 6,
             "content": {
                 "name": "No. 12 Staterooms",
                 "labels": ["Emotional"],
                 "text": [
-                    "“Stay Well® rooms are built on many individual features, which when combined, have an unprecedented positive health impact for the traveler.” Deepak Chopra, MD. Delos® Advisory Board Member."
+                    "“Stay Well<span class='registered'>®</span> rooms are built on many individual features, which when combined, have an unprecedented positive health impact for the traveler.” Deepak Chopra, MD. Delos<span class='registered'>®</span> Advisory Board Member."
                 ],
                 "images": ["41-1.jpg"]
             }
         },
         {
             "id": 42,
-            "subsection": "STAYWELL®",
+            "subsection": "STAYWELL<span class='registered'>®</span>",
             "template": 6,
             "content": {
                 "name": "Program Features",
                 "labels": ["Emotional"],
                 "text": [
-                    "Stateroom fitted with Stay Well® features will optimize the well-being of its residents. Benefits include:<br>Air Puri cation. Aromatherapy. Black Out Shades. Circadian Mood Lighting. Circadian Shower. Cleaning Protocol. Cleveland Clinic Wellness. Dawn Simulation. Deepak Chopra Welcome. Designated Signage. Energising Light.",
-                    "Guided Meditation. Stay Well® Linens. Stay Well® Mattress. Healthy Menu Options. In-Room Program Guide. Long Wave Night Lighting. Mattress Encasements. Stay Well® Mobile APP. Vitamin C Infused Shower. Water Puri cation. Well Hub."
+                    "Stateroom fitted with Stay Well<span class='registered'>®</span> features will optimize the well-being of its residents. Benefits include:<br>Air Puri cation. Aromatherapy. Black Out Shades. Circadian Mood Lighting. Circadian Shower. Cleaning Protocol. Cleveland Clinic Wellness. Dawn Simulation. Deepak Chopra Welcome. Designated Signage. Energising Light.",
+                    "Guided Meditation. Stay Well<span class='registered'>®</span> Linens. Stay Well<span class='registered'>®</span> Mattress. Healthy Menu Options. In-Room Program Guide. Long Wave Night Lighting. Mattress Encasements. Stay Well<span class='registered'>®</span> Mobile APP. Vitamin C Infused Shower. Water Puri cation. Well Hub."
                 ],
                 "images": ["42-1.jpg"]
             }
@@ -145,7 +145,7 @@
                 "labels": ["Social", "Physical", "Clinical", "Emotional"],
                 "text": [
                     "THE HOUSE OF ELEMIS program is the creative heart of ELEMIS. A couture beauty house where spa meets science meets skin. More than 25 years of wisdom inspire the pioneering ELEMIS formulas and revolutionary treatment menu.",
-                    "Designed to deliver exactly what you need, when you need it. ELEMIS Elite therapists make it personal. They look. They listen. They tune in to you, performing transformative treatments, personalised to respond to the ever-evolving rhythm of your life and the ever-changing nature of your skin. <a href='https://www.youtube.com/watch?v=dvSOxoBMexY'>VIDEO</a>"
+                    "Designed to deliver exactly what you need, when you need it. ELEMIS Elite therapists make it personal. They look. They listen. They tune in to you, performing transformative treatments, personalised to respond to the ever-evolving rhythm of your life and the ever-changing nature of your skin. <a href='https://www.youtube.com/watch?v=dvSOxoBMexY' target='_blank'>VIDEO</a>"
                 ],
                 "images": ["47-1.jpg"]
             }
@@ -449,8 +449,8 @@
                 "name": "Injectables",
                 "labels": ["Clinical"],
                 "text": [
-                    "We love self-expression and encourage it. BOTOX® and DYSPORT® won’t remove your ability to reveal emotion but they will soften deeper lines and give you a refreshed look.",
-                    "RESTYLANE® is a non-surgical FDA approved filler that helps get rid of wrinkles as well as plump up the lips."
+                    "We love self-expression and encourage it. BOTOX<span class='registered'>®</span> and DYSPORT<span class='registered'>®</span> won’t remove your ability to reveal emotion but they will soften deeper lines and give you a refreshed look.",
+                    "RESTYLANE<span class='registered'>®</span> is a non-surgical FDA approved filler that helps get rid of wrinkles as well as plump up the lips."
                 ],
                 "images": ["69-1.jpg"]
             }
