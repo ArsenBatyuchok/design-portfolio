@@ -167,7 +167,6 @@ html, body {
     font-size: 17px;
 }
 .ipad-rotate-msg-wrapper, .mobile-msg-wrapper {
-    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -199,7 +198,7 @@ html, body {
         display: block;
     }
 }
-@media screen and (orientation:portrait) {
+@media screen and (min-width: 700px) and (orientation:portrait) {
     .ipad-rotate-msg-wrapper {
         display: block;
     }
