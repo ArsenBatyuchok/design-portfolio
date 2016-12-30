@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 <body style="background-color: rgb(0, 0, 0)">
+    <!-- Mobile Message -->
+    <div class="mobile-msg-wrapper">
+        <div class="mobile-msg">
+            Sorry, this page can only be viewed <br>on Tablet/Desktop devices.
+        </div>
+    </div>
+    <!-- iPad message -->
+    <div class="ipad-rotate-msg-wrapper">
+        <div class="mobile-msg ipad-rotate-msg">
+            <img src="assets/img/ui/ipad-rotate.svg" />
+            <div>
+                Please rotate your device to landscape mode <br>for best experience.
+            </div>
+        </div>
+    </div>
     <!-- Navigation -->
     <div class="navigation"
          ng-class="{'visible': ctrl.menuOpened}">

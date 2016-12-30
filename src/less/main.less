@@ -166,6 +166,44 @@ html, body {
     vertical-align: super;
     font-size: 17px;
 }
+.ipad-rotate-msg-wrapper, .mobile-msg-wrapper {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    .ipad-rotate-msg, .mobile-msg {
+        font-size: 28px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+.ipad-rotate-msg-wrapper {
+    z-index: 999;
+    display: none;
+}
+.mobile-msg-wrapper {
+    z-index: 998;
+    display: none;
+}
+@media (max-width: 1023px) {
+    .mobile-msg-wrapper {
+        display: block;
+    }
+}
+@media screen and (orientation:portrait) {
+    .ipad-rotate-msg-wrapper {
+        display: block;
+    }
+}
 
 @media (min-width: 1025px) {
     .section-inner {
