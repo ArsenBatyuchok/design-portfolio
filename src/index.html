@@ -110,6 +110,26 @@
                 <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
             </div>
         </div>
+
+        <!-- Last section -->
+        <div class="section"
+             data-last="false">
+            <div class="slide reveal"
+                 data-id="{{ctrl.lastPageIndex + 1}}"
+                 full-page
+                 ng-class="{'slide-active': ctrl.activeSlide === ctrl.lastPageIndex + 1,
+                            'prev': ctrl.activeSlide - 1 === ctrl.lastPageIndex + 1,
+                            'next': ctrl.activeSlide + 1 === ctrl.lastPageIndex + 1}"
+                 ng-if="ctrl.activeSlide === ctrl.lastPageIndex + 1 ||
+                       (ctrl.activeSlide - 1) === ctrl.lastPageIndex + 1 ||
+                       (ctrl.activeSlide + 1) === ctrl.lastPageIndex + 1">
+                <div class="section-inner">
+                    <div class="main-heading">
+                        <span class="highlighted">Thank you</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- SCRIPTS -->

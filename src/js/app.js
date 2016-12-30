@@ -17,6 +17,8 @@ angular.module('Cunard', [
     this.windowHeight = window.innerHeight;
     this.activePageName;
     this.subsectionName;
+    this.lastSection;
+    this.lastPageIndex;
 
     $q.all([
         dataService.getData('/section-1.json'),
@@ -28,6 +30,8 @@ angular.module('Cunard', [
         dataService.getData('/section-7.json')
     ]).then(function (response) {
         self.data = response;
+        self.lastSection = self.data[self.data.length - 1];
+        self.lastPageIndex = self.lastSection.data.pages[self.lastSection.data.pages.length - 1].id;
     }, function (error) {
         // Error
     });
@@ -117,10 +121,8 @@ angular.module('Cunard', [
 
         function slide(nextIndex, direction) {
             var nextEl = $('.slide[data-id="' + nextIndex + '"]');
-            var lastSection = self.data[self.data.length - 1];
-            var lastPage = lastSection.data.pages[lastSection.data.pages.length - 1];
 
-            if (nextIndex < 0 || nextIndex >= lastPage.id + 1) {
+            if (nextIndex < 0 || nextIndex > self.lastPageIndex + 1) {
                  return;
             }
 
