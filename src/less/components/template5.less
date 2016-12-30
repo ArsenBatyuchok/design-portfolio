@@ -2,6 +2,8 @@
     .section-inner.template-5 {
         padding-top: @fullsection-top-padding;
         position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
         .row {
             position: relative;
             height: 100%;
@@ -84,6 +86,16 @@
         }
     }
 }
+
+//Animation
+.section {
+    .slide-active {
+        .template-5.section-inner {
+            opacity: 1;
+        }
+    }
+}
+
 @media (min-width: 1025px) {
     .section .section-inner.template-5 {
         .img-holder-3, .img-holder-5, .img-holder-6 {
