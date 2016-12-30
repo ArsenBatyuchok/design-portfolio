@@ -55,7 +55,7 @@ angular.module('Cunard', [
         clearTimeout(timer);
         timer = setTimeout(function() {
             didScroll = false;
-        }, 50);
+        }, 250);
 
         if (!didScroll) {
             var direction = e.originalEvent.wheelDelta /120 > 0 ? 'down' : 'up';
