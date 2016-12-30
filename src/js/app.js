@@ -80,6 +80,24 @@ angular.module('Cunard', [
         }
     });
 
+    // Key click event
+    $('body').on('click', function(e) {
+        if(e.clientY > self.windowHeight/2) { // down
+            if ($('.prevent-sliding').length === 0) {
+                slidePages('up');
+            }
+        } else { // up
+            if ($('.prevent-sliding').length === 0) {
+                slidePages('down');
+            }
+        }
+    });
+
+    // Prevent click event
+    $('body').on('click', '.menu-btn, .navigation, .slide a', function(e) {
+        e.stopPropagation();
+    });
+
     //Slide to section
     this.slideTo = function(sectionIndex) {
         var slideIndex = 1;
