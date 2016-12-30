@@ -36,11 +36,6 @@ angular.module('Cunard', [
         // Error
     });
 
-    //Fix because of avalHeight 
-    window.setTimeout(function() {
-        $('.side-panel').css({height: window.innerHeight + 'px'});
-    }, 100);
-
     //Prevent scroll on Ipad
     $(document).on('touchmove', function(e) {
         e.preventDefault();
