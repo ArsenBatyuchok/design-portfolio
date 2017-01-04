@@ -1,5 +1,6 @@
 {
     "name": "Programming",
+    "sidePanelName": "Program-ming",
     "position": 7,
     "pages": [
         {
@@ -228,8 +229,8 @@
                 "name": "Bespoke Beauty Lab",
                 "labels": ["Social"],
                 "text": [
-                    "With spa facilities  t for socializing or staying low key, the No. 12 Bathhouse is the hot new place to be. Unexpected facility features mix things up with hot and cold therapy, self play areas, cool social scenes and creative spaces that leave a great e ect for both the social butter y and the laidback loner.",
-                    "In The No.12 Bathhouse, you can bask in a traditional Hammam experience and slough away dead skin with a customized scrub under a revitalizing shower. You can also bathe in the healing salty waters of the Thalassotherapy pool, or sink into heated benches and immerse yourself in the sheer pleasure of No. 12. On one or two nights every voyage, The No.12 Bathhouse transforms into a Wellness Night Club and is open for mini treatments, music and mimosas. Check our Wellness events calendar for more details."
+                    "With spa facilities t for socializing or staying low key, the No. 12 Bathhouse is the hot new place to be. Unexpected facility features mix things up with hot and cold therapy, self play areas, cool social scenes and creative spaces that leave a great e ect for both the social butter y and the laidback loner. In The No.12 Bathhouse, you can bask in a traditional Hammam experience and slough away dead skin with a customized scrub under a revitalizing shower.",
+                    "You can also bathe in the healing salty waters of the Thalassotherapy pool, or sink into heated benches and immerse yourself in the sheer pleasure of No. 12. On one or two nights every voyage, The No.12 Bathhouse transforms into a Wellness Night Club and is open for mini treatments, music and mimosas. Check our Wellness events calendar for more details."
                 ],
                 "images": ["53-1.jpg"]
             }
@@ -270,8 +271,8 @@
                 "name": "Destination: India",
                 "labels": ["Emotional", "Physical"],
                 "text": [
-                    "Ayurvedic Shirodhara and Abyhanga Massage Treatment This ancient healing tradition thrives in the modern world. Experience two beautifully Ayurvedic treatments. Shirodhara, which is the constant stream of ho oil onto the third eye, the seat of your",
-                    "intuition between the brows, combined with Ayurvedic aromatherapy massage. Sounds: Om Mantra for Chakra Cleansing"
+                    "Ayurvedic Shirodhara and Abyhanga Massage Treatment This ancient healing tradition thrives in the modern world. Experience two beautifully Ayurvedic treatments. Shirodhara, which is the constant stream of ho oil onto the third eye, the seat",
+                    "of your intuition between the brows, combined with Ayurvedic aromatherapy massage. Sounds: Om Mantra for Chakra Cleansing"
                 ],
                 "images": ["56-1.jpg"]
             }

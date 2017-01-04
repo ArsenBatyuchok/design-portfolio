@@ -1,28 +1,9 @@
 <div class="template-51 section-inner fullheight">
     <div class="wrapper">
         <div class="row">
-            <div class="col col-1">
-                <div class="img-holder"
-                     ng-repeat="image in slide.content.col1Images">
-                    <img ng-src="assets/img/{{image}}" />
-                </div>
-            </div>
-            <div class="col col-2">
-                <div class="img-holder"
-                     ng-repeat="image in slide.content.col2Images">
-                    <img ng-src="assets/img/{{image}}" />
-                </div>
-            </div>
-            <div class="col col-3">
-                <div class="img-holder"
-                     ng-repeat="image in slide.content.col3Images">
-                    <img ng-src="assets/img/{{image}}" />
-                </div>
-            </div>
-            <div class="col col-4">
-                <div class="img-holder"
-                     ng-repeat="image in slide.content.col4Images">
-                    <img ng-src="assets/img/{{image}}" />
+            <div class="col-xs-12">
+                <div class="img-holder">
+                    <img ng-src="assets/img/{{slide.content.image}}" />
                 </div>
             </div>
         </div>

@@ -1,11 +1,12 @@
 {
     "name": "Programming Pillars",
+    "sidePanelName": "Program-ming Pillars",
     "position": 5,
     "pages": [
         {
             "id": 27,
             "subsection": "No.12 Wellness <br>Pillars",
-            "template": 2,
+            "template": 22,
             "content": {
                 "name": "",
                 "text": [
@@ -14,7 +15,7 @@
                     "INTELLECTUAL<br>curated library of books, educational seminars, shows & podcasts about the latest & greatest in wellness, health and healing",
                     "PHYSICAL<br>bootcamp / personal trainers / group classes / massages & bodywork",
                     "NUTRITIONAL<br>healthy eating / cooking classes / nutritional consultations / Chinese herbal medicine / herbal teas / healthy spa beverages and snacks",
-                    "CLINICAL<br>advanced anti-ageing therapies / sports clinic / acupuncture for well-being / pain management"
+                    "CLINICAL<br>advanced anti-ageing therapies / sports clinic / acupuncture for well-being / <br>pain management"
                 ]
             }
         },
@@ -61,10 +62,10 @@
             "content": {
                 "name": "Physical",
                 "text": [
-                    "Work hard, play hard. No. 12’s Physical program encompasses a wide-range of one-on-one training and sessions with group classes from leading brands such as Pure Barre<span class='superscript'>TM</span> and Peloton<span class='superscript'>TM</span>.",
-                    "Massage and Body Therapy. <br>From straight up Swedish massage to the poetic Thousand Flower Detoxifying Wrap, guests can check in and then check out.",
-                    "Group Classes: Step in, Be bold. <br>Engage the body in a variety of functional movements, build muscle and strength. Be it yoga, pilates, stretch therapy or barre, be a part of the team effort to achieve strong hearts and beautiful bodies.",
-                    "Fitness Centre: Build strength, one step at a time.<br> Our signature  tness centre features a high-intensity circuit program built around intervals, strength and T3 conditioning. Practiced by the top athletes worldwide, this proprietary program will allow you to achieve your highest goals."
+                    "Work hard, play hard. No. 12’s Physical program encompasses a wide-range <br>of one-on-one training and sessions with group classes from leading brands such as Pure Barre<span class='superscript'>TM</span> and Peloton<span class='superscript'>TM</span>.",
+                    "Massage and Body Therapy. <br>From straight up Swedish massage to the poetic Thousand Flower <br>Detoxifying Wrap, guests can check in and then check out.",
+                    "Group Classes: Step in, Be bold. <br>Engage the body in a variety of functional movements, build muscle and strength. Be it yoga, pilates, stretch therapy or barre, be a part of the team <br>effort to achieve strong hearts and beautiful bodies.",
+                    "Fitness Centre: Build strength, one step at a time.<br> Our signature  tness centre features a high-intensity circuit program <br>built around intervals, strength and T3 conditioning. Practiced by the top athletes worldwide, this proprietary program will allow you to achieve <br>your highest goals."
                 ]
             }
         },

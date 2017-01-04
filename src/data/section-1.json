@@ -33,7 +33,7 @@
             "content": {
                 "name": null,
                 "text": [
-                    "Building on a foundation of British luxury, create a multi-platform, wellness brand and business model that integrates happy & healthy living into the everyday voyage."
+                    "Building on a foundation of British luxury,<br />create a multi-platform, wellness brand and <br />business model that integrates happy & healthy <br />living into the everyday voyage."
                 ]
             }
         },
@@ -52,10 +52,7 @@
             "template": 51,
             "content": {
                 "name": "Being British has <br>Style & Strength",
-                "col1Images": ["6-1.png", "6-5.png", "6-9.png", "6-13.png", "6-14.png"],
-                "col2Images": ["6-2.png", "6-6.png", "6-10.png", "6-15.png", "6-16.png", "6-17.png"],
-                "col3Images": ["6-3.png", "6-7.png", "6-11.png", "6-18.png", "6-19.png"],
-                "col4Images": ["6-4.png", "6-8.png", "6-12.png", "6-20.png"]
+                "image": "6-all.png"
             }
         },
         {

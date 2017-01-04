@@ -4,12 +4,12 @@
     "pages": [
         {
             "id": 26,
-            "subsection": "The first on board social model for wellness",
+            "subsection": "The first <br>on board <br>social model <br>for wellness",
             "template": 1,
             "content": {
                 "name": null,
                 "text": [
-                    "A new, subscription-based model with single & multi-day packages. Each package is personalized to each guest to reach individual goals. Evolve the wellness experience on board from a special moment to an everyday necessity. Entice and educate guests on the bene ts prior to the journey and encourage pre-bookings."
+                    "A new, subscription-based model with single & <br>multi-day packages. Each package is personalized <br>to each guest to reach individual goals. <br>Evolve the wellness experience on board <br>from a special moment to an everyday necessity. <br>Entice and educate guests on the benefits prior to the journey and encourage pre-bookings."
                 ]
             }
         }

@@ -61,7 +61,7 @@
                 <div class="section-inner">
                     <div class="main-heading">
                         <span class="highlighted">A New<br></span>
-                        <span>Cunard Spa</span>
+                        <span>Cunard <br>Spa</span>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                          ng-src="assets/img/ui/{{section.data.position}}_White.svg" />
                     <img ng-if="$index % 2 !== 0"
                          ng-src="assets/img/ui/{{section.data.position}}_Black.svg" />
-                    <div>{{section.data.name}}</div>
+                    <div>{{section.data.sidePanelName || section.data.name}}</div>
                 </div>
             </div>
 
