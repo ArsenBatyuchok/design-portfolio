@@ -10,8 +10,8 @@
                 "name": "",
                 "text": [
                     "Cunard is synonymous with elegance, luxury and its renowned White Star Service which sets the standard by which all others are judged. Cunard’s commitment to ensuring each guest is pampered begins at the <br>White Star Academy where each crew member is trained to provide impeccable service.",
-                    "Leveraging a history of perfect storms when style collided with five-star <br>service. Braniff Airlines in the 70’s. Annabel’s in the 80s & 90’s, The <br>Wolseley and Cunard today.",
-                    "No.12’s White Star service builds upon this rich tradition with <br>thoughtfulness, care and a nod to the inimitable British wit.",
+                    "Leveraging a history of perfect storms when style collided with five-star <br>service. Braniff Airlines in the 70s. Annabel’s in the 80s & 90s. The <br>Wolseley and Cunard today.",
+                    "No. 12’s White Star service builds upon this rich tradition with <br>thoughtfulness, care and a nod to the inimitable British wit.",
                     "How may we help you?"
                 ]
             }
@@ -23,24 +23,24 @@
             "content": {
                 "name": "",
                 "text": [
-                    "Staff warmly greets guests upon arrival, using the guest’s name <br>when appropriate.",
-                    "Staff offers welcome beverage upon arrival <br>(juice, cocktail, champagne, wine)",
-                    "Staff offers guests specialty loungewear in spa",
-                    "Staff is encouraged to impress with the details <br>(proactive gestures that surprise)",
-                    "Whenever possible, Staff should make it personal <br>(handwritten vs. typed)",
-                    "Every interaction should be about how to extend the stay <br>(help voyagers recreate, plan, and remember No.12)",
-                    "Each day, staff post 12 quotes/insights of the day",
-                    "Staff asks each guest three levels of personalization per service: <br>music, temperature, and for massage, intensity level.",
-                    "Staff starts each service with a welcome ritual",
-                    "Staff ends each service with an Awakening Ritual to close the appointment",
-                    "Upon departure, each therapist will note recommended In-room or <br>post cruise service ideas (how to do your own facial massage, meditation) <br>based on service and guest.",
-                    "Each day, staff lead a 12 minute morning meditation."
+                    "Each No. 12 guest is greeted with a signature greeting and offered a wellness elixir upon arrival (anti-oxidant infusion)",
+                    "Each guest participating in a No. 12 spa service will be offered luxurious lounge wear or a robe and slippers",
+                    "Attention to Ambiance: The spa will be bathed in soft lighting to evoke relaxation",
+                    "A specially curated No. 12 music list will be carefully choreographed to enhance each guest’s auditory experience. On occasion a live musical social surprise will undulate the airwaves;  a Cunard harpist, a cellist, violinist, guitarist or perhaps evenan opera singer will add to the sound of No. 12",
+                    "A No. 12 bespoke aroma",
+                    "A No. 12, 12 minute promise: if we are more than 12 minutes late for an appointment, the treatment is complimentary",
+                    "12 No. 12 Wellness Boxes containing 12 different quotes in each will be found in surprise locations around the ship",
+                    "Customized bed temperature options with every spa treatment",
+                    "Each spa treatment begins with a Welcome Ritual, a cleansing of the feet and the recitation of the insight of the day",
+                    "Each spa treatments ends with an Awakening Ritual, a gentle touch around the body, and the playing of a crystal sound bowl signifying the start of a new more journey",
+                    "Personal, handwritten, No. 12 Thank You Card delivered to each guest who has a private treatment",
+                    "Every day, guests can participate in a 12 minute meditation"
                 ]
             }
         },
         {
             "id": 24,
-            "subsection": "No.12 Butler <br>Service",
+            "subsection": "No. 12 Butler <br>Service",
             "template": 3,
             "content": {
                 "name": null,
@@ -57,7 +57,7 @@
             "content": {
                 "name": null,
                 "text": [
-                    "Holistic wellness is about the balance of opposing forces. Intense physicality mixed with the slower rhythms of yoga and stretching. The high energy of clinical services with the calming force of the ELEMIS-trained therapists. We believe added to this mix is a collection of ‘social surprises.’ Moments of indulgent delight - glass of champagne upon arrival, savory and sweet treats in the lounge, custom DIY products for No. 12’s Bathhouse, surprise music by violinists and guitarists and a handcrafted cock whilst prepping for a lavish night out."
+                    "Holistic wellness is about the balance of opposing forces. Intense physicality mixed with the slower rhythms of yoga and stretching. The high energy of clinical services with the calming force of the ELEMIS-trained therapists. Add to this mix is a collection of ‘social surprises.’ Moments of indulgent delight - glass of champagne upon arrival, savory and sweet treats in the lounge, custom DIY products for the No. 12 Bathhouse, surprise music by violinists and guitarists and a handcrafted cocktail whilst prepping for a lavish night out."
                 ],
                 "image": "25-1.jpg"
             }
