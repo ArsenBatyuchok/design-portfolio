@@ -31,16 +31,16 @@
             "subsection": "The Wellness <br>Social Club",
             "template": 44,
             "content": {
-                "name": "A New kind of <br>Wellness Social Club",
+                "name": "A new kind of <br>wellness social club",
                 "text": [
-                  "Cunard merges the codes of modern social clubs and the destination spa experience. The result is a nexus for wellness that feels exciting and essential for voyagers wanting to maximize the social impact of a cruise. The spa celebrates a new kind of meaningful and mindful luxury grounded in health and wellness, revitalising the classic archetypes of adventures by sea, and eclectic doyenne beauty."
+                  "Merge the codes of modern social clubs and the destination spa experience. The result is a nexus for wellness that feels exciting and essential for voyagers wanting to maximise the social impact of a cruise. The spa celebrates a new kind of meaningful and mindful luxury grounded in health and wellness, revitalising the classic archetypes of adventures by sea, and eclectic doyenne beauty."
                 ],
                 "images": ["10-2.jpg", "10-3.jpg", "10-4.jpg", "10-5.jpg", "10-1.jpg"]
             }
         },
         {
             "id": 10,
-            "subsection": "Introducing <br>No.12",
+            "subsection": "Introducing <br>No. 12",
             "template": 1,
             "content": {
                 "name": null,
@@ -51,53 +51,53 @@
         },
         {
             "id": 11,
-            "subsection": "Introducing <br>No.12",
+            "subsection": "Introducing <br>No. 12",
             "template": 4,
             "content": {
-                "name": "No.12",
+                "name": null,
                 "text": [
-                  "The spa, re-imagined. <br>The first maritime wellness social club grounded in global healing practices. This is the beating heart of our ship, a place for the body to rest, the mind to reboot, the spirit to engage."
+                  "The spa, re-imagined. <br>The first maritime wellness social club grounded in global healing practices. This is the beating heart of the ship, a place for the body to rest, the mind to reboot, the spirit to engage."
                 ],
                 "images": ["12-1.jpg", "12-2.jpg", "12-3.jpg"]
             }
         },
         {
             "id": 12,
-            "subsection": "Introducing <br>No.12",
+            "subsection": "Introducing <br>No. 12",
             "template": 7,
             "content": {
-                "name": "No.12",
+                "name": null,
                 "videoSrc": "video.mp4"
             }
         },
         {
             "id": 13,
-            "subsection": "Introducing <br>No.12",
+            "subsection": "Introducing <br>No. 12",
             "template": 2,
             "content": {
-                "name": "No.12",
+                "name": null,
                 "text": [
                     "Numbers convey a sense of mystery; those who know, know. <br>In London, 'No. 10' is shorthand for the seat of power.",
-                    "12 represents the completed cycle of experience.<br>There are 12 major bodies of water, as well as 12 chakras and <br>12 units of time and space (minutes, hours, months, inches). <br>The magic of 12 is it's universal application across geography <br>and culture.",
-                    "No. 12 offers programming synchronised to the natural rhythms <br>of the sea and the sky. Each day, we reveal our 12 most important <br>insights for the day. Focused mornings, energetic days and <br>long evenings to unwind. Tune in to your fellow seamates with our <br>daily services (morning meditation and classes, afternoon tea, <br>evening elemental ceremonies around water, fire, earth & air) <br>or tune out for some personal time."
+                    "12 represents the completed cycle of experience.<br>There are 12 major bodies of water, as well as 12 chakras and <br>12 units of time and space (minutes, hours, months, inches). <br>The magic of 12 is its universal application across geography <br>and culture.",
+                    "No. 12 offers programming synchronised to the natural rhythms <br>of the sea and the sky. Each day, we reveal our 12 most important <br>insights for the day. Focused mornings, energetic days and <br>long evenings to unwind. Tune in to your fellow seafarers with our <br>daily services (morning meditation and classes, afternoon tea, <br>evening elemental ceremonies around water, fire, earth & air) <br>or tune out for some personal time."
                 ]
             }
         },
         {
             "id": 14,
-            "subsection": "No.12 Brand <br>values",
+            "subsection": "No. 12 Brand <br>values",
             "template": 42,
             "content": {
                 "name": "British",
                 "text": [
-                  "To be British today is to be respectful and clever, dapper yet fresh, formal in design yet passionate about the details. To be British today is to live amidst centuries of leaders and legends, the imaginative the fearless. We carry their souls yet push forward with our hearts."
+                  "To be British today is to be respectful and clever, dapper yet fresh, formal in design yet passionate about the details. To be British today is to live amidst centuries of leaders and legends, the imaginative – the fearless. We carry their souls yet push forward with our hearts."
                 ],
                 "images": ["14-1.jpg", "14-2.jpg", "14-3.jpg"]
             }
         },
         {
             "id": 15,
-            "subsection": "No.12 Brand <br>values",
+            "subsection": "No. 12 Brand <br>values",
             "template": 4,
             "content": {
                 "name": "Joy",
@@ -109,7 +109,7 @@
         },
         {
             "id": 16,
-            "subsection": "No.12 Brand <br>values",
+            "subsection": "No. 12 Brand <br>values",
             "template": 42,
             "content": {
                 "name": "Culture",
@@ -121,7 +121,7 @@
         },
         {
             "id": 17,
-            "subsection": "No.12 Brand <br>values",
+            "subsection": "No. 12 Brand <br>values",
             "template": 41,
             "content": {
                 "name": "Allure",
@@ -133,7 +133,7 @@
         },
         {
             "id": 18,
-            "subsection": "No.12 Design <br>Values",
+            "subsection": "No. 12 Design <br>Values",
             "template": 2,
             "content": {
                 "name": "Philosophy",
@@ -145,7 +145,7 @@
         },
         {
             "id": 19,
-            "subsection": "No.12 Design <br>Values",
+            "subsection": "No. 12 Design <br>Values",
             "template": 4,
             "content": {
                 "name": "Modern",
@@ -157,7 +157,7 @@
         },
         {
             "id": 20,
-            "subsection": "No.12 Design <br>Values",
+            "subsection": "No. 12 Design <br>Values",
             "template": 41,
             "content": {
                 "name": "Layered",
@@ -169,7 +169,7 @@
         },
         {
             "id": 21,
-            "subsection": "No.12 Design <br>Values",
+            "subsection": "No. 12 Design <br>Values",
             "template": 4,
             "content": {
                 "name": "Personal",

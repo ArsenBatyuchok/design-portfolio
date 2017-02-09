@@ -200,6 +200,19 @@ html, body {
     vertical-align: super;
     font-size: 15px;
 }
+.last-slide-fullheight {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    .img-wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
 @media (max-width: 1023px) {
     .mobile-msg-wrapper {
         display: block;

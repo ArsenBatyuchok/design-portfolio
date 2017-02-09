@@ -4,61 +4,62 @@
     "pages": [
         {
             "id": 34,
-            "subsection": "One Day <br>Package",
+            "subsection": "ONE-DAY<br>Package",
             "template": 42,
             "content": {
                 "name": null,
                 "text": [
                     "Sample packages could include:",
-                    "Daily Meditation",
-                    "1 No. 12 Yoga Class",
-                    "Bathhouse access",
-                    "One facial One massage"
+                    "Daily meditation",
+                    "One No. 12 Yoga class",
+                    "No. 12 Bathhouse access",
+                    "One facial",
+                    "One massage"
                 ],
                 "images": ["34-1.jpg", "34-2.jpg"]
             }
         },
         {
             "id": 35,
-            "subsection": "Three Day <br>Package",
+            "subsection": "Three-Day <br>Package",
             "template": 44,
             "content": {
                 "name": null,
                 "text": [
                     "Sample packages could include:",
-                    "Daily Meditation",
-                    "Personal Trainer for three days",
-                    "1 No. 12 Yoga Class",
-                    "Complimentary 3-day access to The Bathhouse",
+                    "Daily meditation",
+                    "One daily personal training session",
+                    "One No. 12 Yoga class",
+                    "Three-day No. 12 Bathhouse access",
                     "One facial",
                     "One massage",
-                    "One Body Treatment",
+                    "One body treatment",
                     "One ELEMIS amenity bag",
-                    "Complimentary designer lounge wear that comes with each package"
+                    "Complimentary designer loungewear"
                 ],
                 "images": ["35-1.jpg", "35-2.jpg", "35-3.jpg", "35-4.jpg"]
             }
         },
         {
             "id": 36,
-            "subsection": "Six Day <br>Package",
+            "subsection": "Six-Day <br>Package",
             "template": 44,
             "content": {
                 "name": null,
                 "text": [
                     "Sample packages could include:",
-                    "Daily Meditation",
-                    "Personal coach during seven-days",
-                    "Complimentary 5-day access to The Bathhouse",
-                    "2 No. 12 Yoga Class",
-                    "2 No. 12 Sound Bath Classes",
+                    "Daily meditation",
+                    "Daily personal coach access",
+                    "Six-day No. 12 Bathhouse access",
+                    "Two No. 12 Yoga classes",
+                    "Two No. 12 Sound Bath classes",
                     "One facial",
-                    "Three Massages",
-                    "Two Body Treatments",
+                    "Three massages",
+                    "Two body treatments",
                     "No. 12 Manicure and Pedicure",
                     "One ELEMIS amenity bag",
-                    "1 No. 12 Beauty Butler Stateroom visit",
-                    "Complimentary designer lounge wear that comes with each package"
+                    "One No. 12 Beauty Butler stateroom visit",
+                    "Complimentary designer loungewear"
                     
                 ],
                 "images": ["36-1.jpg", "36-2.jpg", "36-3.jpg", "36-4.jpg", "36-5.jpg"]
