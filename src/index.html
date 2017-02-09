@@ -45,28 +45,6 @@
     <!-- Slider Container -->
     <div class="slider">
 
-        <!-- First section -->
-        <div class="section section-starter"
-             ng-style="{'z-index': ctrl.data.length + 1}"
-             data-last="false">
-            <div class="slide"
-                 data-id="0"
-                 full-page
-                 ng-class="{'slide-active': ctrl.activeSlide === 0,
-                            'prev': ctrl.activeSlide - 1 === 0,
-                            'next': ctrl.activeSlide + 1 === 0}"
-                 ng-if="ctrl.activeSlide === 0 ||
-                       (ctrl.activeSlide - 1) === 0 ||
-                       (ctrl.activeSlide + 1) === 0">
-                <div class="section-inner">
-                    <div class="main-heading">
-                        <span class="highlighted">A New<br></span>
-                        <span>Cunard <br>Spa</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Slider Sections -->
     	<div class="section"
              ng-class-odd="'black'"
@@ -110,26 +88,6 @@
                        (ctrl.activeSlide + 1) === slide.id">
                 <!-- Template -->
                 <ng-include src="'templates/template' + slide.template + '.html'"></ng-include>
-            </div>
-        </div>
-
-        <!-- Last section -->
-        <div class="section"
-             data-last="false">
-            <div class="slide reveal"
-                 data-id="{{ctrl.lastPageIndex + 1}}"
-                 full-page
-                 ng-class="{'slide-active': ctrl.activeSlide === ctrl.lastPageIndex + 1,
-                            'prev': ctrl.activeSlide - 1 === ctrl.lastPageIndex + 1,
-                            'next': ctrl.activeSlide + 1 === ctrl.lastPageIndex + 1}"
-                 ng-if="ctrl.activeSlide === ctrl.lastPageIndex + 1 ||
-                       (ctrl.activeSlide - 1) === ctrl.lastPageIndex + 1 ||
-                       (ctrl.activeSlide + 1) === ctrl.lastPageIndex + 1">
-                <div class="section-inner last-slide-fullheight">
-                    <div class="img-wrapper">
-                        <img src="assets/img/no12.svg" alt="No.12 Logo" />
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -10,8 +10,8 @@ angular.module('Cunard', [
     var timer;
     var didScroll = false;
 
-    this.activeSlide = 0;
-    this.revealIndex = 0;
+    this.activeSlide = 1;
+    this.revealIndex = 1;
     this.menuOpened = false;
 	this.data = null;
     this.windowHeight = window.innerHeight;
